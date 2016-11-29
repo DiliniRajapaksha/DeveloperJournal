@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+ <title>Title</title>
+ <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+ <!--   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}"> -->
+ <link rel="stylesheet" href="../css/bootstrap.css">
+ <link rel="stylesheet" href="../css/test.css" >
+
+ <link href='https://fonts.googleapis.com/css?family=Allura|Amaranth' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+  <header>
+
+    <div class="container">
+
+      <div class="row top-row">
+
+        <div class="col-md-3 logo">
+          Cake Love
+        </div>
+        <div class="col-md-6 navigation">
+
+          <a class="nav-item" href="#">Home</a>
+          <a class="nav-item" href="#">About</a>
+          <a class="nav-item" href="/">Tutorials</a>
+          <a class="nav-item" href="#">Contact</a>
+          
+        </div>
+        <div class="col-md-3 search"> 
+          <div class="input-group">
+            <input type="text" class="form-control search-input input-box grey-border" placeholder="Search this blog">
+            <span class="input-group-btn">
+              <button class="btn btn-sm search-button" type="button"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+          </div><!-- /input-group -->
+
+
+          <ul id="search_results"></ul>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-9 col-md-12 post-placehoder">
+
+
+          <img src="../assets/img/cake.jpg" class="img-responsive img-placehoder" alt="Responsive image">
+        </div>
+
+        <div class="col-lg-3 col-md-12">
+
+          <form>
+            <div class="form-group subscribe-form">
+              <label class="label-text dark-text" for="email">Let's keep in touch</label>
+              <input type="email" class="form-control input-box grey-border" id="email" placeholder="Email address">
+            </div>
+            <button type="submit" class="btn btn-sm btn-block subscribe-button">Subscribe</button>
+          </form>
+          
+          <div id="me" class="">
+            
+            <p class="label-text dark-text text-center">Hi I'm Dilini</p>
+
+            <img src="../assets/img/self.jpg" class="img-circle center-block">
+
+            <p id="about-text" class="info-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
+
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </header>
+
+
+</body>
+
+</html>

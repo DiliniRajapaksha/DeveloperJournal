@@ -1,0 +1,17 @@
+
+ <head>
+
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+   <title>My title</title>
+   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+ 
+   <link rel="stylesheet" href={{ "/css/v4/bootstrap.css" | prepend: site.baseurl }}>
+   <link rel="stylesheet" href={{ "/css/main.css" | prepend: site.baseurl }}>
+  <link rel="stylesheet" href={{ "/fonts/font-awesome-4.6.3/css/font-awesome.min.css" | prepend: site.baseurl }}>
+   <link href='https://fonts.googleapis.com/css?family=Allura|Amaranth' rel='stylesheet' type='text/css'>
+  </head>
