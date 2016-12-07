@@ -4,8 +4,8 @@ title:  "The awesome Post !"
 date:   2015-11-11 13:33:41 +1100
 categories: Main category
 excerpt_separator: <!--more-->
-images:
-
+images: /assets/img/tdd.png
+permalink: testLink
  
 ---
 

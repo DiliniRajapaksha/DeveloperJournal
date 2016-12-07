@@ -29,7 +29,6 @@ $on-palm:          600px;
 $on-laptop:        800px;
 
 
-
 // Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {
@@ -42,8 +41,16 @@ $on-laptop:        800px;
         @content;
     }
 }
+/*@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
+$font-name: "league-gothic";
+$font-path-file-name: {{ baseurl }}/assets/font/League-Gothic/LeagueGothic-Regular;
 
+// font_name font
+@font-face {
+  font-family: $font-name;
+  src: url($font-path-file-name+'.otf');   
+}*/
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
@@ -51,7 +58,10 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
-
+a, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: none;
+}
 
 .bg-pink{
 	background-color:#ff5d55 !important;
@@ -68,75 +78,32 @@ $on-laptop:        800px;
 }
 
 
-.btn-pink {
-  color: #fff;
-  background-color: #ff5d55;
-  border-color: #ff5d55;
+.nav-item>a{
+	text-decoration: none;
+  color: black;
+  font-family: "raleway",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size:0.8em; 
 }
-
-.btn-pink:hover {
-  color: #fff;
-  background-color: #ff756f;
-  border-color: #c12e2a;
-}
-
-.btn-pink:focus, .btn-pink.focus {
-  color: #fff;
-  background-color: #c9302c;
-  border-color: #c12e2a;
-}
-
-.btn-pink:active, .btn-pink.active,
-.open > .btn-pink.dropdown-toggle {
-  color: #fff;
-  background-color: #c9302c;
-  border-color: #c12e2a;
-  background-image: none;
-}
-
-.btn-pink:active:hover, .btn-pink:active:focus, .btn-pink:active.focus, .btn-pink.active:hover, .btn-pink.active:focus, .btn-pink.active.focus,
-.open > .btn-pink.dropdown-toggle:hover,
-.open > .btn-pink.dropdown-toggle:focus,
-.open > .btn-pink.dropdown-toggle.focus {
-  color: #fff;
-  background-color: #ac2925;
-  border-color: #8b211e;
-}
-
-.btn-pink.disabled:focus, .btn-pink.disabled.focus, .btn-pink:disabled:focus, .btn-pink:disabled.focus {
-  background-color: #d9534f;
-  border-color: #d9534f;
-}
-
-.btn-pink.disabled:hover, .btn-pink:disabled:hover {
-  background-color: #d9534f;
-  border-color: #d9534f;
-}
-
-.nav-item{
-	font-family: 'Amaranth', sans-serif;
+a:visited{
+  color: black;
 }
 
 .navbar-brand{
-    font-family: 'Allura', cursive;
-    font-size: 44px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
 /*    color: #ff5d55 !important;*/
-color: white;
+    color: black;
     font-weight: bold;
     line-height: 29px;
 }
-
-.subscribe-form{
-	font-family: 'Amaranth', sans-serif;
-	margin-bottom: 0.5rem !important;
-}
-
 
 .btn-default {
   color: #fff;
   background-color: #ff5d55;
   border-color: #ff5d55;
-  	font-size: 16px;
+  font-size: 16px;
 	font-family: 'Amaranth', sans-serif;
 }
 
@@ -183,7 +150,26 @@ color: white;
   
   list-style: none;
 }
+.post-title{
+font-family: "raleway",sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 38;
+color: #1c1c1c;
+    line-height: 1.3em;
+        text-transform: none;
+    letter-spacing: 1px;
+}
+.post-title>a:hover{
+  text-decoration: none;
 
+}
+a{
+  text-orientation: none;
+}
+a:visited{
+
+}
 /*body{
 background-color: #fff; 
 background-image: 
@@ -192,10 +178,48 @@ linear-gradient(#eee .1em, transparent .1em);
 background-size: 100% 1.2em;
 }*/
 
-body{
-  background-color: #f3f2f2;
-}
-
 .color-pink{
   color: #ff5d55 !important;
+}
+
+.top-pd-60{
+  padding-top: 60px;
+}
+.post-meta{
+    font-family: "europa";
+/*    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6em;
+    letter-spacing: .5px;*/
+    color:rgba(31,31,31,.5);
+}
+.bottem-buffer-3{
+  margin-bottom: 3%;
+}
+
+.red{
+  color: #ff5c5c;
+}
+.blue{
+  color: #2eb2ff;
+}
+body{
+  font-family: "europa";
+  color: #1f1f1f;
+  line-height: 1.6em;
+  letter-spacing: .5px;
+  font-weight: 300;
+  font-style: normal;
+}
+.max-500{
+  max-width: 500px;
+}
+.center{
+  text-align: center;
+}
+.mg-top-1{
+  margin-top: 3%;
+}
+.the{
+  font-weight: 300;
 }
