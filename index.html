@@ -15,7 +15,7 @@ layout: default
         <div markdown="1" >
         {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
         </div>
-        <a class="color-pink" href="{{post.url}}">Read on ...</a>
+        <a class="color-pink" href="{{post.url | prepend: site.baseurl}}">Read on ...</a>
         </div>
 
       </li>
