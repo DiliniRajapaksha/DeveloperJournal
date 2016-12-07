@@ -3,6 +3,7 @@ layout: post
 title:  "TEST DRIVEN DEVELOPMENT - A Beginner's guide for Java developers"
 date:   2015-11-11 13:33:41 +1100
 categories: Main category
+markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 excerpt_separator: <!--more-->
 images: 
   - url: /assets/img/tdd.png
@@ -12,10 +13,10 @@ images:
 permalink: test-driven-development
  
 ---
-<div class="center">
+
 {% assign image = page.images[0] %}
 {% include image.html image=image %}
-</div>
-<div class="mg-top-1">
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</div>
+
+## What is TDD?
+> Test-driven development (TDD) is a software development process that relies on the repetition of a very short development cycle: requirements are turned into very specific test cases, then the software is improved to pass the new tests, only. 
+From: [Wikipedia] [https://en.wikipedia.org/wiki/Test-driven_development]
