@@ -20,7 +20,32 @@ permalink: test-driven-development
 
 <!--more-->
 
-## What is TDD?
+
+## So what is TDD?
+
+Can you actually write a test before writing a single line of implemetion logic? How do you know what method, class, or interface will contain the method under test? Sounds a bit odd...
+That's exactly how I felt when I first read about TDD on Wikipedia. 
+
 > Test-driven development (TDD) is a software development process that relies on the repetition of a very short development cycle: requirements are turned into very specific test cases, then the software is improved to pass the new tests, only. 
 >
 >--- [Test-driven development. (2016, November 20). In Wikipedia, The Free Encyclopedia. Retrieved 23:45, November 20, 2016](https://en.wikipedia.org/w/index.php?title=Test-driven_development&oldid=750634597)
+
+But once I got the hang of it I realised, that's the whole point! It guides you through the design.
+
+TDD concept was introduced or developed by Kent Beck and in his book Test Driven Development: By Example he explains the pains of traditional development process and how adopting test driven development helps. And also the foundation and key concepts are explained with lots of code samples.
+
+## TDD in action part -1 {hello world}
+
+All that is great! But how do you really apply TDD in ‘real word’ Java development?
+Well, I started by applying it to a ‘hello world’. Too trivial, I know, but I like to start as simple as possible.
+
+    public class HelloWorldTest {
+        @Test
+        public void test() {
+            Greeting greeting = new Greeting("hello world");
+            assertEquals("hello world", greeting .getMessage());
+        }
+    }
+
+
+
