@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "TEST DRIVEN DEVELOPMENT - A Beginner's guide for Java developers"
+comments: true
+title:  "TEST DRIVEN DEVELOPMENT - A Beginner's guide"
 date:   2015-11-11 13:33:41 +1100
 categories: Main category
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
@@ -10,6 +11,10 @@ images:
     alt: Test Driven Development illustration
     title: Test Driven Development illustration
 
+  - url: /assets/img/tdd_hello_world_1.gif
+    alt: Test Driven Development Hello world example
+    title: Test Driven Development Hello world example
+
 permalink: test-driven-development
  
 ---
@@ -18,13 +23,11 @@ permalink: test-driven-development
 {% include image.html image=image %}
 </div>
 
-<!--more-->
-
-
 ## So what is TDD?
 
 Can you actually write a test before writing a single line of implemetion logic? How do you know what method, class, or interface will contain the method under test? Sounds a bit odd...
-That's exactly how I felt when I first read about TDD on Wikipedia. 
+That's exactly how I felt when I first read about TDD. 
+<!--more-->
 
 > Test-driven development (TDD) is a software development process that relies on the repetition of a very short development cycle: requirements are turned into very specific test cases, then the software is improved to pass the new tests, only. 
 >
@@ -34,18 +37,30 @@ But once I got the hang of it I realised, that's the whole point! It guides you 
 
 TDD concept was introduced or developed by Kent Beck and in his book Test Driven Development: By Example he explains the pains of traditional development process and how adopting test driven development helps. And also the foundation and key concepts are explained with lots of code samples.
 
-## TDD in action part -1 {hello world}
+<hr>
+
+## LETS TEST THE WATERS WITH A HELLO WORLD
+
+<hr> 
 
 All that is great! But how do you really apply TDD in ‘real word’ Java development?
-Well, I started by applying it to a ‘hello world’. Too trivial, I know, but I like to start as simple as possible.
+Well, I started by applying it to a ‘hello world’. Too trivial, I know, but I like it to be as simple as possible.
 
-    public class HelloWorldTest {
-        @Test
-        public void test() {
-            Greeting greeting = new Greeting("hello world");
-            assertEquals("hello world", greeting .getMessage());
-        }
-    }
+##### 1 | Writting the test
+
+<div>
+{% assign image = page.images[1] %}
+{% include image.html image=image %}
+</div>
+
+##### 2 | Writting the minimum code in order to pass the test
+
+<div>
+{% assign image = page.images[1] %}
+{% include image.html image=image %}
+</div>
+
+##### 3 | Refactor the test and the code
 
 
 
