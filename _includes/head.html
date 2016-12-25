@@ -8,9 +8,11 @@
 
    <title>THE_CODE</title>
    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
- 
-   <link rel="stylesheet" href={{ "/css/v4/bootstrap.css" | prepend: site.baseurl }}>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href={{ "/css/main.css" | prepend: site.baseurl }}>
+<!--    <link rel="stylesheet" href={{ "/css/v4/bootstrap.css" | prepend: site.baseurl }}>
    <link rel="stylesheet" href={{ "/css/main.css" | prepend: site.baseurl }}>
-  <link rel="stylesheet" href={{ "/fonts/font-awesome-4.6.3/css/font-awesome.min.css" | prepend: site.baseurl }}>
+  <link rel="stylesheet" href={{ "/fonts/font-awesome-4.6.3/css/font-awesome.min.css" | prepend: site.baseurl }}> -->
   </head>
