@@ -163,3 +163,8 @@ It's that simple. So what's keeping you from practicing TDD? So let's get starte
     6. Second method annotated with `@Test` i.e. `test2()`.
     7. Method annotated with `@After`
     8. Method annotated with `@AfterClass`
+
+##### Usage of `@Before` and `@After`
+
+Often time we have to convert objects (eg: front-end objects to entities), so the example below is a unit test for a such method which converts an object to a different type of object.
+
