@@ -7,13 +7,21 @@ categories: Main category
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 excerpt_separator: <!--more-->
 images: 
-  - url: /assets/img/tdd.png
+  - url: /assets/img/tdd/tdd.png
     alt: Test Driven Development illustration
     title: Test Driven Development illustration
 
-  - url: /assets/img/tdd_hello_world_1.gif
-    alt: Test Driven Development Hello world example
-    title: Test Driven Development Hello world example
+  - url: /assets/img/tdd/tdd_hello_world_test.gif
+    alt: Test Driven Development Hello world example - write a test
+    title: Test Driven Development Hello world example - write a test
+
+  - url: /assets/img/tdd/tdd_hello_world_code.gif
+    alt: Test Driven Development Hello world example - implement logic
+    title: Test Driven Development Hello world example - implement logic
+
+  - url: /assets/img/tdd/tdd_hello_world_refactor.gif
+    alt: Test Driven Development Hello world example - refactor
+    title: Test Driven Development Hello world example - refactor
 
 permalink: test-driven-development
  
@@ -56,14 +64,14 @@ Well, I started by applying it to a ‘hello world’. Too trivial, I know, but 
 ##### 2 | Writting the minimum code in order to pass the test
 
 <div>
-{% assign image = page.images[1] %}
+{% assign image = page.images[2] %}
 {% include image.html image=image %}
 </div>
 
 ##### 3 | Refactor the test and the code
 
 <div>
-{% assign image = page.images[1] %}
+{% assign image = page.images[3] %}
 {% include image.html image=image %}
 </div>
 
@@ -73,7 +81,7 @@ Well, I started by applying it to a ‘hello world’. Too trivial, I know, but 
 
 <hr> 
 
-It's that simple. So what's keeping you from practicing TDD? So let's get started. 
+It's that simple. So what's keeping you from practicing TDD? Let's get started. 
 
 ##### In order to follow TDD we must be good at few things:
 
