@@ -100,11 +100,23 @@ It's that simple. So what's keeping you from practicing TDD? Let's get started.
 
 <hr>
 
-## JUNIT4 BASICS
+## JUNIT4 BASICS - How to make best use of the basic JUnit features
 
 <hr> 
 
-##### Basic annotations in JUnit4
+##### JUnit4 - Basic annotations
+
+- `@Before` and `@After` sandwitches **each test method** in the class.
+- `@BeforeClass` and `@AfterClass` sandwitches **all of the test methods** in a JUnit test class.
+-  So when you run the JUnit test class below, the execution order is:
+    1. Method annotated with `@BeforeClass`
+    2. Method annotated with `@Before`
+    3. First method annotated with `@Test` i.e. `test1()`.
+    4. Method annotated with `@After`    
+    5. Method annotated with `@Before`
+    6. Second method annotated with `@Test` i.e. `test2()`.
+    7. Method annotated with `@After`
+    8. Method annotated with `@AfterClass`
 
 ~~~
     public class SampleTest {
@@ -160,19 +172,27 @@ It's that simple. So what's keeping you from practicing TDD? Let's get started.
 ~~~
 {: .language-java}
 
-- `@Before` and `@After` sandwitches **each test method** in the class.
-- `@BeforeClass` and `@AfterClass` sandwitches **all of the test methods** in a JUnit test class.
--  So when you run the above JUnit test class, the execution order is:
-    1. Method annotated with `@BeforeClass`
-    2. Method annotated with `@Before`
-    3. First method annotated with `@Test` i.e. `test1()`.
-    4. Method annotated with `@After`    
-    5. Method annotated with `@Before`
-    6. Second method annotated with `@Test` i.e. `test2()`.
-    7. Method annotated with `@After`
-    8. Method annotated with `@AfterClass`
+##### JUnit4 - Assertions
 
-##### Usage of `@Before` and `@After`
+When it comes to assertions, there is the set of old JUnit assertions like:
 
-Often time we have to convert objects (eg: front-end objects to entities), so the example below is a unit test for a such method which converts an object to a different type of object.
+- org.junit.Assert.assertArrayEquals
+- org.junit.Assert.assertEquals
+- org.junit.Assert.assertFalse
+- org.junit.Assert.assertNotNull
+- org.junit.Assert.assertNotSame
+- org.junit.Assert.assertNull
+- org.junit.Assert.assertSame
+- org.junit.Assert.assertTrue
 
+And the org.junit.Assert.assertThat method (available in JUnit4) which uses matchers and is better than old style assertions because it provides:
+
+ - Better readability
+    + `assertThat(actual, is(equalTo(expected)));` is better than `assertEquals(expected, actual);`
+    + `assertThat(actual, is(not(equalTo(expected))));` is better than `assertFalse(expected.equals(actual));`
+ - Better failiure messages
+    + `java.lang.AssertionError: Expected: is "hello" but: was "hello world"` is better than `org.junit.ComparisonFailure: expected:<hello[]> but was:<hello[ world]>`
+ - Flexbility
+    + Multiple conditions could be asserted using matchers like `anyOf` or `allOf`. eg: `assertThat("hello world", anyOf(is("hello world"), containsString("hello")));` In this case, the test will pass if either the actual string is "hello world" or if it contains the word "hello".
+
+You can find an example of each of the assertions at <https://github.com/junit-team/junit4/wiki/Assertions>
