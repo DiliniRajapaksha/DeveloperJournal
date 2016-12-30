@@ -33,7 +33,7 @@ permalink: test-driven-development
 
 ## So what is TDD?
 
-Can you actually write a test before writing a single line of implemetion logic? How do you know what method, class, or interface will contain the method under test? Sounds a bit odd...
+Can you actually write a test before writing a single line of implementation logic? How do you know what method, class, or interface will contain the method under test? Sounds a bit odd...
 That's exactly how I felt when I first read about TDD. 
 <!--more-->
 
@@ -54,14 +54,14 @@ TDD concept was introduced or developed by Kent Beck and in his book Test Driven
 All that is great! But how do you really apply TDD in ‘real word’ Java development?
 Well, I started by applying it to a ‘hello world’. Too trivial, I know, but I like it to be as simple as possible.
 
-##### 1 | Writting the test
+##### 1 | Writing the test
 
 <div class="code-border">
 {% assign image = page.images[1] %}
 {% include image.html image=image %}
 </div>
 
-##### 2 | Writting the minimum code in order to pass the test
+##### 2 | Writing the minimum code in order to pass the test
 
 <div class="code-border">
 {% assign image = page.images[2] %}
@@ -85,7 +85,7 @@ It's that simple. So what's keeping you from practicing TDD? Let's get started.
 
 ##### In order to follow TDD we must be good at few things:
 
-- Writting great unit tests
+- Writing great unit tests
     + We'll discuss JUnit in this post
 - Mocking
     + There are a few mocking frameworks out there. We'll discuss Mockito, PowerMockito, and DBUnit in a future post.
@@ -94,8 +94,8 @@ It's that simple. So what's keeping you from practicing TDD? Let's get started.
 
 ##### Some jargon
 - **Class under test** - The class which contains the method that the unit test would be testing.
-- **Method under test** - The target method a unit test is executing (testing). There should be no more that one method under test for a single unit test method.
-- **Test fixture** - a test fixture is data that is required to execute a test. eg: an object setup in a certain state. A single test fixture could be used in serveral test methods.
+- **Method under test** - The target method a unit test is executing (testing). There should be no more than one method under test for a single unit test method.
+- **Test fixture** - a test fixture is data that is required to execute a test. eg: an object setup in a certain state. A single test fixture could be used in several test methods.
 
 
 <hr>
@@ -104,10 +104,10 @@ It's that simple. So what's keeping you from practicing TDD? Let's get started.
 
 <hr> 
 
-##### JUnit4 - Basic annotations
+### JUnit4 - Basic annotations
 
-- `@Before` and `@After` sandwitches **each test method** in the class.
-- `@BeforeClass` and `@AfterClass` sandwitches **all of the test methods** in a JUnit test class.
+- `@Before` and `@After` sandwiches **each test method** in the class.
+- `@BeforeClass` and `@AfterClass` sandwiches **all of the test methods** in a JUnit test class.
 -  So when you run the JUnit test class below, the execution order is:
     1. Method annotated with `@BeforeClass`
     2. Method annotated with `@Before`
@@ -127,7 +127,7 @@ It's that simple. So what's keeping you from practicing TDD? Let's get started.
             
             //Method annotated with `@BeforeClass` will execute once before any of the test methods in this class.
 
-            //This method could be used to set up any test fixtures that are computationally expensive and shared by several test methods. eg:establishing database connections 
+            //This method could be used to set up any test fixtures that are computationally expensive and shared by several test methods. e.g. establishing database connections 
 
             //Sometimes several tests need to share computationally expensive setup (like logging into a database). While this can compromise the independence of tests, sometimes it is a necessary optimization. From http://junit.sourceforge.net/javadoc/org/junit/BeforeClass.html
            
@@ -172,7 +172,7 @@ It's that simple. So what's keeping you from practicing TDD? Let's get started.
 ~~~
 {: .language-java}
 
-##### JUnit4 - Assertions
+### JUnit4 - Assertions
 
 When it comes to assertions, there is the set of old JUnit assertions like:
 
@@ -191,8 +191,104 @@ And the org.junit.Assert.assertThat method (available in JUnit4) which uses matc
     + `assertThat(actual, is(equalTo(expected)));` is better than `assertEquals(expected, actual);`
     + `assertThat(actual, is(not(equalTo(expected))));` is better than `assertFalse(expected.equals(actual));`
  - Better failiure messages
-    + `java.lang.AssertionError: Expected: is "hello" but: was "hello world"` is better than `org.junit.ComparisonFailure: expected:<hello[]> but was:<hello[ world]>`
- - Flexbility
-    + Multiple conditions could be asserted using matchers like `anyOf` or `allOf`. eg: `assertThat("hello world", anyOf(is("hello world"), containsString("hello")));` In this case, the test will pass if either the actual string is "hello world" or if it contains the word "hello".
+    + `java.lang.AssertionError: Expected: is "hello" but: was "hello world"` is better than 
 
-You can find an example of each of the assertions at <https://github.com/junit-team/junit4/wiki/Assertions>
+        `org.junit.ComparisonFailure: expected:<hello[]> but was:<hello[ world]>`
+ - Flexbility
+    + Multiple conditions could be asserted using matchers like `anyOf` or `allOf`. 
+
+        eg: `assertThat("hello world", anyOf(is("hello world"), containsString("hello")));` In this case, the test will pass if either the actual string is "hello world" or if it contains the word "hello".
+
+[JUnit4 wiki for Assertions](https://github.com/junit-team/junit4/wiki/Assertions){:target="_blank"} contains a list of examples for each of the assertions mentioned above. Also [this](https://objectpartners.com/2013/09/18/the-benefits-of-using-assertthat-over-other-assert-methods-in-unit-tests){:target="_blank"} is a comprehensive post on `assertThat`. I like the table at the end the most, which is a comparison of the `assertThat` with the old style assert methods, very useful.
+
+##### JUnit4 - Exceptions testing
+
+Does your method throw exceptions? There are a few different ways to verify whether expected exceptions are thrown, given the conditions.
+For example, we need a method which reads a file and it throws file not found exception with the message "The file 'file_name' does not exist!". We can test if the file not found exception is thrown in a number of ways. The first is the simplest and the most straight forward way which is preferred, but if we need to test the exception message as well, we could make use of the other two.
+
+ 1. Set the `expected` parameter `@Test(expected = FileNotFoundException.class)`.
+
+    ~~~~
+    @Test(expected = FileNotFoundException.class) 
+    public void testReadFile() { 
+        myClass.readFile("test.txt");
+    }
+    ~~~~
+    {: .language-java}
+
+
+ 2. Using `try` `catch`
+
+    ~~~
+    public void testReadFile() { 
+        try {
+            myClass.readFile("test.txt");
+            fail("Expected a FileNotFoundException to be thrown");
+        } catch (FileNotFoundException e) {
+            assertThat(e.getMessage(), is("The file test.txt does not exist!"));
+        }
+         
+    }
+    ~~~
+    {: .language-java}
+
+ 3. Testing with `ExpectedException` Rule.
+
+    ~~~
+    @Rule
+    public ExpectedException thrown = ExpectedException.none();
+
+    @Test
+    public void testReadFile() throws FileNotFoundException {
+        
+        thrown.expect(FileNotFoundException.class);
+        thrown.expectMessage(startsWith("The file test.txt"));
+        myClass.readFile("test.txt");
+    }
+
+    ~~~
+    {: .language-java}
+
+You could read more about exceptions testing in [JUnit4 wiki for Exception testing](https://github.com/junit-team/junit4/wiki/Exception-testing){:target="_blank"}  and [bad.robot - Expecting Exceptions JUnit Rule](http://baddotrobot.com/blog/2012/03/27/expecting-exception-with-junit-rule/index.html){:target="_blank"}.
+
+### JUnit4 - Parameterized tests
+
+Often times we need to test a single method with several different test data or inputs and `Parameterized` tests are very useful to maintain a very clean and readable tests in such cases.
+
+e.g. In the following example, the `getTotalCharactersWithoutSpaces` method will count the number of characters ignoring any whitespace. We need to test this with different test input samples. Without Parameterized test, we would have to repeat the assertion for each of the test data which would make tests less readable and maintainable over time.
+
+~~~
+@RunWith(Parameterized.class)
+public class GreetingTest {
+
+    @Parameters
+    public static Collection<Object[]> data() {
+        return Arrays.asList(new Object[][] {
+                 { "hello world", 10 }, { "helloworld", 10 }, { "hello", 5 }
+                 //The first item in the array is the input, and second is the expected outcome.
+           });
+    }
+
+    private String input;
+    private int expected;
+    
+    //This constructor must be provided for the parameterized tests to work.
+    public GreetingTest(String input, int expected) {
+        this.input = input;
+        this.expected = expected;
+    }
+    
+    @Test
+    public void test() {
+        
+        Greeting greeting = new Greeting("hello world");
+        assertThat(greeting.getTotalCharactersWithoutSpaces(input), is(expected));
+    }
+
+}
+~~~
+{: .language-java}
+
+Again more elaborated examples could be found in the [JUnit4 wiki for Parameterized tests](https://github.com/junit-team/junit4/wiki/Parameterized-tests){:target="_blank"}
+
+I hope you found some useful information in this post. The next will be on Mockito and how to make best use of the features in Test Driven Development.
