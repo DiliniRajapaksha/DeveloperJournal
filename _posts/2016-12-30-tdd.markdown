@@ -26,11 +26,17 @@ images:
 permalink: test-driven-development
  
 ---
-<div class="center">
+<div class="row">
+<div class="flex-box-row">
+<div class="flex-item">
 {% assign image = page.images[0] %}
 {% include image.html image=image %}
 </div>
-
+<div class="flex-item">
+    Outline
+</div>
+</div>
+</div>
 ## So what is TDD?
 
 Can you actually write a test before writing a single line of implementation logic? How do you know what method, class, or interface will contain the method under test? Sounds a bit odd...
@@ -293,4 +299,8 @@ public class GreetingTest {
 
 Again more elaborated examples could be found in the [JUnit4 wiki for Parameterized tests](https://github.com/junit-team/junit4/wiki/Parameterized-tests){:target="_blank"}
 
-I hope you found some useful information in this post. The next will be on Mockito and how to make best use of the features in Test Driven Development.
+I hope you enjoyed this post. The next will be on Mockito and how to make best use of the features in Test Driven Development.
+Do you have any practical advise on TDD? If so, please share it with us in the comments...
+
+
+Please do let me know in the comments below if you found this information useful and I'm always looking forward to your constructive feedback. 
