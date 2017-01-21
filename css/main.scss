@@ -59,13 +59,10 @@ $font-path-file-name: {{ baseurl }}/assets/font/League-Gothic/LeagueGothic-Regul
         "syntax-highlighting"
 ;
 a, a:visited, a:hover, a:active {
-  color: inherit;
+  color: #7ecdd0;
   text-decoration: none;
 }
 
-.bg-pink{
-	background-color:#ff5d55 !important;
-}
 
 .float-right{
 	float: right;
@@ -86,9 +83,7 @@ a, a:visited, a:hover, a:active {
   font-weight: 500;
   font-size:0.8em; 
 }
-a:visited{
-  color: black;
-}
+
 
 .btn-default {
   color: #fff;
@@ -141,15 +136,22 @@ a:visited{
   
   list-style: none;
 }
+
+.post-header{
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
 .post-title{
 font-family: "raleway",sans-serif;
 font-style: normal;
 font-weight: 300;
 font-size: 38;
-color: #1c1c1c;
-    line-height: 1.3em;
-        text-transform: none;
-    letter-spacing: 1px;
+color: #1c1c1c!important;
+line-height: 1.3em;
+text-transform: none;
+letter-spacing: 1px;
+margin-top: 2em;
 }
 .post-title>a:hover{
   text-decoration: none;
@@ -184,9 +186,6 @@ background-size: 100% 1.2em;
     letter-spacing: .5px;*/
     color:rgba(31,31,31,.5);
 }
-.bottem-buffer-3{
-  margin-bottom: 3%;
-}
 
 .red{
   color: #ff5c5c;
@@ -201,6 +200,7 @@ body{
   letter-spacing: .5px;
   font-weight: 300;
   font-style: normal;
+  background-color: #FFFFFF;
 }
 .max-600{
   max-width: 600px;
@@ -314,7 +314,6 @@ text-align: right;
 
 
 .navbar-brand>img{
-  max-width: 9em!important;
   margin-top: 0.5em;
   margin-left: 0.9em;
 }
@@ -335,4 +334,99 @@ text-align: right;
     margin-top: 0px;
     margin-left: 0px;
   }
+}
+
+.code-border>img{
+  max-width: 100%;
+  border:20px solid #3F3F3F;
+  background-color: #c5c5c5;
+  padding: 4px;
+}
+.comments{
+  margin-top: 4em;
+}
+
+.narrow-container{
+  max-width: 750px;
+}
+
+.box {
+  border: 1em solid #ffffff;
+
+}
+legend {
+    background-color: #7ecdd0;
+    display: block;
+    width: auto !important;
+    padding: 1em;
+    margin-left: 1.6em;
+    margin-bottom: 1em;
+    font-size: 21px;
+    line-height: inherit;
+    color: #ffffff;
+    border: inherit !important;
+    border: none !important;
+    font-weight: bold;
+}
+fieldset{
+  border: 1px solid #7ecdd0!important;
+}
+
+.flex-box-row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.flex-item-text{
+  padding: 0.6em;
+}
+.flex-box-col{
+display: flex;
+ flex-direction: column;
+}
+
+.img-circle{
+  border-radius: 50%!important;
+}
+
+.img-shape{
+    shape-outside: circle();
+    width: 9em;
+    float: left;
+    margin-right: 3em;
+    margin-top: 0.7em;
+}
+
+.inner-box{
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    background-color: #f5f5f5;
+    padding: 1em;
+}
+
+.lg-txt{
+  font-size: 1.2em;
+  color: #7ecdd0;
+}
+
+.shape-text{
+  padding-top: 0.6em;
+  line-height: 1.9em;
+}
+.meta{
+  font-size: 0.5em;
+  font-style: italic;  
+  line-height: 2em;
+}
+.h5-sub{
+  margin-top: 0px;
+}
+
+.img-sm{
+  max-width: 4em!important;
+}
+
+.float-right{
+  float: right;
 }
