@@ -312,7 +312,9 @@ text-align: right;
     }
 }
 
-
+.nav-link{
+  color:#7ecdd0 !important;
+}
 .navbar-brand>img{
   margin-top: 0.5em;
   margin-left: 0.9em;
@@ -429,4 +431,13 @@ display: flex;
 
 .float-right{
   float: right;
+}
+
+.footer{
+  background-color: #7ecdd0;
+  color: #FFFFFF;
+}
+
+#disqus_thread{
+  margin-bottom: 100px;
 }
