@@ -312,7 +312,9 @@ text-align: right;
     }
 }
 
-
+.nav-link{
+  color:#7ecdd0 !important;
+}
 .navbar-brand>img{
   margin-top: 0.5em;
   margin-left: 0.9em;
@@ -431,6 +433,7 @@ display: flex;
   float: right;
 }
 
+<<<<<<< HEAD
 // Adding 'Contents' headline to the TOC
 #markdown-toc::before {
     content: "Contents";
@@ -448,4 +451,13 @@ display: flex;
     list-style: decimal;
     float: left;
     display: inline-block;
+=======
+.footer{
+  background-color: #7ecdd0;
+  color: #FFFFFF;
+}
+
+#disqus_thread{
+  margin-bottom: 100px;
+>>>>>>> 60aee600cafa8edf4cc99fdee4502f73b606cdf8
 }
