@@ -5,6 +5,7 @@ title:  "TEST DRIVEN DEVELOPMENT for Beginners"
 date:   2016-12-30 13:33:41 +1100
 categories: Main category
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
+description: "test"
 excerpt_separator: <!--more-->
 images: 
   - url: /assets/img/tdd/tdd.png
@@ -26,11 +27,18 @@ images:
 permalink: test-driven-development
  
 ---
-<div>
+<div class="col-lg-6">
 
 {% assign image = page.images[0] %}
 {% include image.html image=image %}
 </div>
+
+    
+* Table of contents
+{:toc}
+
+
+
 
 ## So what is TDD?
 
