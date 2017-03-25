@@ -152,6 +152,7 @@ line-height: 1.3em;
 text-transform: none;
 letter-spacing: 1px;
 margin-top: 2em;
+margin-bottom: 2em;
 }
 .post-title>a:hover{
   text-decoration: none;
@@ -193,7 +194,7 @@ background-size: 100% 1.2em;
 .blue{
   color: #2eb2ff;
 }
-body{
+body, html{
   font-family: "europa";
   color: #1f1f1f;
   line-height: 1.6em;
@@ -201,6 +202,9 @@ body{
   font-weight: 300;
   font-style: normal;
   background-color: #FFFFFF;
+  height: 100%;
+   margin:0;
+   padding:0;
 }
 .max-600{
   max-width: 600px;
@@ -316,7 +320,7 @@ text-align: right;
   color:#7ecdd0 !important;
 }
 .navbar-brand>img{
-  margin-top: 0.5em;
+  width: 10em;
   margin-left: 0.9em;
 }
 .navbar-brand{
@@ -336,6 +340,12 @@ text-align: right;
     margin-top: 0px;
     margin-left: 0px;
   }
+}
+
+.container{
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 2em;
 }
 
 .code-border>img{
@@ -433,31 +443,29 @@ display: flex;
   float: right;
 }
 
-<<<<<<< HEAD
-// Adding 'Contents' headline to the TOC
-#markdown-toc::before {
-    content: "Contents";
-    font-weight: bold;
-}
 
-
-// Using numbers instead of bullets for listing
-#markdown-toc ul {
-    list-style: decimal;
-}
-
-#markdown-toc {
-    padding: 1.5em;
-    list-style: decimal;
-    float: left;
-    display: inline-block;
-=======
 .footer{
   background-color: #7ecdd0;
   color: #FFFFFF;
+   position:absolute;
+   bottom:0;
+   width:100%;
+   text-align: center;
 }
 
 #disqus_thread{
   margin-bottom: 100px;
->>>>>>> 60aee600cafa8edf4cc99fdee4502f73b606cdf8
+}
+
+.mg-auto{
+  margin: auto;
+}
+
+.footer-text{
+  padding: 1em;
+  margin: 0px;
+}
+#contact-text{
+  margin-top: 2em;
+  text-align: center;
 }

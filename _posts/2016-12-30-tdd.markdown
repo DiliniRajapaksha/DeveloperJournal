@@ -10,6 +10,7 @@ excerpt_separator: <!--more-->
 images: 
   - url: /assets/img/tdd/tdd.png
     alt: Test Driven Development illustration
+    width: 50%
     title: Test Driven Development illustration
 
   - url: /assets/img/tdd/tdd_hello_world_test.gif
@@ -27,18 +28,11 @@ images:
 permalink: test-driven-development
  
 ---
-<div class="col-lg-6">
+<div class="center">
 
 {% assign image = page.images[0] %}
-{% include image.html image=image %}
+{% include image.html image=image class="test" %}
 </div>
-
-    
-* Table of contents
-{:toc}
-
-
-
 
 ## So what is TDD?
 
