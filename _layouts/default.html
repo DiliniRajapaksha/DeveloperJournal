@@ -5,19 +5,22 @@
 
   <body>
 
-    <div class="container">
+    <div class="container-fluid">
     
-    {% include header.html %}
+    <div class="row">
+      {% include header.html %}
+    </div>
 
-
-   
+    <div class="row">
       <article class="posts-list">
         {{ content }}
       </article>
-  
+    </div>
  
+    <div class="row footer">
     {% include footer.html %}
-    
+    </div>
+
     </div>
 
     
