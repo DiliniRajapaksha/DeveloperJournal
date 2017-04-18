@@ -50,18 +50,14 @@ TDD concept was introduced or developed by Kent Beck and in his book Test Driven
 
 <hr>
 
-## LETS TEST THE WATERS WITH A HELLO WORLD IN TDD
+## LETS TEST THE WATERS WITH A HELLO WORLD
 
 <hr> 
 
-All that is great! But how do you practice TDD in Java development?
+All that is great! But how do you really apply TDD in ‘real word’ Java development?
 Well, I started by applying it to a ‘hello world’. Too trivial, I know, but I like it to be as simple as possible.
 
-Requirement: I want to print 'hello world'
-
 ##### 1 | Writing the test
-
-We think of the outcome first, and write an assert to test if we get what we want. In this case, we want the string 'hello world'.
 
 <div class="code-border gif">
 {% assign image = page.images[1] %}
@@ -75,12 +71,18 @@ We think of the outcome first, and write an assert to test if we get what we wan
 {% include image.html image=image %}
 </div>
 
-##### 3 | Refactor both the test and the implementation
+##### 3 | Refactor the test and the code
 
 <div class="code-border">
 {% assign image = page.images[3] %}
 {% include image.html image=image %}
 </div>
+
+<hr>
+
+## WELCOME TO THE REAL WORLD!
+
+<hr> 
 
 It’s that simple. So what’s keeping you from practicing TDD? Let’s get started.
 
@@ -93,6 +95,7 @@ Following are a few things that motivated me and planted the foundation of TDD i
 - TDD Kata - Small practice exercises that help you master it.
 
 
+
 <hr>
 
 ## QUALITY MATTERS
@@ -102,8 +105,7 @@ Following are a few things that motivated me and planted the foundation of TDD i
 Yes, the quality of unit tests does matter as much as the quality of production code.
  
 ##### Why it's so important to write good unit tests?
-
-If unit tests lack quality (i.e. if the tests are not easily understandable by a person other than the one who wrote it,
+Becaluse if unit tests lack quality (i.e. if the tests are not easily understandable by a person other than the one who wrote it,
 or if they inter depend on other tests causing multiple tests to fail if one test is broken,
 or if unit test suit take ages to run, or etc...) maintaining those unit tests would become a nightmare in the long run and would ultimately lead to ignoring all the tests one by one as they fail. Don't believe me? Then you may want to read this [open letter from an ignored test](https://dzone.com/articles/open-letter-from-an-ignored-test){:target="_blank"}
 
@@ -116,18 +118,53 @@ or if unit test suit take ages to run, or etc...) maintaining those unit tests w
 - name of the test method should be meaningful.
 - Unit tests should be fast, so that it could be run as often as required.
 
+##### Following is an example of a very simple unit test in JUnit
+
+    ~~~~
+    @Test
+    public void testFindCustomerByName_found() {
+
+        String customerName = "John";
+
+        when(repository.findByName(customerName)).thenReturn(new Customer(customerName));
+
+        assertThat(customerService.findCustomerByName(customerName).isPresent(), is(true));
+
+        verify(repository).findByName(customerName);
+
+    }
+
+    @Test(expected = EntityNotFoundException.class)
+    public void testFindCustomerByName_notFound() {
+
+        String customerName = "John";
+
+        when(repository.findByName(customerName)).thenReturn(null);
+
+        customerService.findCustomerByName(customerName);
+
+    }
+    ~~~~
+    {: .language-java}
+
+
+
 <hr>
 
-## TDD KATA - PRACTICE MAKES PERFECT
+## PRACTICE MAKES PERFECT
 
 <hr> 
 
 
 Like anything, the key to TDD is practice. But how do you practice? TDD KATAs to the rescue.
 
-KATA has it's roots in Japan, and it means a detailed or defined set of movements to be practiced over and over again. Hope it makes sense :)
+KATA has it's roots in Japan, and it means a detailed or defined set of movements to be practiced. Hope it makes sense :)
 
 TDD Kata is a tiny bit of coding that you could repeat over and over again, not a new one every day but the same coding exercise until you get sick of it. So, head over to [this repository](https://github.com/mwhelan/Katas){:target="_blank"} where you can find a list of Katas to practice and start now.
 
 
-I hope you enjoyed this post. Please do leave a comment if you found this information useful and I'm always looking forward to your feedback and questions to improve the content.
+I hope you enjoyed this post. The next will be on Mockito and how to make best use of the features in Test Driven Development.
+Do you have any practical advice on TDD? If so, please share it with us in the comments...
+
+
+Please do let me know in the comments below if you found this information useful and I'm always looking forward to your constructive feedback.
