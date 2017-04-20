@@ -130,4 +130,4 @@ KATA has it's roots in Japan, and it means a detailed or defined set of movement
 TDD Kata is a tiny bit of coding that you could repeat over and over again, not a new one every day but the same coding exercise until you get sick of it. So, head over to [this repository](https://github.com/mwhelan/Katas){:target="_blank"} where you can find a list of Katas to practice and start now.
 
 
-I hope you enjoyed this post. Please do leave a comment if you found this information useful and I'm always looking forward to your feedback and questions to improve the content.
+Please leave a comment and let me know if you liked it!
