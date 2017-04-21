@@ -264,8 +264,5 @@ public class GreetingTest {
 
 Again more elaborated examples could be found in the [JUnit4 wiki for Parameterized tests](https://github.com/junit-team/junit4/wiki/Parameterized-tests){:target="_blank"}
 
-I hope you enjoyed this post. The next will be on Mockito and how to make best use of the features in Test Driven Development.
-Do you have any practical advise on TDD? If so, please share it with us in the comments...
-
 
 Please do let me know in the comments below if you found this information useful and I'm always looking forward to your constructive feedback. 

@@ -1,11 +1,12 @@
 ---
 layout: post
 comments: true
-title:  "TEST DRIVEN DEVELOPMENT for Beginners"
+
+title:  "Test Driven Development for the absolute beginner"
 date:   2016-12-30 13:33:41 +1100
 categories: Main category
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
-description: "test"
+description: "Wondering what Test Driven Development looks like? Then this is for you. Why not give TDD a try and see how you like it?"
 excerpt_separator: <!--more-->
 images: 
   - url: /assets/img/tdd/TDD_1.png
@@ -32,13 +33,15 @@ permalink: test-driven-development
 {% assign image = page.images[0] %}
 {% include image.html image=image styleClass="first-image" %}
 
+
+{{page.description}}
 </div>
 
 ## So what is TDD?
 
 Can you actually write a test before writing a single line of implementation logic? How do you know what method, class, or interface will contain the method under test? Sounds a bit odd...
 That's exactly how I felt when I first read about TDD. 
-<!--more-->
+
 
 > Test-driven development (TDD) is a software development process that relies on the repetition of a very short development cycle: requirements are turned into very specific test cases, then the software is improved to pass the new tests, only. 
 >

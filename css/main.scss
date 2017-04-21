@@ -68,11 +68,11 @@ a, a:visited, a:hover, a:active {
 	float: right;
 }
 
-* {
+/** {
   -webkit-border-radius: 0 !important;
      -moz-border-radius: 0 !important;
           border-radius: 0 !important;
-}
+}*/
 
 
 .nav-item>a{
@@ -86,30 +86,30 @@ a, a:visited, a:hover, a:active {
 
 
 .btn-default {
-  color: #fff;
+  color: #ffffff!important;
   background-color: #ff5d55;
   border-color: #ff5d55;
-  font-size: 16px;
-	font-family: 'Amaranth', sans-serif;
+  font-size: 1em;
+	font-family: "raleway",sans-serif;
 }
 
 .btn-default:hover {
-  color: #fff;
-  background-color: #ff756f;
-  border-color: #ff756f;
+  color: #ffffff;
+  background-color: #ff5d55;
+  border-color: #ff5d55;
 }
 
 .btn-default:focus, .btn-default.focus {
-  color: #fff;
-  background-color: #ff756f;
-  border-color: #ff756f;
+  color: #ffffff;
+  background-color: #ff5d55;
+  border-color: #ff5d55;
 }
 
 .btn-default:active, .btn-default.active,
 .open > .btn-default.dropdown-toggle {
-  color: #fff;
-  background-color: #ff756f;
-  border-color: #ff756f;
+  color: #ffffff;
+  background-color: #ff5d55;
+  border-color: #ff5d55;
   background-image: none;
 }
 
@@ -117,9 +117,9 @@ a, a:visited, a:hover, a:active {
 .open > .btn-default.dropdown-toggle:hover,
 .open > .btn-default.dropdown-toggle:focus,
 .open > .btn-default.dropdown-toggle.focus {
-  color: #fff;
-  background-color: #ff756f;
-  border-color: #ff756f;
+  color: #ffffff;
+  background-color: #ff5d55;
+  border-color: #ff5d55;
 }
 
 .btn-default.disabled:focus, .btn-default.disabled.focus, .btn-default:disabled:focus, .btn-default:disabled.focus {
@@ -457,6 +457,7 @@ display: flex;
    text-align: center;
 }
 
+
 #disqus_thread{
   margin-bottom: 100px;
 }
@@ -477,3 +478,33 @@ display: flex;
 .first-image{
    margin-bottom:4em;
 }
+
+.post-item{
+}
+
+.thumb{
+  max-width: 50%;
+}
+
+.post-item-intro{
+ display: flex;
+ flex-direction: column;
+ padding-left: 2em;
+ justify-content: space-around;
+}
+
+.post-item-title{
+    font-family:  "raleway",sans-serif;
+    font-size: 2em;
+    line-height: 1.2;
+    color: #7ecdd0;
+}
+
+.post-item-desc{
+  font-size: 1.2em;
+}
+
+.post-item .btn{
+  width: 50%;
+}
+
