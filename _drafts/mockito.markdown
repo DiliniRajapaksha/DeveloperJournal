@@ -1,39 +1,14 @@
----
-layout: post
-comments: true
-title:  "How to mock with Mockito"
-date:   2017-04-30 13:33:41 +1100
-categories: Unit testing
-markdown_ext: "markdown, mkdown, mkdn, mkd, md"
-description: "Learn to write elegent unit tests and mock dependencies with Mockito. Mockito is a mocking framework for java which is extremly easy to use, so this post will introduce all the cool features you need to know about mockito with simple and easy examples."
-excerpt_separator: <!--more-->
-images: 
-  - url: /assets/img/tdd/mockito.png
-    alt: Test Driven Development illustration
-    title: Test Driven Development illustration
+[x] Outline
 
- permalink: mockito
- 
----
-<div class="center">
-
-{% assign image = page.images[0] %}
-{% include image.html image=image styleClass="first-image" %}
-
-
-{{page.description}}
-</div>
-
-
-## First of all why should we mock?
-Most of the classes we come across have dependencies. and often times methods delegates some of the work to other methods in other classes, and we call these classes dependencies. When unit testing such methods, if we only used JUnit, our tests will also depend on those methods as well. We want the unit tests to be independent of all other dependencies.
+- Why should we mock?
+    - Most of the classes we come across have dependencies. and often times methods delegates some of the work to other methods in other classes, and we call these classes dependencies. When unit testing such methods, if we only used JUnit, our tests will also depend on those methods as well. We want the unit tests to be independent of all other dependencies.
     - eg: we want to test the method addCustomer in CustomerService class, and within this addCustomer method, the save method of the CustomerDao class is invoked. We don't want to call the real implementation of the CustomerDao save() method for a few reasons:
         - We may not yet have implemented it.
         - We don't want the unit test of the addCustomer() fail if there is a defect in save() method in the CustomerDao.
         - We only want to test the logic inside the addCustomer() in isolation.
     - So we should some how mock the behavior of the dependencies. This is where mocking frameworks comes in to play.
     - Mockito famework is what I use for just this and in this post we'll see how to use mockito effectively to mock those dependencies.
-## What is mockito?
+- What is mockito?
     - - Mockito is a mocking framework that tastes really good. It lets you write beautiful tests with a clean & simple API. Mockito doesn’t give you hangover because the tests are very readable and they produce clean verification errors.  from http://site.mockito.org/
 - How to inject mocks
     - So going back to the example above, how do we mock out the dependency using Mockito?
