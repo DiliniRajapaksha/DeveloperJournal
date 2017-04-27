@@ -137,27 +137,6 @@ a, a:visited, a:hover, a:active {
   list-style: none;
 }
 
-.post-header{
-  margin-top: 3em;
-  margin-bottom: 2em;
-}
-
-.post-title{
-font-family: "raleway",sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 38;
-color: #1c1c1c!important;
-line-height: 1.3em;
-text-transform: none;
-letter-spacing: 1px;
-margin-top: 2em;
-margin-bottom: 2em;
-}
-.post-title>a:hover{
-  text-decoration: none;
-
-}
 a{
   text-orientation: none;
 }
@@ -476,10 +455,11 @@ display: flex;
 }
 
 .first-image{
-   margin-bottom:4em;
+   margin-bottom:2em;
 }
 
-.post-item{
+.post-excerpt{
+  padding: 2em;
 }
 
 .thumb{
@@ -502,9 +482,33 @@ display: flex;
 
 .post-item-desc{
   font-size: 1.2em;
+  margin-top: 1em; 
 }
 
 .post-item .btn{
-  width: 50%;
+  width: 25%;
+  min-width: 40px;
+  margin-top: 1em;
 }
 
+.post-title{
+font-family: "raleway",sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 38;
+color: #1c1c1c!important;
+line-height: 1.3em;
+text-transform: none;
+letter-spacing: 1px;
+margin-bottom: 1em;
+}
+.post-title>a:hover{
+  text-decoration: none;
+
+}
+
+.shadow{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}

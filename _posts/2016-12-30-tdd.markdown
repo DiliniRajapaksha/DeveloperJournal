@@ -2,7 +2,7 @@
 layout: post
 comments: true
 
-title:  "Test Driven Development for the absolute beginner"
+title:  "Get started with Test Driven Development"
 date:   2016-12-30 13:33:41 +1100
 categories: Main category
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
@@ -28,10 +28,10 @@ images:
 permalink: test-driven-development
  
 ---
-<div class="center">
+<div class="center first-image">
 
 {% assign image = page.images[0] %}
-{% include image.html image=image styleClass="first-image" %}
+{% include image.html image=image styleClass="first-image shadow" %}
 
 
 {{page.description}}
