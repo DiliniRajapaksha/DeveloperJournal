@@ -1,28 +1,29 @@
  <header>
 
-      <div class="container-fluid">
-
-        <div class="row top-row m-b-1">
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+       <a class="navbar-brand" href="{{"/index.html" | prepend: site.baseurl}}"><img src="{{ "/assets/img/logo2.png" | prepend: site.baseurl }}"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
         
-         <nav class="navbar">
-            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
-              &#9776;
-            </button>
-            <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-              <a class="navbar-brand" href="#"><img src="{{ "/assets/img/logo.png" | prepend: site.baseurl }}"></a>
-              <ul class="nav navbar-nav float-right tk-raleway">
-                <li class="nav-item active">
-                  <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-              </ul>
-            </div>
-
-          </nav>
-
-          </div>
-
-        </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item">
+          <a class="nav-link" href="{{"/index.html" | prepend: site.baseurl}}">HOME</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="{{"/contact.html" | prepend: site.baseurl}}" target="_blank">CONTACT US</a>
+        </li>
+        <!-- <li class="nav-item ">
+          <a class="nav-link" href="{{"/about-me.html" | prepend: site.baseurl}}" target="_blank"><img class="img-circle img-sm" src="{{"/assets/img/self.jpg" | prepend: site.baseurl }}"></a>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
 </header>
