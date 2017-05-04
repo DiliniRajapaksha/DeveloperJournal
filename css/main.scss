@@ -86,7 +86,7 @@ a, a:visited, a:hover, a:active {
 
 
 .btn-default {
-  color: #ffffff!important;
+  color: #ffffff;
   background-color: #ff5d55;
   border-color: #ff5d55;
   font-size: 1em;
@@ -486,9 +486,26 @@ display: flex;
 }
 
 .post-item .btn{
-  width: 25%;
-  min-width: 40px;
+  width: 11%;
+  min-width: 116px;
   margin-top: 1em;
+  background-color: #ffffff;
+  color: #ff5d55;
+  border-radius: 0px; 
+}
+
+.post-item .btn{
+  width: 11%;
+  min-width: 116px;
+  margin-top: 1em;
+  background-color: #ffffff;
+  color: #ff5d55;
+  border-radius: 0px; 
+}
+
+.post-item .btn:hover{
+ background-color: #ff5d55;
+  color: #ffffff;
 }
 
 .post-title{
@@ -496,15 +513,16 @@ font-family: "raleway",sans-serif;
 font-style: normal;
 font-weight: 300;
 font-size: 38;
-color: #1c1c1c!important;
 line-height: 1.3em;
 text-transform: none;
 letter-spacing: 1px;
 margin-bottom: 1em;
+color: #1c1c1c;
 }
-.post-title>a:hover{
-  text-decoration: none;
 
+.post-header>a:hover, .post-title>a:visited{
+  text-decoration: none;
+  color: #1c1c1c;
 }
 
 .shadow{
