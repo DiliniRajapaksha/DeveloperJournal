@@ -2,10 +2,10 @@
 layout: post
 comments: true
 title:  "How to write great unit tests with JUnit"
-date:   2017-04-26 13:33:41 +1100
+date:   2016-12-30 13:33:41 +1100
 categories: Main category
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
-description: "JUnit tutorial - We would look into the essentials of JUnit 4 so that we could write some quality unit tests that makes sense and are easy to maintain."
+description: "JUnit tutorial"
 excerpt_separator: <!--more-->
 images: 
   - url: /assets/img/junit/junit.png
@@ -20,7 +20,7 @@ permalink: junit-essentials
 {% include image.html image=image styleClass="first-image" %}
 </div>
 
-{{page.description}}
+In this post I would like to introduce the essentials of JUnit so that we could write some quality unit tests that makes sense and are easy to maintain.
 
 <hr>
 
@@ -28,7 +28,7 @@ permalink: junit-essentials
 
 <hr> 
 
-### Following are the most commonly used annotations and their usage in a basic unit test written in JUnit 4.
+### Following are the most commanly used annotations and their usage in a basic unit test written in JUnit4.
 
 - `@Test` - Marks the method as a test method.
 - `@Before` and `@After` sandwiches **each test method** in the class.
@@ -106,7 +106,7 @@ permalink: junit-essentials
 <hr> 
 
 
-##### When it comes to assertions, there is the set of old JUnit assertions like:
+When it comes to assertions, there is the set of old JUnit assertions like:
 
 - org.junit.Assert.assertArrayEquals
 - org.junit.Assert.assertEquals
@@ -117,7 +117,7 @@ permalink: junit-essentials
 - org.junit.Assert.assertSame
 - org.junit.Assert.assertTrue
 
-##### And the org.junit.Assert.assertThat method (available in JUnit4) which uses matchers and is better than old style assertions because it provides:
+And the org.junit.Assert.assertThat method (available in JUnit4) which uses matchers and is better than old style assertions because it provides:
 
  - Better readability
     + `assertThat(actual, is(equalTo(expected)));` is better than `assertEquals(expected, actual);`
@@ -131,12 +131,10 @@ permalink: junit-essentials
 
         eg: `assertThat("hello world", anyOf(is("hello world"), containsString("hello")));` In this case, the test will pass if either the actual string is "hello world" or if it contains the word "hello".
 
-##### Following is a list of hamcrest coreMatchers from the [hamcrest docs](http://hamcrest.org/JavaHamcrest/javadoc/1.3/org/hamcrest/CoreMatchers.html){:target="_blank"}.
+Following is a list of hamcrest matchers
 
-| {::nomarkdown} <ul> <li> allOf </li> <li> any </li> <li> anyOf </li> <li> anything </li> <li> both </li> <li> containsString </li> <li> describedAs </li> <li> either </li> <li> endsWith </li> <li> equalTo </li>   </ul> {:/}    | {::nomarkdown} <ul> <li> everyItem </li>  <li> hasItems </li> <li> instanceOf </li> <li> is </li> <li> isA </li> <li> not </li> <li> notNullValue </li> <li> nullValue </li> <li> sameInstance </li> <li> startsWith </li> <li> theInstance </li> </ul> {:/} 
+ - 
 
-
-##### Example useage of a few of the above matchers
 
 ~~~~
 @Test
@@ -267,4 +265,4 @@ public class GreetingTest {
 Again more elaborated examples could be found in the [JUnit4 wiki for Parameterized tests](https://github.com/junit-team/junit4/wiki/Parameterized-tests){:target="_blank"}
 
 
-Please leave a comment and let me know if you liked it!
+Please do let me know in the comments below if you found this information useful and I'm always looking forward to your constructive feedback. 
