@@ -267,4 +267,6 @@ public class GreetingTest {
 Again more elaborated examples could be found in the [JUnit4 wiki for Parameterized tests](https://github.com/junit-team/junit4/wiki/Parameterized-tests){:target="_blank"}
 
 
+<span data-sumome-listbuilder-embed-id="340523dee454f42568cc7c66d8b8a4ad82a9a3e8d0b49dba972e7336b7da4399"></span>
+
 Please leave a comment and let me know if you liked it!

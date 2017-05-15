@@ -6,14 +6,14 @@ title:  "How to mock with Mockito"
 date:   2016-12-30 13:33:41 +1100
 categories: Main category
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
-description: "Learn to write elegent unit tests and mock dependencies with Mockito. Mockito is a mocking framework for java which is extremly easy to use, so this post will introduce all the cool features you need to know about mockito with simple and easy examples."
+description: "Learn to write elegant unit tests and mock dependencies with Mockito. Mockito is a mocking framework for Java which is extremely easy to use, so this post will introduce all the cool features you need to know about mockito with simple and easy examples."
 excerpt_separator: <!--more-->
 images: 
   - url: /assets/img/mockito/mockito.png
     alt: Mockito
     title: Mockito
 
-permalink: mockito
+permalink: mockito-tutorial
  
 ---
 
@@ -29,7 +29,7 @@ permalink: mockito
 
 <hr>
 
-## WHY MOCK?
+## WHY MOCK? [test]
 
 <hr> 
 
@@ -40,7 +40,7 @@ Most of the classes we come across have dependencies. and often times methods de
     - We don't want the unit test of the `addCustomer()` fail if there is a defect in `save()` method in the `CustomerDao`.
     - We only want to test the logic inside the `addCustomer()` in isolation.
 - So we should some how mock the behavior of the dependencies. This is where mocking frameworks comes in to play.
-- Mockito famework is what I use for just this and in this post we'll see how to use mockito effectively to mock those dependencies.
+- Mockito framework is what I use for just this and in this post we'll see how to use mockito effectively to mock those dependencies.
 
 ##### What is mockito?
     
@@ -58,7 +58,7 @@ Most of the classes we come across have dependencies. and often times methods de
 So going back to the example above, how do we mock out the dependency using Mockito?
 _Well, we could inject a mock to the class under test instead of the real implementation while we run our tests!_
 
-##### Let's look at an example of a class under test which has a dependecy on `CustomerDao`
+##### Let's look at an example of a class under test which has a dependency on `CustomerDao`
 
 ~~~
 
@@ -128,7 +128,7 @@ public class CustomerTest {
 
 <hr>
 
-## HOW TO **MOCK** BEHAVIOR WITH MOCKITO
+## HOW TO **MOCK** METHODS WITH MOCKITO
 
 <hr> 
 
@@ -149,7 +149,7 @@ Great! now we have successfully created and injected the mock, and now we should
     - `thenReturn(returnValue)`
     - `thenThrow(exception)`
     - `thenCallRealMethod()`
-    - `thenAnswer()` - this could be used when we need to mock a void method ([see How to mock void method behavior](#void)).
+    - `thenAnswer()` - this could be used to set up smarter stubs ([see How to mock void method behavior](#void)).
 - Simply putting this all in one line
 
     `when(dao.save(customer)).thenReturn(true);`
@@ -166,7 +166,7 @@ Great! now we have successfully created and injected the mock, and now we should
 
 - We either have to use matchers for all parameters or should pass in real values or objects.
 
-##### Example
+##### Mock behavior of dependencies using `Mockito.when` - Example
 
 ~~~
 
@@ -214,19 +214,23 @@ public class CustomerTest {
 
 <hr>
 
-## <a name="void"></a>HOW TO **MOCK** BEHAVIOR OF VOID METHOS WITH MOCKITO
+## <a name="void"></a>HOW TO **MOCK** BEHAVIOR OF VOID METHOS WITH MOCKITO - ANSWER!
 
 <hr> 
 
-answer
+
 
 <hr>
 
-## HOW TO **VERIFY** BEHAVIOR WITH MOCKITO
+## HOW TO **TEST** VOID METHODS WITH MOCKITO - TWO WAYS
 
 <hr> 
 
-- Another great thing about mocking is that we can verify that certain methods have been called on those mock objects during test execution in addition to assertions or in place of assertions when the method under test is void.
+Methods with return values can be tested by asserting the returned value, but how to test void methods?
+The void method that you want to test could either be calling other methods to get things done or processing the input parameters or maybe generating some values or all of it. With Mockito, you can test all of the above scenarios.
+
+##### 1 | **Verify** with Mockito
+- A great thing about mocking is that we can verify that certain methods have been called on those mock objects during test execution in addition to assertions or in place of assertions when the method under test is void.
 - There are two overloaded verify methods.
     - one which accepts only the mock object - we can use this if the method is supposed to be invoked only once.
     - the other accepts the mock and a `VerificationMode` - there are  quite a few methods in the Mockito class which provides some useful verificationModes
@@ -238,7 +242,7 @@ answer
         - `atLeastOnce()`
         - `never()`
 
-##### Example
+##### `Mockito.verify` - Example
 
 ~~~
 
@@ -291,6 +295,11 @@ public class CustomerTest {
 }
 ~~~
 {: .language-java}
+
+
+##### 2 | Capture Arguments
+
+Another cool feature is the `ArgumentCaptor` which allows us to capture any arguments passed in to the mocked or spied methods.
 
 <hr>
 
