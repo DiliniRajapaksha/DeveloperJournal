@@ -2,11 +2,11 @@
 layout: post
 comments: true
 
-title:  "How to mock with Mockito"
+title:  "How to mock with Mockito (A comprehensive guide with examples)"
 date:   2016-12-30 13:33:41 +1100
 categories: Main category
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
-description: "Learn to write elegant unit tests and mock dependencies with Mockito. Mockito is a mocking framework for Java which is extremely easy to use, so this post will introduce all the cool features you need to know about mockito with simple and easy examples."
+description: "Learn to write elegant unit tests and mock dependencies with Mockito. Mockito is a mocking framework for Java which is extremely easy to use, so this post will discuss all the cool features you need to know about mockito with simple and easy examples."
 excerpt_separator: <!--more-->
 images: 
   - url: /assets/img/mockito/mockito.png
@@ -29,7 +29,7 @@ permalink: mockito-tutorial
 
 <hr>
 
-## WHY MOCK? [test]
+## WHY MOCK?
 
 <hr> 
 
@@ -136,11 +136,11 @@ Great! now we have successfully created and injected the mock, and now we should
 
 #### The `when` `then` pattern
 
-- We do this in each of the test methods, the following line of code tells the Mockito framework that we want the `save()` method of the mock doa instance to return true when passed in a certain customer instance
+- We do this in each of the test methods, the following line of code tells the Mockito framework that we want the `save()` method of the mock dao instance to return true when passed in a certain customer instance.
 
 `when(dao.save(customer)).thenReturn(true);`
 
-- when is a static method of the Mockito class and it returns an `OngoingStubbing<T>` (`T` is the return type of the method that we are mocking, in this case it is `boolean`)
+- `when` is a static method of the Mockito class and it returns an `OngoingStubbing<T>` (`T` is the return type of the method that we are mocking, in this case it is `boolean`)
 - So if we just extract that out to get hold of the stub, it looks like this:
 
 `OngoingStubbing<Boolean> stub = when(dao.save(customer));`
@@ -149,8 +149,8 @@ Great! now we have successfully created and injected the mock, and now we should
     - `thenReturn(returnValue)`
     - `thenThrow(exception)`
     - `thenCallRealMethod()`
-    - `thenAnswer()` - this could be used to set up smarter stubs ([see How to mock void method behavior](#void)).
-- Simply putting this all in one line
+    - `thenAnswer()` - this could be used to set up smarter stubs and also mock behavior of void methods as well ([see How to mock void method behavior](#void)).
+- Simply putting this all in one line again.
 
     `when(dao.save(customer)).thenReturn(true);`
 
@@ -196,17 +196,58 @@ public class CustomerTest {
         MockitoAnnotations.initMocks(this);
     }
 
+     @Test
+        public void testAddCustomer_returnsNewCustomer() {
+
+            when(daoMock.save(any(Customer.class))).thenReturn(new Customer());
+
+            Customer customer = new Customer();
+
+            assertThat(service.addCustomer(customer), is(notNullValue()));
+           
+        }
+
+
+    //Using Answer to set an id to the customer passed in as a parameter to the mock method.
     @Test
-    public void test() {
+    public void testAddCustomer_returnsNewCustomerWithId() {
 
-        when(daoMock.save(any(Customer.class))).thenReturn(true);
+        when(daoMock.save(any(Customer.class))).thenAnswer(new Answer<Customer>() {
 
-        Customer customer=new Customer();
+            @Override
+            public Customer answer(InvocationOnMock invocation) throws Throwable {
+                
+                Object[] arguments = invocation.getArguments();
+                
+                if (arguments != null && arguments.length > 0 && arguments[0] != null){
+                    
+                    Customer customer = (Customer) arguments[0];
+                    customer.setId(1);
+                    
+                    return customer;
+                }
+                
+                return null;
+            }
+        });
 
-        assertThat(service.addCustomer(customer), is(true));
-       
+        Customer customer = new Customer();
+
+        assertThat(service.addCustomer(customer), is(notNullValue()));
+
     }
+    
+    //Throwing an exception from the mocked method
+     @Test
+        public void testAddCustomer_throwsException() {
 
+            when(daoMock.save(any(Customer.class))).thenThrow(RuntimeException.class);
+
+            Customer customer=new Customer();
+
+            assertThat(service.addCustomer(customer), is(nullValue()));
+           
+        }
 }
 
 ~~~
@@ -214,15 +255,60 @@ public class CustomerTest {
 
 <hr>
 
-## <a name="void"></a>HOW TO **MOCK** BEHAVIOR OF VOID METHOS WITH MOCKITO - ANSWER!
+## <a name="void"></a>HOW TO **MOCK VOID** METHOS WITH MOCKITO
 
 <hr> 
 
+1. `doAnswer` - If we want our mocked void method to do something (mock the behavior despite being void).
+2. `doThrow` - Then there is `Mockito.doThrow()` if you want to throw an exception from the mocked void method.
 
+Following is an example of how to use it (not an ideal usecase but just wanted to illustrate the basic usage).
+
+~~~
+    @Test
+    public void testUpdate() {
+
+        doAnswer(new Answer<Void>() {
+
+            @Override
+            public Void answer(InvocationOnMock invocation) throws Throwable {
+                Object[] arguments = invocation.getArguments();
+                if (arguments != null && arguments.length > 1 && arguments[0] != null && arguments[1] != null) {
+
+                    Customer customer = (Customer) arguments[0];
+                    String email = (String) arguments[1];
+                    customer.setEmail(email);
+
+                }
+                return null;
+            }
+        }).when(daoMock).updateEmail(any(Customer.class), any(String.class));
+
+        // calling the method under test
+        Customer customer = service.changeEmail("old@test.com", "new@test.com");
+
+        //some asserts
+        assertThat(customer, is(notNullValue()));
+        assertThat(customer.getEmail(), is(equalTo("new@test.com")));
+
+    }
+
+    @Test(expected = RuntimeException.class)
+    public void testUpdate_throwsException() {
+
+        doThrow(RuntimeException.class).when(daoMock).updateEmail(any(Customer.class), any(String.class));
+
+        // calling the method under test
+        Customer customer = service.changeEmail("old@test.com", "new@test.com");
+
+    }
+}
+~~~
+{: .language-java}
 
 <hr>
 
-## HOW TO **TEST** VOID METHODS WITH MOCKITO - TWO WAYS
+## HOW TO **TEST VOID** METHODS WITH MOCKITO - TWO WAYS
 
 <hr> 
 
@@ -301,6 +387,60 @@ public class CustomerTest {
 
 Another cool feature is the `ArgumentCaptor` which allows us to capture any arguments passed in to the mocked or spied methods.
 
+##### `Mockito.ArgumentCaptor` - Example
+
+~~~
+
+package com.service;
+
+import static org.hamcrest.CoreMatchers.*;
+import static org.junit.Assert.assertThat;
+import static org.mockito.Mockito.verify;
+
+import org.junit.Test;
+import org.mockito.ArgumentCaptor;
+import org.mockito.Captor;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+
+import com.dao.CustomerDao;
+import com.entity.Customer;
+
+public class CustomerServiceTest {
+
+    @Mock
+    private CustomerDao doaMock;
+
+    @InjectMocks
+    private CustomerService service;
+    
+    @Captor
+    private ArgumentCaptor<Customer> customerArgument;
+
+    public CustomerServiceTest() {
+
+        MockitoAnnotations.initMocks(this);
+    }
+
+    @Test
+    public void testRegister() {
+
+        //Requirement: we want to register a new customer. Every new customer should be assigned a random token before saving in the database.
+        
+        service.register(new Customer());
+        
+        //captures the argument which was passed in to save method.
+        verify(doaMock).save(customerArgument.capture());
+        
+        //make sure a token is assigned by the register method before saving.
+        assertThat(customerArgument.getValue().getToken(), is(notNullValue()));
+    }
+}
+
+~~~
+{: .language-java}
+
 <hr>
 
 ## I SPY - MOCKITO SPY
@@ -358,22 +498,15 @@ public class CustomerTestV2 {
 ~~~
 {: .language-java}
 
-- Answer
+That's it on this post, but there's some more cool features, best practices and guidelines which you might want to check out at following places:
 
-- Spy
+[Official Mockito website](http://site.mockito.org/)
 
-Notes:
+[Mockito Main reference documentation](https://static.javadoc.io/org.mockito/mockito-core/2.7.22/org/mockito/Mockito.html)
 
-- Spy -  when you want to verify calls to some real methods that you are calling internally
+[Wiki page](https://github.com/mockito/mockito/wiki)
 
-- Answer:
+<a data-sumome-listbuilder-id="b05e999e-6651-4e3c-8aea-03ab7b8992bb">Click Here</a> to get the example source code.
 
+Please let me know how you liked this tutorial, and what you would want me to write about in future posts in the comments below.
 
- when(repositoryMock.save(productTypeDomain)).then(returnsFirstArg());
-
-<Object> Answer<Object> org.mockito.AdditionalAnswers.returnsFirstArg()
-Returns the first parameter of an invocation.
-
-This additional answer could be used at stub time using the then|do|willorg.mockito.stubbing.Answer methods. For example :
-given(carKeyFob.authenticate(carKey)).will(returnsFirstArg());
-doAnswer(returnsFirstArg()).when(carKeyFob).authenticate(carKey)

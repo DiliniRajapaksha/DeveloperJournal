@@ -1,18 +1,18 @@
 ---
 layout: post
 comments: true
-title:  "How to write great unit tests with JUnit"
+title:  "How to write great unit tests with JUnit (examples explaining 4 major features of JUnit 4)"
 date:   2017-04-26 13:33:41 +1100
 categories: Main category
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
-description: "JUnit tutorial - We would look into the essentials of JUnit 4 so that we could write some quality unit tests that makes sense and are easy to maintain."
+description: "JUnit 4 tutorial - We would look into the essentials of JUnit 4 so that we could write some quality unit tests that makes sense and are easy to maintain."
 excerpt_separator: <!--more-->
 images: 
   - url: /assets/img/junit/junit.png
     alt: How to write great unit tests with JUnit
     title: How to write great unit tests with JUnit
 
-permalink: junit-essentials
+permalink: junit-tutorial
  
 ---
 <div class="center">
