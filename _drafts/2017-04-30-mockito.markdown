@@ -9,7 +9,7 @@ markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: "Learn to write elegant unit tests and mock dependencies with Mockito. Mockito is a mocking framework for Java which is extremely easy to use, so this post will discuss all the cool features you need to know about mockito with simple and easy examples."
 excerpt_separator: <!--more-->
 images: 
-  - url: /assets/img/mockito/mockito.png
+  - url: /assets/img/mockito/mockito3.png
     alt: Mockito
     title: Mockito
 
@@ -20,7 +20,7 @@ permalink: mockito-tutorial
 <div class="center">
 
 {% assign image = page.images[0] %}
-{% include image.html image=image styleClass="first-image" %}
+{% include image.html image=image styleClass="first-image shadow" %}
 
 
 {{page.description}}
@@ -507,6 +507,8 @@ That's it on this post, but there's some more cool features, best practices and 
 [Wiki page](https://github.com/mockito/mockito/wiki)
 
 <a data-sumome-listbuilder-id="b05e999e-6651-4e3c-8aea-03ab7b8992bb">Click Here</a> to get the example source code.
+
+Btw here's the part-1 [How to write great unit tests with JUnit]({% post_url 2017-04-26-junit4 %})
 
 Please let me know how you liked this tutorial, and what you would want me to write about in future posts in the comments below.
 
