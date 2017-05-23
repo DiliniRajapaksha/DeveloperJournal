@@ -2,8 +2,8 @@
 layout: post
 comments: true
 
-title:  "Unit testing - How to mock with Mockito (A comprehensive guide with examples)"
-date:   2017-05-24
+title:  "How to mock with Mockito (A comprehensive guide with examples)"
+date:   2017-05-20 13:33:41 +1100
 categories: Main category
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: "Learn to write elegant unit tests and mock dependencies with Mockito. Mockito is a mocking framework for Java which is extremely easy to use, so this post will discuss all the cool features you need to know about mockito with simple and easy examples."

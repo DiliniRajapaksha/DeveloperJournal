@@ -17,7 +17,7 @@ images:
     alt: Test Driven Development Hello world example - write a test
     title: Test Driven Development Hello world example - write a test
 
-  - url: /assets/img/tdd/tdd_hello_world_code.gi
+  - url: /assets/img/tdd/tdd_hello_world_code.gif
     alt: Test Driven Development Hello world example - implement logic
     title: Test Driven Development Hello world example - implement logic
 
