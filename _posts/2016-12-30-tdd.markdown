@@ -2,7 +2,7 @@
 layout: post
 comments: true
 
-title:  "Get started with Test Driven Development"
+title:  "Get started with Test Driven Development (A beginner's guide)"
 date:   2016-12-30 13:33:41 +1100
 categories: Main category
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
@@ -25,7 +25,7 @@ images:
     alt: Test Driven Development Hello world example - refactor
     title: Test Driven Development Hello world example - refactor
 
-permalink: test-driven-development
+permalink: tdd-tutorial
  
 ---
 <div class="center first-image">
