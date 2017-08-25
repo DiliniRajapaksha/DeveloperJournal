@@ -17,6 +17,6 @@ twitter_username: sewdil
 github_username:  DiliniRajapaksha
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-seo-tag

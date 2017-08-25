@@ -84,6 +84,10 @@ a, a:visited, a:hover, a:active {
   font-size:0.8em; 
 }
 
+.nav-item.active{
+   color:#7ecdd0 !important;
+}
+
 
 .btn-default {
   color: #ffffff;
@@ -295,7 +299,7 @@ text-align: right;
     }
 }
 
-.nav-link:visited{
+.nav-link:active{
   color:#7ecdd0 !important;
 }
 .navbar-brand>img{
@@ -542,4 +546,8 @@ color: #1c1c1c;
     padding: 1.5em;
     border-radius: 6px;
     border: 1px #fdd8a8 solid;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #000;
 }
