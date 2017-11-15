@@ -1,0 +1,229 @@
+---
+layout: post
+comments: true
+
+content_upgrade: true
+
+title:  "How to Mock any REST API with SOAP UI (Step by step guide)"
+date:   2017-11-15 
+categories: Main category
+markdown_ext: "markdown, mkdown, mkdn, mkd, md"
+description: "It's super quick and easy to mock or simulate any REST api with SOAP UI and this post shows you how to do it with step by step instructions and screen shots."
+excerpt_separator: <!--more-->
+images: 
+  - url: /assets/img/rest-mock/rest-mock.png
+    alt: Mock Rest APIs with Soap UI
+    title: Mock Rest APIs with Soap UI
+
+  - url: /assets/img/rest-mock/001.jpg
+    alt: Create Rest project
+    title: Create Rest project
+
+  - url: /assets/img/rest-mock/002.jpg
+    alt: Create Rest project
+    title: Create Rest project
+
+  - url: /assets/img/rest-mock/003.jpg
+    alt: Create Rest project
+    title: Create Rest project
+
+  - url: /assets/img/rest-mock/004.jpg
+    alt: Create Rest project
+    title: Create Rest project
+
+  - url: /assets/img/rest-mock/005.jpg
+    alt: Create Rest project
+    title: Create Rest project
+
+  - url: /assets/img/rest-mock/006.jpg
+    alt: Create Rest project
+    title: Create Rest project
+
+  - url: /assets/img/rest-mock/007.jpg
+    alt: Create Rest project
+    title: Create Rest project
+
+  - url: /assets/img/rest-mock/008.jpg
+    alt: Create Rest project
+    title: Create Rest project
+
+  - url: /assets/img/rest-mock/009.jpg
+    alt: Create Rest project
+    title: Create Rest project
+
+  - url: /assets/img/rest-mock/010.jpg
+    alt: Create Rest project
+    title: Create Rest project
+
+  - url: /assets/img/rest-mock/011.jpg
+    alt: Create Rest project
+    title: Create Rest project
+
+  - url: /assets/img/rest-mock/012.jpg
+    alt: Create Rest project
+    title: Create Rest project
+
+  - url: /assets/img/rest-mock/013.jpg
+    alt: Create Rest project
+    title: Create Rest project
+
+  - url: /assets/img/rest-mock/014.jpg
+    alt: Create Rest project
+    title: Create Rest project
+
+  - url: /assets/img/rest-mock/015.jpg
+    alt: Create Rest project
+    title: Create Rest project
+  
+  - url: /assets/img/rest-mock/016.jpg
+    alt: Create Rest project
+    title: Create Rest project
+
+permalink: mock-rest-apis-soapui
+ 
+---
+
+<div class="center">
+
+{% assign image = page.images[0] %}
+{% include image.html image=image styleClass="first-image shadow" %}
+
+
+{{page.description}}
+</div>
+<!--more-->
+
+
+<hr>
+
+## Mocking your REST APIs enables you to stay productive while the API is being implemented. Mocks could be used for testing and developing the front end even when the back end is not available.
+
+<hr> 
+
+
+
+Install Soap UI if you have don't have already, and following are the steps after that.
+
+
+<hr>
+#### 1. Create a new REST project in Soap UI following the screens below. 
+<hr>
+
+**Click the REST button on the tool bar (circled in red).**
+<div class="screen-shot">
+ {% assign image = page.images[1] %}
+{% include image.html image=image %}
+</div>
+
+**Give an appropriate URL. I have provided `http://localhost:8080/test`. You can change these later.**
+<div class="screen-shot">
+{% assign image = page.images[2] %}
+{% include image.html image=image %}
+</div>
+
+**Following is the new project that was just created (REST Project 2)**
+<div class="screen-shot">
+{% assign image = page.images[3] %}
+{% include image.html image=image %}
+</div>
+
+<hr>
+#### 2. Create a Mock for the REST project
+<hr>
+**Right click on the project and select *New REST MockService* from the menu.**
+<div class="screen-shot">
+{% assign image = page.images[4] %}
+{% include image.html image=image %}
+</div>
+
+**Give an appropriate name for the MockService**
+<div class="screen-shot">
+{% assign image = page.images[5] %}
+{% include image.html image=image %}
+</div>
+
+**Right click on the Mock Service and select *Add new mock action* from the menu.**
+<div class="screen-shot">
+{% assign image = page.images[6] %}
+{% include image.html image=image %}
+</div>
+
+**Select the HTTP method and give the resource path, it can be anything. I have selected `GET` method and my resource path is `test`.**
+<div class="screen-shot">
+{% assign image = page.images[7] %}
+{% include image.html image=image %}
+</div>
+
+<div class="screen-shot">
+{% assign image = page.images[8] %}
+{% include image.html image=image %}
+</div>
+
+<hr>
+#### 3. Add a mock response  
+<hr>
+
+**Right click on the action and select *New MockResponse* from the menu.**
+<div class="screen-shot">
+{% assign image = page.images[9] %}
+{% include image.html image=image %}
+</div>
+
+**Give an appropriate name to the mock response.**
+<div class="screen-shot">
+{% assign image = page.images[10] %}
+{% include image.html image=image %}
+</div>
+
+**Select the response content type (i.e. xml, json, text, etc...) and type in the mock response**
+<div class="screen-shot">
+{% assign image = page.images[11] %}
+{% include image.html image=image %}
+</div>
+
+<hr>
+#### 4. Start the mock service
+<hr>
+
+**Right click on the MockService and select Show REST MockService Editor.**
+<div class="screen-shot">
+{% assign image = page.images[12] %}
+{% include image.html image=image %}
+</div>
+
+**Click the green play button on the MockService Editor (circled in red), and the Mock service will start.**
+<div class="screen-shot">
+{% assign image = page.images[13] %}
+{% include image.html image=image %}
+</div>
+
+<div class="screen-shot">
+{% assign image = page.images[14] %}
+{% include image.html image=image %}
+</div>
+
+<hr>
+#### 5. Test it out!
+<hr>
+
+**Send a request using the REST Project by clicking the green play button on the request.**
+<div class="screen-shot">
+{% assign image = page.images[15] %}
+{% include image.html image=image %}
+</div>
+
+
+**The mock service can also be called using a browser**
+<div class="screen-shot">
+{% assign image = page.images[16] %}
+{% include image.html image=image %}
+</div>
+
+This is a very simple and basic mock. If you have any questions or want to know how to something specific with the mocks, please leave a comment below. Leave your email address below to get the project file used in this post, which you can import to Soap UI.
+
+
+<div class='mailmunch-forms-widget-572387'></div>
+
+
+
+
