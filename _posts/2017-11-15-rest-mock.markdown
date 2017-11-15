@@ -4,7 +4,7 @@ comments: true
 
 content_upgrade: true
 
-title:  "How to Mock any REST API with SOAP UI (Step by step guide)"
+title:  "How to Mock REST API with SOAP UI (Step by step guide)"
 date:   2017-11-15 
 categories: Main category
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
