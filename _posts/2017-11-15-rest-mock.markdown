@@ -222,7 +222,9 @@ Install Soap UI if you have don't have already, and following are the steps afte
 This is a very simple and basic mock. If you have any questions or want to know how to something specific with the mocks, please leave a comment below. Leave your email address below to get the project file used in this post, which you can import to Soap UI.
 
 
-<div class='mailmunch-forms-widget-572387'></div>
+<div class="row">
+  <div class='col-sm-6 col-md-offset-3 mailmunch-forms-widget-572387'></div>
+</div>
 
 
 
