@@ -286,7 +286,7 @@ The HTTP status code can also be set to preferred value in the responses. In the
 
 ##### See it in action
 
-<video class="screen-shot" controls="controls" width="800" height="600" autoplay="true" 
+<video id="sequence-video" class="screen-shot" controls="controls" width="800" height="600" autoplay="true" 
        name="Multiple responses in sequence" src="/assets/img/rest-mock/202.mov"></video>
 
 
@@ -320,7 +320,7 @@ return "user"+id //this will return the response with the name 'user{id}' eg: us
 
 ##### See it in action
 
-<video class="screen-shot" controls="controls" width="800" height="600" autoplay="true" 
+<video id="script-video" class="screen-shot" controls="controls" width="800" height="600" autoplay="true" 
        name="Multiple responses in sequence" src="/assets/img/rest-mock/301.mov"></video>
 
 That's all I have come across so far with Mocking REST APIs using Soap UI.
