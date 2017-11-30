@@ -13,6 +13,7 @@ images:
     title: How to write great unit tests with JUnit
 
 permalink: junit-tutorial
+content_upgrade: true
  
 ---
 <div class="center">
@@ -131,9 +132,10 @@ permalink: junit-tutorial
 
         eg: `assertThat("hello world", anyOf(is("hello world"), containsString("hello")));` In this case, the test will pass if either the actual string is "hello world" or if it contains the word "hello".
 
-##### Following is a list of hamcrest coreMatchers from the [hamcrest docs](http://hamcrest.org/JavaHamcrest/javadoc/1.3/org/hamcrest/CoreMatchers.html){:target="_blank"}.
+##### Following is a list of hamcrest coreMatchers from the [hamcrest docs](http://hamcrest.org/JavaHamcrest/javadoc/1.3/org/hamcrest/CoreMatchers.html){:target="_blank"}. 
 
-| {::nomarkdown} <ul> <li> allOf </li> <li> any </li> <li> anyOf </li> <li> anything </li> <li> both </li> <li> containsString </li> <li> describedAs </li> <li> either </li> <li> endsWith </li> <li> equalTo </li>   </ul> {:/}    | {::nomarkdown} <ul> <li> everyItem </li>  <li> hasItems </li> <li> instanceOf </li> <li> is </li> <li> isA </li> <li> not </li> <li> notNullValue </li> <li> nullValue </li> <li> sameInstance </li> <li> startsWith </li> <li> theInstance </li> </ul> {:/} 
+
+{::nomarkdown}<ul> <li> allOf </li> <li> any </li> <li> anyOf </li> <li> anything </li> <li> both </li> <li> containsString </li> <li> describedAs </li> <li> either </li> <li> endsWith </li> <li> equalTo </li>   </ul> {:/}    | {::nomarkdown} <ul> <li> everyItem </li>  <li> hasItems </li> <li> instanceOf </li> <li> is </li> <li> isA </li> <li> not </li> <li> notNullValue </li> <li> nullValue </li> <li> sameInstance </li> <li> startsWith </li> <li> theInstance </li> </ul> {:/} 
 
 
 ##### Example useage of a few of the above matchers
@@ -174,15 +176,18 @@ public void testAssetThatExamples() {
 Does your method throw exceptions? There are a few different ways to verify whether expected exceptions are thrown, given the conditions.
 For example, we need a method which reads a file and it throws file not found exception with the message "The file 'file_name' does not exist!". We can test if the file not found exception is thrown in a number of ways. The first is the simplest and the most straight forward way which is preferred, but if we need to test the exception message as well, we could make use of the other two.
 
-##### Following are the three different ways you can test that your method would throw the expected exception.
+##### Following are the three different ways you can test that your method would throw the expected exception. 
+  *see [bottom](#subscription-form) of this post to download these examples*
 
  1. Set the `expected` parameter `@Test(expected = FileNotFoundException.class)`.
 
     ~~~~
     @Test(expected = FileNotFoundException.class) 
-    public void testReadFile() { 
-        myClass.readFile("test.txt");
-    }
+        public void testReadFile() throws IOException { 
+            FileReader reader = new FileReader("test.txt");
+            reader.read();
+            reader.close();
+        }
     ~~~~
     {: .language-java}
 
@@ -190,32 +195,36 @@ For example, we need a method which reads a file and it throws file not found ex
  2. Using `try` `catch`
 
     ~~~
-    public void testReadFile() { 
-        try {
-            myClass.readFile("test.txt");
-            fail("Expected a FileNotFoundException to be thrown");
-        } catch (FileNotFoundException e) {
-            assertThat(e.getMessage(), is("The file test.txt does not exist!"));
+    @Test
+        public void testReadFile2() { 
+            try {
+                FileReader reader = new FileReader("test.txt");
+                reader.read();
+                reader.close();
+                fail("Expected an IOException to be thrown");
+            } catch (IOException e) {
+                assertThat(e.getMessage(), is("test.txt (No such file or directory)"));
+            }
+                 
         }
-         
-    }
     ~~~
     {: .language-java}
 
  3. Testing with `ExpectedException` Rule.
 
     ~~~
-    @Rule
-    public ExpectedException thrown = ExpectedException.none();
+     @Rule
+        public ExpectedException thrown = ExpectedException.none();
 
-    @Test
-    public void testReadFile() throws FileNotFoundException {
-        
-        thrown.expect(FileNotFoundException.class);
-        thrown.expectMessage(startsWith("The file test.txt"));
-        myClass.readFile("test.txt");
-    }
-
+        @Test
+        public void testReadFile3() throws IOException {
+                
+            thrown.expect(IOException.class);
+            thrown.expectMessage(startsWith("test.txt (No such file or directory)"));
+            FileReader reader = new FileReader("test.txt");
+            reader.read();
+            reader.close();
+        }
     ~~~
     {: .language-java}
 
@@ -256,7 +265,7 @@ public class GreetingTest {
     @Test
     public void test() {
         
-        Greeting greeting = new Greeting("hello world");
+        Greeting greeting = new Greeting();
         assertThat(greeting.getTotalCharactersWithoutSpaces(input), is(expected));
     }
 
@@ -266,9 +275,12 @@ public class GreetingTest {
 
 Again more elaborated examples could be found in the [JUnit4 wiki for Parameterized tests](https://github.com/junit-team/junit4/wiki/Parameterized-tests){:target="_blank"}
 
-Interested in TDD? check this out! [Get started with Test Driven Development (A beginner's guide)]({% post_url 2016-12-30-tdd %})
+
+<div class="row">
+    <div id="subscription-form" class='mailmunch-forms-widget-570320 col-sm-6 col-md-offset-3'></div>
+</div>
 
 
-<span data-sumome-listbuilder-embed-id="340523dee454f42568cc7c66d8b8a4ad82a9a3e8d0b49dba972e7336b7da4399"></span>
+Have you tried **TDD**? check this out! [Get started with Test Driven Development (A beginner's guide)]({% post_url 2016-12-30-tdd %})
 
 Please leave a comment and let me know if you liked it!
