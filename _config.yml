@@ -19,3 +19,4 @@ github_username:  DiliniRajapaksha
 markdown: kramdown
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
