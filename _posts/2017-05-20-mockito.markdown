@@ -13,6 +13,12 @@ images:
     alt: Mockito
     title: Mockito
 
+author: https://www.linkedin.com/in/dilinirajapaksha/
+
+image: /assets/img/mockito/mockito3.png
+
+publisher: https://javacodehouse.com
+
 permalink: mockito-tutorial
  
 ---
