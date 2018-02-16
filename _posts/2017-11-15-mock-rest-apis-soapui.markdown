@@ -6,7 +6,7 @@ content_upgrade: true
 
 title:  "How to Mock REST API with SOAP UI (Step by step guide)"
 date:   2017-11-15 
-categories: Main category
+categories: blog
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: "It's super quick and easy to mock or simulate any REST api with SOAP UI and this post shows you how to do it with step by step instructions and screen shots."
 excerpt_separator: <!--more-->
@@ -95,17 +95,18 @@ images:
     alt: Create Rest project
     title: Create Rest project
 
-permalink: mock-rest-apis-soapui
+redirect_from:
+  - /mock-rest-apis-soapui
  
 ---
 
 <div class="center">
 
 {% assign image = page.images[0] %}
-{% include image.html image=image styleClass="first-image shadow" %}
+{% include image.html image=image styleClass="first-image shadow" id="main-image" %}
 
 
-{{page.description}}
+<p id="description">{{page.description}}</p>
 </div>
 <!--more-->
 

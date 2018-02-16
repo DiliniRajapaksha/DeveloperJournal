@@ -4,7 +4,8 @@ comments: true
 
 title:  "How to mock with Mockito (A comprehensive guide with examples)"
 date:   2017-05-20 13:33:41 +1100
-categories: Main category
+updated-date: 2017-05-20
+categories: blog
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: "Learn to write elegant unit tests and mock dependencies with Mockito. Mockito is a mocking framework for Java which is extremely easy to use, so this post will discuss all the cool features you need to know about mockito with simple and easy examples."
 excerpt_separator: <!--more-->
@@ -13,18 +14,16 @@ images:
     alt: Mockito
     title: Mockito
 image: /assets/img/mockito/mockito3.png
-
-permalink: mockito-tutorial
  
 ---
 
 <div class="center">
 
 {% assign image = page.images[0] %}
-{% include image.html image=image styleClass="first-image shadow" %}
+{% include image.html image=image styleClass="first-image shadow" id="main-image" %}
 
 
-{{page.description}}
+<p id="description">{{page.description}}</p>
 </div>
 
 
@@ -43,7 +42,7 @@ Most of the classes we come across have dependencies. and often times methods de
 - So we should some how mock the behavior of the dependencies. This is where mocking frameworks comes in to play.
 - Mockito framework is what I use for just this and in this post we'll see how to use mockito effectively to mock those dependencies.
 
-If you are new to unit testing with JUnit, please check out the previous post on [How to write great unit tests with JUnit]({% post_url 2017-04-26-junit4 %})
+If you are new to unit testing with JUnit, please check out the previous post on [How to write great unit tests with JUnit]({% post_url 2017-04-26-junit-tutorial %})
 {: .note}
 
 ##### What is mockito?
@@ -513,7 +512,7 @@ That's it on this post, please check out the below websites for more cool featur
 
 [Wiki page](https://github.com/mockito/mockito/wiki)
 
-Btw here's the part-1 [How to write great unit tests with JUnit]({% post_url 2017-04-26-junit4 %})
+Btw here's the part-1 [How to write great unit tests with JUnit]({% post_url 2017-04-26-junit-tutorial %})
 
 Please let me know how you liked this tutorial, and what you would want me to write about in future posts in the comments below.
 

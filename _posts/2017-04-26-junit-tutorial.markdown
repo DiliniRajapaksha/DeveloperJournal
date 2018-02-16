@@ -3,7 +3,7 @@ layout: post
 comments: true
 title:  "How to write great unit tests with JUnit (examples explaining 4 major features of JUnit 4)"
 date:   2017-04-26 13:33:41 +1100
-categories: Main category
+categories: blog
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: "JUnit 4 tutorial - We would look into the essentials of JUnit 4 so that we could write some quality unit tests that makes sense and are easy to maintain."
 excerpt_separator: <!--more-->
@@ -12,13 +12,15 @@ images:
     alt: How to write great unit tests with JUnit
     title: How to write great unit tests with JUnit
 
-permalink: junit-tutorial
+redirect_from:
+  - /junit-tutorial
+
 content_upgrade: true
  
 ---
 <div class="center">
 {% assign image = page.images[0] %}
-{% include image.html image=image styleClass="first-image" %}
+{% include image.html image=image styleClass="first-image" id="main-image" %}
 </div>
 
 {{page.description}}
@@ -281,6 +283,6 @@ Again more elaborated examples could be found in the [JUnit4 wiki for Parameteri
 </div>
 
 
-Have you tried **TDD**? check this out! [Get started with Test Driven Development (A beginner's guide)]({% post_url 2016-12-30-tdd %})
+Have you tried **TDD**? check this out! [Get started with Test Driven Development (A beginner's guide)]({% post_url 2016-12-30-test-driven-development-tutorial %})
 
 Please leave a comment and let me know if you liked it!

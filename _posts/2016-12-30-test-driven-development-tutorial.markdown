@@ -4,7 +4,7 @@ comments: true
 
 title:  "Get started with Test Driven Development (A beginner's guide)"
 date:   2016-12-30 13:33:41 +1100
-categories: Main category
+categories: blog
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: "Wondering what Test Driven Development looks like? Then this is for you. Why not give TDD a try and see how you like it?"
 excerpt_separator: <!--more-->
@@ -25,16 +25,17 @@ images:
     alt: Test Driven Development Hello world example - refactor
     title: Test Driven Development Hello world example - refactor
 
-permalink: tdd-tutorial
+redirect_from:
+  - /tdd-tutorial
  
 ---
 <div class="center first-image">
 
 {% assign image = page.images[0] %}
-{% include image.html image=image styleClass="first-image shadow" %}
+{% include image.html image=image styleClass="first-image shadow" id="main-image" %}
 
+<p id="description">{{page.description}}</p>
 
-{{page.description}}
 </div>
 
 ## So what is TDD?
