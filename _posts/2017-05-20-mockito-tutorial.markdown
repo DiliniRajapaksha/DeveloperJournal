@@ -14,7 +14,9 @@ images:
     alt: Mockito
     title: Mockito
 image: /assets/img/mockito/mockito3.png
- 
+
+redirect_from:
+  - /mockito-tutorial
 ---
 
 <div class="center">
