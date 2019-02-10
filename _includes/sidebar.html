@@ -1,15 +1,5 @@
 <div class="side-bar">
-<a data-sumome-listbuilder-id="{{page.content-upgrade.list-builder-id}}">
-	<div>
-		<p>Download</p>
-		<h5>{{page.content-upgrade.title}}</h5>
-		<img class="img-responsive" src="{{"/assets/img/download-icon.png" | prepend: site.baseurl }}" alt="Download zip file">
-		<p>{{page.content-upgrade.text}}</p>
-		<div class="button">
-			SEND IT TO ME!
-		</div>
-	</div>
-
-	<!-- <img class="img-responsive" src="{{"/assets/img/download-side.png" | prepend: site.baseurl }}" alt=""> -->
-</a>
+{% if page.content-upgrade %}
+	{% include content-upgrade.html %}
+{% endif %}
 </div>
