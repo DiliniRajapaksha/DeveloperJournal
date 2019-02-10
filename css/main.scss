@@ -556,4 +556,38 @@ color: #1c1c1c;
   margin-bottom: 20px;
   border: 1px black solid;
 }
+.side-bar{
+    background: rgba(232,232,232, .39);
+    /*position: fixed;*/
+/*    width: 15em;*/
+    text-align: center;
+    /*right: 0px;
+    bottom: 0px;*/
+    padding: 2em;
+ }
 
+ .side-bar p{
+  color: #1f1f1f;
+ }
+
+ .side-bar img{
+  max-width: 8em;
+  margin: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+ }
+
+.button{
+    background: #FB7972;
+    padding: 1em;
+    margin-top: 1em;
+    color: white;
+    font-weight: bold;
+ }
+
+ .sticky-side{
+    max-width: 20em;
+    padding-right: 0px;
+    right: 0px;
+    bottom: 0px;
+ }
