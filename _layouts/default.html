@@ -15,9 +15,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="row">
-      <article class="posts-list">
-        {{ content }}
-      </article>
+      {% if page.aside %}
+        <article class="col-md-9">
+          {{ content }}
+        </article>   
+        <aside class="col-md-3 visible-lg affix col-md-offset-9 sticky-side">
+           {% include sidebar.html %}
+        </aside>
+      {% else %}
+         <article class="container">
+            {{ content }}
+          </article>   
+      {% endif %}
     </div>
  
     <div class="row footer">

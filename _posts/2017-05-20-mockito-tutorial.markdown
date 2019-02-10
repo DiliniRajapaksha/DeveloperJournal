@@ -2,6 +2,14 @@
 layout: post
 comments: true
 
+aside: true
+content-upgrade:
+    title: SOURCE CODE
+    text: Download the example source code for this post.
+    img: /assets/img/download-side.png
+    list-builder-id: a246b85b-722c-44a6-9bca-ffc4b737ea5e
+
+
 title:  "How to mock with Mockito (A comprehensive guide with examples)"
 date:   2017-05-20 13:33:41 +1100
 updated-date: 2017-05-20
@@ -503,7 +511,7 @@ public class CustomerServiceTestV2 {
 ~~~
 {: .language-java}
 
-<a href="#mailmunch-pop-538214">Click Here</a> to get the example source code given in this tutorial.
+<a data-sumome-listbuilder-id="a246b85b-722c-44a6-9bca-ffc4b737ea5e">Click Here</a> to get the example source code given in this tutorial.
 {: .note}
 
 That's it on this post, please check out the below websites for more cool features, best practices and guidelines on Mockito.
