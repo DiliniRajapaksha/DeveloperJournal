@@ -60,7 +60,7 @@ $font-path-file-name: {{ baseurl }}/assets/font/League-Gothic/LeagueGothic-Regul
 ;
 a, a:visited, a:hover, a:active {
   color: #7ecdd0;
-  text-decoration: none;
+  text-decoration: none!important;
 }
 
 
