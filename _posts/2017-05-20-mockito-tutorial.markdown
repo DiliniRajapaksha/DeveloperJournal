@@ -8,6 +8,7 @@ content-upgrade:
     text: Download the example source code for this post.
     img: /assets/img/download-side.png
     list-builder-id: a246b85b-722c-44a6-9bca-ffc4b737ea5e
+    mailmunch-href: mailmunch-pop-538214
 
 
 title:  "How to mock with Mockito (A comprehensive guide with examples)"
@@ -26,15 +27,6 @@ image: /assets/img/mockito/mockito3.png
 redirect_from:
   - /mockito-tutorial
 ---
-
-<div class="center">
-
-{% assign image = page.images[0] %}
-{% include image.html image=image styleClass="first-image shadow" id="main-image" %}
-
-
-<p id="description">{{page.description}}</p>
-</div>
 
 
 <hr>
@@ -138,6 +130,10 @@ public class CustomerServiceTest {
 `MockitoAnnotations.initMocks(this);`
 
 - So these instances would be created at the start of every test method of this test class.
+
+<div>
+  {% include content-upgrade-inline.html %}  
+</div>
 
 <hr>
 
@@ -318,6 +314,10 @@ Following is an example of how to use it (not an ideal usecase but just wanted t
 }
 ~~~
 {: .language-java}
+
+<div>
+  {% include content-upgrade-inline.html %}  
+</div>
 
 <hr>
 

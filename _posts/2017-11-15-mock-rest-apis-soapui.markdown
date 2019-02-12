@@ -100,17 +100,6 @@ redirect_from:
  
 ---
 
-<div class="center">
-
-{% assign image = page.images[0] %}
-{% include image.html image=image styleClass="first-image shadow" id="main-image" %}
-
-
-<p id="description">{{page.description}}</p>
-</div>
-<!--more-->
-
-
 <hr>
 
 ## Mocking your REST APIs enables you to stay productive while the API is being implemented. 
@@ -330,9 +319,6 @@ That's all I have come across so far with Mocking REST APIs using Soap UI.
 
 Leave your email address below so that I can send you the project files used in this post, which you can import to Soap UI.
 
-<div class="row">
-  <div id="subscription-form" class='col-sm-6 col-md-offset-3 mailmunch-forms-widget-572387'></div>
-</div>
 
 
 
