@@ -2,51 +2,39 @@
 layout: default
 ---
 
-<!-- <div class="container"> -->
-	<article class="post" markdown="1" itemscope itemtype="http://schema.org/BlogPosting">
+	<article class="post flex-container-col" markdown="1" itemscope itemtype="http://schema.org/BlogPosting">
 
-	  <header class="blog-header">
-	    <h1 class="post-title tk-raleway" itemprop="name headline">{{ page.title }}</h1>
-	    <div class="post-meta">
-	    <time id="publish-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished"></time>
-	    {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</div>
-	  </header>
+		<header class="blog-header ">
+			<h1 class="post-title tk-raleway" itemprop="name headline">{{ page.title }}</h1>
+			<div class="post-meta">
+			<time id="publish-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished"></time>
+			{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</div>
+		</header>
 
-	  <div markdown="1" class="post-content tk-europa" itemprop="articleBody">
-	    {{ content }}
-	  </div>
+
+		<div class="flex-container-col shrink-75">
+			{% assign image = page.images[0] %}
+			{% include image.html image=image styleClass="first-image shadow" id="main-image" %}
+			<p id="description">{{page.description}}</p>
+		</div> 
+
+		<div class="flex-container" itemprop="articleBody">
+      		<div class="main-content">
+          		{{ content }}
+      		</div> 
+	      	{% if page.aside %}  
+		      	<aside class="visible-lg">
+		           {% include sidebar.html %}
+		      	</aside>
+	      	{% endif %}
+    	</div>
 
 	</article>
+ 
+    <div >
+      {% include post-footer.html %}
+    </div>
+ 
+ 
+ 
 
-	<section class="row">
-		<!-- <div class="col-sm-6 col-md-offset-3">
-			<span data-sumome-listbuilder-embed-id="e83402133a880052e892ff3a43ead95da76a906d373f3d641c85e335effbbe1a"></span>
-		</div> -->
-		{% unless page.content_upgrade %}
-		<div class="col-sm-6 col-md-offset-3">
-			<div class='mailmunch-forms-widget-537870'></div>
-		</div>
-		{% endunless %}
-	</section>
-
-
-	{% if page.comments %}
-	<h5 id="comments" class="comments">Please share your thoughts...</h5>
-	<div id="disqus_thread"></div>
-	<script>
-	var disqus_config = function () {
-	this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-	this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-	};
-	
-	(function() { // DON'T EDIT BELOW THIS LINE
-	var d = document, s = d.createElement('script');
-	s.src = '//https-dilinirajapaksha-github-io-developerjournal.disqus.com/embed.js';
-	s.setAttribute('data-timestamp', +new Date());
-	(d.head || d.body).appendChild(s);
-	})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                                
-{% endif %}
-<!-- </div> -->

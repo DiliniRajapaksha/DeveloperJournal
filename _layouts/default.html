@@ -8,30 +8,19 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLH5S8S"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    <div class="container-fluid">
+    <div class="flex-container-col">
     
-    <div class="row">
-      {% include header.html %}
-    </div>
+      <div>
+        {% include header.html %}
+      </div>
 
-    <div class="row">
-      {% if page.aside %}
-        <article class="col-md-9">
-          {{ content }}
-        </article>   
-        <aside class="col-md-3 visible-lg affix col-md-offset-9 sticky-side">
-           {% include sidebar.html %}
-        </aside>
-      {% else %}
-         <article class="container">
-            {{ content }}
-          </article>   
-      {% endif %}
-    </div>
- 
-    <div class="row footer">
-    {% include footer.html %}
-    </div>
+      <div class="container">
+       {{ content }}
+      </div>
+   
+      <div class="footer">
+      {% include footer.html %}
+      </div>
 
     </div>
     
