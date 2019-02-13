@@ -15,15 +15,17 @@ images:
 redirect_from:
   - /junit-tutorial
 
-content_upgrade: true
+aside: true
+content-upgrade:
+    title: SOURCE CODE
+    text: Download the example source code for this post.
+    img: /assets/img/download-side.png
+    list-builder-id: f3470674-5ce6-4f33-b483-d1a544b38131
+    mailmunch-href: mailmunch-pop-743283
+
+
  
 ---
-<div class="center">
-{% assign image = page.images[0] %}
-{% include image.html image=image styleClass="first-image" id="main-image" %}
-</div>
-
-{{page.description}}
 
 <hr>
 
@@ -169,6 +171,12 @@ public void testAssetThatExamples() {
 
 [JUnit4 wiki for Assertions](https://github.com/junit-team/junit4/wiki/Assertions){:target="_blank"} contains a list of examples for each of the assertions mentioned above. Also [this](https://objectpartners.com/2013/09/18/the-benefits-of-using-assertthat-over-other-assert-methods-in-unit-tests){:target="_blank"} is a comprehensive post on `assertThat`. I like the table at the end the most, which is a comparison of the `assertThat` with the old style assert methods, very useful.
 
+
+
+<div>
+  {% include content-upgrade-inline.html %}  
+</div>
+
 <hr>
 
 ## JUnit4 - Exceptions testing
@@ -179,7 +187,6 @@ Does your method throw exceptions? There are a few different ways to verify whet
 For example, we need a method which reads a file and it throws file not found exception with the message "The file 'file_name' does not exist!". We can test if the file not found exception is thrown in a number of ways. The first is the simplest and the most straight forward way which is preferred, but if we need to test the exception message as well, we could make use of the other two.
 
 ##### Following are the three different ways you can test that your method would throw the expected exception. 
-  *see [bottom](#subscription-form) of this post to download these examples*
 
  1. Set the `expected` parameter `@Test(expected = FileNotFoundException.class)`.
 
@@ -277,10 +284,6 @@ public class GreetingTest {
 
 Again more elaborated examples could be found in the [JUnit4 wiki for Parameterized tests](https://github.com/junit-team/junit4/wiki/Parameterized-tests){:target="_blank"}
 
-
-<div class="row">
-    <div id="subscription-form" class='mailmunch-forms-widget-570320 col-sm-6 col-md-offset-3'></div>
-</div>
 
 
 Have you tried **TDD**? check this out! [Get started with Test Driven Development (A beginner's guide)]({% post_url 2016-12-30-test-driven-development-tutorial %})

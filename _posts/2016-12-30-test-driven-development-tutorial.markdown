@@ -29,14 +29,7 @@ redirect_from:
   - /tdd-tutorial
  
 ---
-<div class="center first-image">
 
-{% assign image = page.images[0] %}
-{% include image.html image=image styleClass="first-image shadow" id="main-image" %}
-
-<p id="description">{{page.description}}</p>
-
-</div>
 
 ## So what is TDD?
 

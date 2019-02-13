@@ -8,38 +8,27 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLH5S8S"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    <div class="container-fluid">
+    <div class="flex-container-col">
     
-    <div class="row">
-      {% include header.html %}
-    </div>
+      <div>
+        {% include header.html %}
+      </div>
 
-    <div class="row">
-      {% if page.aside %}
-        <article class="col-md-9">
-          {{ content }}
-        </article>   
-        <aside class="col-md-3 visible-lg affix col-md-offset-9 sticky-side">
-           {% include sidebar.html %}
-        </aside>
-      {% else %}
-         <article class="container">
-            {{ content }}
-          </article>   
-      {% endif %}
-    </div>
- 
-    <div class="row footer">
-    {% include footer.html %}
-    </div>
+      <div>
+       {{ content }}
+      </div>
+   
+      <div>
+      {% include footer.html %}
+      </div>
 
     </div>
     
-   <script src="https://use.typekit.net/cng0pjz.js"></script>
+    <script src="https://use.typekit.net/cng0pjz.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
   </body>
 </html>

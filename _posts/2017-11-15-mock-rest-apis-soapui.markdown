@@ -2,8 +2,6 @@
 layout: post
 comments: true
 
-content_upgrade: true
-
 title:  "How to Mock REST API with SOAP UI (Step by step guide)"
 date:   2017-11-15 
 categories: blog
@@ -97,19 +95,15 @@ images:
 
 redirect_from:
   - /mock-rest-apis-soapui
- 
+
+aside: true
+content-upgrade:
+    title: SOAP UI PROJECT
+    text: Download the example Soap UI Project for this post.
+    img: /assets/img/download-side.png
+    mailmunch-href: mailmunch-pop-743366
+    
 ---
-
-<div class="center">
-
-{% assign image = page.images[0] %}
-{% include image.html image=image styleClass="first-image shadow" id="main-image" %}
-
-
-<p id="description">{{page.description}}</p>
-</div>
-<!--more-->
-
 
 <hr>
 
@@ -229,6 +223,9 @@ Install Soap UI if you don't have already, and following are the steps after tha
 {% include image.html image=image %}
 </div>
 
+<div>
+  {% include content-upgrade-inline.html %}  
+</div>
 
 #### 5. Test it out!
 
@@ -326,13 +323,15 @@ return "user"+id //this will return the response with the name 'user{id}' eg: us
 
 That's all I have come across so far with Mocking REST APIs using Soap UI.
 
+<div>
+  {% include content-upgrade-inline.html %}  
+</div>
+
+
 #### Which tools have you used for simulating REST APIs? Any suggestions? I would love to hear from you, so please leave a comment below. 
 
 Leave your email address below so that I can send you the project files used in this post, which you can import to Soap UI.
 
-<div class="row">
-  <div id="subscription-form" class='col-sm-6 col-md-offset-3 mailmunch-forms-widget-572387'></div>
-</div>
 
 
 
