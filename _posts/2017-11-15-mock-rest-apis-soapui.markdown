@@ -144,7 +144,7 @@ Install Soap UI if you don't have already, and following are the steps after tha
 {% include image.html image=image %}
 </div>
 
-**Following is the new project that was just created ([REST Project 2](#subscription-form))**
+**Following is the new project that was just created ([REST Project 2](#mailmunch-pop-743366))**
 <div class="screen-shot">
 {% assign image = page.images[3] %}
 {% include image.html image=image %}
@@ -223,7 +223,7 @@ Install Soap UI if you don't have already, and following are the steps after tha
 {% include image.html image=image %}
 </div>
 
-<div>
+<div class="margin-bt-2">
   {% include content-upgrade-inline.html %}  
 </div>
 
@@ -249,7 +249,7 @@ Install Soap UI if you don't have already, and following are the steps after tha
 {: #resource-path-variables}
 <hr>
 
-Most REST URLs contain variables in the resource path, like https://example.com/users/679822 which are basically ids or names which change depending on the request. If you are wondering how to handle these, the good news is, it is already taken care of. If we just use up to `users` in the resource path of the mock, whatever comes after it in the request url doesn't really matter. This behavior is demonstrated in REST Project 3 (You can grab these project files using the [form at the bottom of the post](#subscription-form), and import in to Soap UI)
+Most REST URLs contain variables in the resource path, like https://example.com/users/679822 which are basically ids or names which change depending on the request. If you are wondering how to handle these, the good news is, it is already taken care of. If we just use up to `users` in the resource path of the mock, whatever comes after it in the request url doesn't really matter. This behavior is demonstrated in REST Project 3 (You can grab these project files by [clicking here](#mailmunch-pop-743366), and import in to Soap UI)
 
 <div class="screen-shot">
 {% assign image = page.images[17] %}
@@ -323,7 +323,7 @@ return "user"+id //this will return the response with the name 'user{id}' eg: us
 
 That's all I have come across so far with Mocking REST APIs using Soap UI.
 
-<div>
+<div class="margin-bt-2">
   {% include content-upgrade-inline.html %}  
 </div>
 
