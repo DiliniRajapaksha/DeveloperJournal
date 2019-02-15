@@ -511,7 +511,7 @@ public class CustomerServiceTestV2 {
 ~~~
 {: .language-java}
 
-<a data-sumome-listbuilder-id="a246b85b-722c-44a6-9bca-ffc4b737ea5e">Click Here</a> to get the example source code given in this tutorial.
+<a href="mailmunch-pop-538214">Click Here</a> to get the example source code given in this tutorial.
 {: .note}
 
 That's it on this post, please check out the below websites for more cool features, best practices and guidelines on Mockito.
