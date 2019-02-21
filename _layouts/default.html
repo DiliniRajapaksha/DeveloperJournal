@@ -4,23 +4,20 @@
   {% include head.html %}
 
   <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLH5S8S"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    <div class="flex-container-col">
-    
-      <div>
-        {% include header.html %}
-      </div>
 
-      <div class="container">
-       {{ content }}
-      </div>
+    <div class="container">
+    
+      {% include header.html %}
+
+      <main>
+        {{content}}
+      </main>
+
+      <aside>
+        {% include sidebar.html %}
+      </aside>
    
-      <div>
       {% include footer.html %}
-      </div>
 
     </div>
     
@@ -28,7 +25,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="{{"/js/main.js" | prepend: site.baseurl }}"></script>
+  
   </body>
 </html>
