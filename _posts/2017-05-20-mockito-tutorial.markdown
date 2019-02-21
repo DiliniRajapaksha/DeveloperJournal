@@ -26,6 +26,7 @@ image: /assets/img/mockito/mockito3.png
 
 redirect_from:
   - /mockito-tutorial
+
 ---
 
 
@@ -43,6 +44,8 @@ Most of the classes we come across have dependencies. and often times methods de
     - We don't want the unit test of the `addCustomer()` fail if there is a defect in `save()` method in the `CustomerDao`.
 - So we should some how mock the behavior of the dependencies. This is where mocking frameworks comes in to play.
 - Mockito framework is what I use for just this and in this post we'll see how to use mockito effectively to mock those dependencies.
+
+<!--more-->
 
 If you are new to unit testing with JUnit, please check out the previous post on [How to write great unit tests with JUnit]({% post_url 2017-04-26-junit-tutorial %})
 {: .note}

@@ -1,41 +1,22 @@
 ---
 layout: default
 title: Java Code House
+aside: true
 ---
 
- <div class="container">
-        
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-      <div class="post-excerpt">
-       <!--  <header class="post-header">
-        <h1><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-        <div class="post-meta"><h6>{{ post.date | date: '%B %d, %Y' }}</h6></div>
-        </header> -->
-        <div class="post-item"> 
-            <header class="post-header">
-              <h1><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-              <div class="post-meta"><h6>{{ post.date | date: '%B %d, %Y' }}</h6></div>
-            </header>
-          <!-- <div class="post-item-image col-md-6"> -->
-            <a href="{{post.url | prepend: site.baseurl}}">            
-              {% assign image = post.images[0] %}
-              {% include image.html image=image styleClass="shadow"%}
-            </a>
-          <!-- </div> -->
-          <!-- <div class="post-item-intro"> -->
-            <div class="post-item-desc">{{post.description}}</div>
-            <a href="{{post.url | prepend: site.baseurl}}" class="btn btn-default">Read More</a>
-          </div>
-        <!-- </div> -->
-        
-        </div>
-
-      </li>
-    {% endfor %}
-  </ul>
-
-  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
-
-</div>
+<ul class="">
+  {% for post in site.posts %}
+    <li class="post-excerpt">
+      <a href="{{post.url | prepend: site.baseurl}}">            
+        {% assign image = post.images[0] %}
+        {% include image.html image=image styleClass="shadow"%}
+      </a>
+      <header>
+        <h1 class="title" ><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+        <div class="">{{post.description}}</div>
+        <div class="meta"><h6>{{ post.date | date: '%B %d, %Y' }}</h6></div>
+      </header>
+      <a href="{{post.url | prepend: site.baseurl}}" class="btn">Read More</a>
+    </li>
+  {% endfor %}
+</ul>

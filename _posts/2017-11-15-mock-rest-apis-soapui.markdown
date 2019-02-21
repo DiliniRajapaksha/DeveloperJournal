@@ -223,7 +223,7 @@ Install Soap UI if you don't have already, and following are the steps after tha
 {% include image.html image=image %}
 </div>
 
-<div class="margin-bt-2">
+<div>
   {% include content-upgrade-inline.html %}  
 </div>
 
