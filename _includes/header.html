@@ -1,10 +1,25 @@
-<header id="page-header">
-  <a class="brand" href="{{"/index.html" | prepend: site.baseurl}}"> <span class="brand-lg">JAVA</span>  <span class="brand-sm">CODE HOUSE</span></a>
-  <!-- <img id="logo" src="{{ "/assets/img/logo.png" | prepend: site.baseurl }}" alt="JAVA CODE HOUSE"> -->
-  <nav>
-    <ul>
-      <li class="nav-item"><a href="{{"/index.html" | prepend: site.baseurl}}">HOME</a></li>
-      <li class="nav-item"><a href="{{"/contact" | prepend: site.baseurl}}" target="_blank">CONTACT US</a></li>
-    </ul>
-  </nav>
-</header>
+<div class="nav-bar">
+	<div class="logo">
+		<a class="brand" href="{{"/index.html" | prepend: site.baseurl}}"> 
+			<p class="brand-lg">JAVA</p>  
+			<p class="brand-sm">CODE HOUSE</p>
+		</a>
+	</div>
+
+	<ul class="nav-items">
+		<li class="nav-item"><a href="{{"/index.html" | prepend: site.baseurl}}">HOME</a></li>
+		<li class="nav-item"><a href="{{"/contact" | prepend: site.baseurl}}" target="_blank">CONTACT US</a></li>
+	</ul>
+
+	<ul class="nav-btn">
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>	
+</div>
+
+<!-- mobile toggle -->
+<ul class="nav-verticle">
+	<li class="nav-item"><a href="{{"/index.html" | prepend: site.baseurl}}">HOME</a></li>
+	<li class="nav-item"><a href="{{"/contact" | prepend: site.baseurl}}" target="_blank">CONTACT US</a></li>
+</ul>

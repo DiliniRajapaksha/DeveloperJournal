@@ -6,4 +6,13 @@ $(document).ready(function() {
             $(this).addClass("active");
         }
     });
+
+
+    $('.nav-btn').click(function () {
+    	$('.nav-verticle').toggle();
+    });
+
+    $( window ).resize(function() {
+        $('.nav-verticle').hide();
+    });
 });
