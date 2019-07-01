@@ -24,6 +24,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-redirect-from
+  - jemoji
 permalink: /:categories/:title/
 
 general_mailmunch_popup: mailmunch-pop-747983
