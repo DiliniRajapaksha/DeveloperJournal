@@ -2,7 +2,7 @@
 layout: post
 comments: true
 
-title:  "Get started with Test Driven Development (A beginner's guide)"
+title:  "Test Driven Development tutorial (Hello world in TDD)"
 date:   2016-12-30 13:33:41 +1100
 categories: blog
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
@@ -33,13 +33,18 @@ redirect_from:
 
 ## So what is TDD?
 
+__Test driven development is a software develoment process, where three basic steps are repeated untill you achive the desired result. Following are the three steps:__
+
+__1. Write a test for the requirement.__
+
+__2. Write the logic to pass the test.__
+
+__3. Refactor both test and logic.__
+
+:open_mouth:
+
 Can you actually write a test before writing a single line of implementation logic? How do you know what method, class, or interface will contain the method under test? Sounds a bit odd...
 That's exactly how I felt when I first read about TDD. 
-
-
-> Test-driven development (TDD) is a software development process that relies on the repetition of a very short development cycle: requirements are turned into very specific test cases, then the software is improved to pass the new tests, only. 
->
->--- [Test-driven development. (2016, November 20). In Wikipedia, The Free Encyclopedia. Retrieved 23:45, November 20, 2016](https://en.wikipedia.org/w/index.php?title=Test-driven_development&oldid=750634597)
 
 But once I got the hang of it I realised, that's the whole point! It guides you through the design.
 
@@ -56,7 +61,7 @@ Well, I started by applying it to a ‘hello world’. Too trivial, I know, but 
 
 Requirement: I want to print 'hello world'
 
-##### 1 | Writing the test
+### 1 | Writing the test
 
 We think of the outcome first, and write an assert to test if we get what we want. In this case, we want the string 'hello world'.
 
@@ -65,14 +70,18 @@ We think of the outcome first, and write an assert to test if we get what we wan
 {% include image.html image=image %}
 </div>
 
-##### 2 | Writing the minimum code in order to pass the test
+
+
+### 2 | Writing the minimum code in order to pass the test
 
 <div class="code-border">
 {% assign image = page.images[2] %}
 {% include image.html image=image %}
 </div>
 
-##### 3 | Refactor both the test and the implementation
+
+
+### 3 | Refactor both the test and the implementation
 
 <div class="code-border">
 {% assign image = page.images[3] %}
@@ -103,6 +112,7 @@ Yes, the quality of unit tests does matter as much as the quality of production 
 If unit tests lack quality (i.e. if the tests are not easily understandable by a person other than the one who wrote it,
 or if they inter depend on other tests causing multiple tests to fail if one test is broken,
 or if unit test suit take ages to run, or etc...) maintaining those unit tests would become a nightmare in the long run and would ultimately lead to ignoring all the tests one by one as they fail. Don't believe me? Then you may want to read this [open letter from an ignored test](https://dzone.com/articles/open-letter-from-an-ignored-test){:target="_blank"}
+
 
 ##### Some qualities of a great unit test
 
