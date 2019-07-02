@@ -6,7 +6,7 @@ title:  "Test Driven Development tutorial (Hello world in TDD)"
 date:   2016-12-30 13:33:41 +1100
 categories: blog
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
-description: "Wondering what Test Driven Development looks like? Then this is for you. Why not give TDD a try and see how you like it?"
+description: "Wondering what Test Driven Development looks like __practically__? Then this is for you. Why not give TDD a try and see how you like it?"
 excerpt_separator: <!--more-->
 images: 
   - url: /assets/img/tdd/TDD_1.png
@@ -30,7 +30,6 @@ redirect_from:
  
 ---
 
-
 ## So what is TDD?
 
 __Test driven development is a software develoment process, where three basic steps are repeated untill you achive the desired result. Following are the three steps:__
@@ -41,25 +40,25 @@ __2. Write the logic to pass the test.__
 
 __3. Refactor both test and logic.__
 
-:open_mouth:
-
-Can you actually write a test before writing a single line of implementation logic? How do you know what method, class, or interface will contain the method under test? Sounds a bit odd...
+Can you actually write a test before writing a single line of implementation logic? :open_mouth: How do you know what method, class, or interface will contain the method under test? Sounds a bit odd...
 That's exactly how I felt when I first read about TDD. 
 
-But once I got the hang of it I realised, that's the whole point! It guides you through the design.
+But once I got the hang of it I realised, __that's the whole point! :stuck_out_tongue_winking_eye: It guides you through the design.__
+
+So don't worry, __In this post I'll demonstrate each step with a simple example.__
 
 TDD concept was introduced or developed by Kent Beck and in his book Test Driven Development: By Example he explains the pains of traditional development process and how adopting test driven development helps. And also the foundation and key concepts are explained with lots of code samples.
 
 <hr>
 
-## LETS TEST THE WATERS WITH A HELLO WORLD IN TDD
+## HELLO WORLD IN TDD
 
 <hr> 
 
 All that is great! But how do you practice TDD in Java development?
 Well, I started by applying it to a ‘hello world’. Too trivial, I know, but I like it to be as simple as possible.
 
-Requirement: I want to print 'hello world'
+__Requirement: I want to print 'hello world'__
 
 ### 1 | Writing the test
 
