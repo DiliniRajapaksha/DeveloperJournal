@@ -15,7 +15,7 @@ aside: true
         {% assign image = post.images[0] %}
         {% include image.html image=image styleClass="shadow"%}
       </a>
-      <div class="">{{post.description}}</div>
+      <div class="">{{post.description | markdownify }}</div>
       <a href="{{post.url | prepend: site.baseurl}}" class="btn">Read More</a>
     </li>
   {% endfor %}
