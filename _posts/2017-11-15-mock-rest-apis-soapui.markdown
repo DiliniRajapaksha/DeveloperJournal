@@ -348,9 +348,7 @@ That's all I have come across so far with Mocking REST APIs using Soap UI.
 </div>
 
 
-#### Which tools have you used for simulating REST APIs? Any suggestions? I would love to hear from you, so please leave a comment below. 
-
-Leave your email address below so that I can send you the project files used in this post, which you can import to Soap UI.
+#### Which tools have you used for simulating REST APIs? Any suggestions?
 
 
 
