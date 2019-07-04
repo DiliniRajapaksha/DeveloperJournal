@@ -9,9 +9,7 @@ content-upgrade:
     img: /assets/img/download-side.png
     list-builder-id: a246b85b-722c-44a6-9bca-ffc4b737ea5e
     mailmunch-href: mailmunch-pop-538214
-
-
-title:  "How to mock with Mockito (A comprehensive guide with examples)"
+title:  "Mockito Tutorial (A comprehensive guide with examples)"
 date:   2017-05-20 13:33:41 +1100
 updated-date: 2017-05-20
 categories: blog
@@ -28,8 +26,15 @@ redirect_from:
   - /mockito-tutorial
 
 ---
+Mockito is a mocking framework for Java which is extremely easy to use, so this post will discuss all the cool features you need to know about mockito with simple and easy examples.
 
+1. [How to inject mocks](#how-to-inject-mocks)
+2. [How to mock methods with Mockito](#how-to-mock-methods-with-mockito)
+3. [How to mock __void methods__ with Mockito](#how-to-mock-void-methos-with-mockito)
+4. [2 Ways to test __void methods__ with Mockito](#how-to-test-void-methods-with-mockito---two-ways)
+5. [Spying with Mockito](#i-spy---mockito-spy)
 
+<!--more-->
 <hr>
 
 ## WHY MOCK?
@@ -45,7 +50,6 @@ Most of the classes we come across have dependencies. and often times methods de
 - So we should some how mock the behavior of the dependencies. This is where mocking frameworks comes in to play.
 - Mockito framework is what I use for just this and in this post we'll see how to use mockito effectively to mock those dependencies.
 
-<!--more-->
 
 If you are new to unit testing with JUnit, please check out the previous post on [How to write great unit tests with JUnit]({% post_url 2017-04-26-junit-tutorial %})
 {: .note}

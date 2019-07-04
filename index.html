@@ -7,15 +7,15 @@ aside: true
 <ul class="post-list">
   {% for post in site.posts %}
     <li class="post-excerpt">
-      <a href="{{post.url | prepend: site.baseurl}}">            
+      <header class="mg-bt-1">
+        <h1 class="post-title" ><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>    
+        <time id="publish-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date_to_long_string }}</time>
+      </header>
+      <a href="{{post.url | prepend: site.baseurl}}" class="mg-bt-1">            
         {% assign image = post.images[0] %}
         {% include image.html image=image styleClass="shadow"%}
       </a>
-      <header>
-        <h1 class="title" ><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-        <div class="">{{post.description}}</div>
-        <div class="meta"><h6>{{ post.date | date: '%B %d, %Y' }}</h6></div>
-      </header>
+      <div class="">{{post.description}}</div>
       <a href="{{post.url | prepend: site.baseurl}}" class="btn">Read More</a>
     </li>
   {% endfor %}

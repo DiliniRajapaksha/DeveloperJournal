@@ -1,16 +1,20 @@
 ---
 layout: post
 comments: true
-title:  "How to write great unit tests with JUnit (examples explaining 4 major features of JUnit 4)"
+title:  "How to unit test with JUnit 4 (Junit 4 tutorial with examples)"
 date:   2017-04-26 13:33:41 +1100
 categories: blog
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
-description: "JUnit 4 tutorial - We would look into the essentials of JUnit 4 so that we could write some quality unit tests that makes sense and are easy to maintain."
+description: In this tutorial we will look into the basics of JUnit 4 which are essential to writting quality unit tests that makes sense and are easy to maintain.
 excerpt_separator: <!--more-->
 images: 
   - url: /assets/img/junit/junit.png
     alt: How to write great unit tests with JUnit
     title: How to write great unit tests with JUnit
+  - url: /assets/img/junit/method-execution-stack.png
+    alt: JUnit4 annotated method execution order
+    title: JUnit4 annotated method execution order
+    max-width: 225px
 
 redirect_from:
   - /junit-tutorial
@@ -22,10 +26,17 @@ content-upgrade:
     img: /assets/img/download-side.png
     list-builder-id: f3470674-5ce6-4f33-b483-d1a544b38131
     mailmunch-href: mailmunch-pop-743283
-
-
- 
+    
 ---
+
+In this tutorial we will look into the basics of JUnit 4 which are essential to writting quality unit tests that makes sense and are easy to maintain.
+
+1. [How to use the basic annotations of JUnit4](#junit4---basic-annotations)
+2. [How to use assertions in JUnit4](#junit4---assertions)
+3. [Exceptions testing in JUnit4](#junit4---exceptions-testing)
+4. [JUnit4 Parameterized tests](#junit4---parameterized-tests)
+
+<!--more-->
 
 <hr>
 
@@ -37,16 +48,34 @@ content-upgrade:
 
 - `@Test` - Marks the method as a test method.
 - `@Before` and `@After` sandwiches **each test method** in the class.
-- `@BeforeClass` and `@AfterClass` sandwiches **all of the test methods** in a JUnit test class.
--  So when you run the JUnit test class below, the execution order is:
-    1. Method annotated with `@BeforeClass`
-    2. Method annotated with `@Before`
-    3. First method annotated with `@Test` i.e. `test1()`.
-    4. Method annotated with `@After`    
-    5. Method annotated with `@Before`
-    6. Second method annotated with `@Test` i.e. `test2()`.
-    7. Method annotated with `@After`
-    8. Method annotated with `@AfterClass`
+- `@BeforeClass` and `@AfterClass` sandwiches **all of the test methods** in a JUnit test class. 
+
+### Following is the execution order of the above mentioned methods when a JUnit4 test is run.
+
+<div class="col-container pd-bt-1">
+
+<div class="col-1" markdown="1">
+
+1. Method annotated with `@BeforeClass`
+2. Method annotated with `@Before`
+3. First method annotated with `@Test` i.e. `test1()`.
+4. Method annotated with `@After`    
+5. Method annotated with `@Before`
+6. Second method annotated with `@Test` i.e. `test2()`.
+7. Method annotated with `@After`
+8. Method annotated with `@AfterClass`
+    
+</div>  
+
+<div class="col-2">
+
+{% assign image = page.images[1] %}
+{% include image.html image=image %}
+    
+</div> 
+</div>
+
+
 
 ~~~
     public class SampleTest {
@@ -111,7 +140,7 @@ content-upgrade:
 <hr> 
 
 
-##### When it comes to assertions, there is the set of old JUnit assertions like:
+##### When it comes to assertions, there is the set of old JUnit assertions such as:
 
 - org.junit.Assert.assertArrayEquals
 - org.junit.Assert.assertEquals
@@ -122,7 +151,7 @@ content-upgrade:
 - org.junit.Assert.assertSame
 - org.junit.Assert.assertTrue
 
-##### And the org.junit.Assert.assertThat method (available in JUnit4) which uses matchers and is better than old style assertions because it provides:
+##### And the `org.junit.Assert.assertThat` method (available in JUnit4) which uses matchers and is better than old style assertions because it provides:
 
  - Better readability
     + `assertThat(actual, is(equalTo(expected)));` is better than `assertEquals(expected, actual);`
@@ -142,7 +171,7 @@ content-upgrade:
 {::nomarkdown}<ul> <li> allOf </li> <li> any </li> <li> anyOf </li> <li> anything </li> <li> both </li> <li> containsString </li> <li> describedAs </li> <li> either </li> <li> endsWith </li> <li> equalTo </li>   </ul> {:/}    | {::nomarkdown} <ul> <li> everyItem </li>  <li> hasItems </li> <li> instanceOf </li> <li> is </li> <li> isA </li> <li> not </li> <li> notNullValue </li> <li> nullValue </li> <li> sameInstance </li> <li> startsWith </li> <li> theInstance </li> </ul> {:/} 
 
 
-##### Example useage of a few of the above matchers
+### How to use `assertThat` with `hamcrest` matches.
 
 ~~~~
 @Test
@@ -186,7 +215,7 @@ public void testAssetThatExamples() {
 Does your method throw exceptions? There are a few different ways to verify whether expected exceptions are thrown, given the conditions.
 For example, we need a method which reads a file and it throws file not found exception with the message "The file 'file_name' does not exist!". We can test if the file not found exception is thrown in a number of ways. The first is the simplest and the most straight forward way which is preferred, but if we need to test the exception message as well, we could make use of the other two.
 
-##### Following are the three different ways you can test that your method would throw the expected exception. 
+### Following are the three different ways to test that a method would throw the expected exception. 
 
  1. Set the `expected` parameter `@Test(expected = FileNotFoundException.class)`.
 
