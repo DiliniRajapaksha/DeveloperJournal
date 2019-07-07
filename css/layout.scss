@@ -55,6 +55,7 @@ $on-laptop:        800px;
 }
 
 html, body{
+	font-size: 18px;
 	height: 100%;
 	margin: 0px;
 	font-family: "europa";
@@ -215,7 +216,7 @@ nav > ul{
 }
 
 .nav-item a{
-	font-size: 1rem; 
+	font-size: 0.8rem; 
 	font-weight: 300;
 	text-decoration: none;
 	color: var(--brand-color);
