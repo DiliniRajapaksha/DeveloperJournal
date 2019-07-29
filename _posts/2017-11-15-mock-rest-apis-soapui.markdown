@@ -8,6 +8,12 @@ categories: blog
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: "It's super quick and easy to mock or simulate any REST api with SOAP UI and this post shows you how to do it with step by step instructions and screen shots."
 excerpt_separator: <!--more-->
+
+cover-image:
+    url: /assets/img/rest-mock/rest-mock.png
+    alt: Mock Rest APIs with Soap UI
+    title: Mock Rest APIs with Soap UI
+
 images: 
   - url: /assets/img/rest-mock/rest-mock.png
     alt: Mock Rest APIs with Soap UI

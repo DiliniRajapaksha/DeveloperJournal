@@ -7,10 +7,16 @@ categories: blog
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: In this tutorial we will look into the basics of JUnit 4 which are essential to writting quality unit tests that makes sense and are easy to maintain.
 excerpt_separator: <!--more-->
+cover-image: 
+    url: /assets/img/junit/junit.png
+    alt: How to write great unit tests with JUnit
+    title: How to write great unit tests with JUnit
+    
 images: 
   - url: /assets/img/junit/junit.png
     alt: How to write great unit tests with JUnit
     title: How to write great unit tests with JUnit
+
   - url: /assets/img/junit/method-execution-stack.png
     alt: JUnit4 annotated method execution order
     title: JUnit4 annotated method execution order

@@ -16,6 +16,10 @@ categories: blog
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: "Learn to write elegant unit tests and mock dependencies with Mockito. Mockito is a mocking framework for Java which is extremely easy to use, so this post will discuss all the cool features you need to know about mockito with simple and easy examples."
 excerpt_separator: <!--more-->
+cover-image:
+    url: /assets/img/mockito/mockito3.png
+    alt: Mockito Tutorial
+    title: Mockito Tutorial
 images: 
   - url: /assets/img/mockito/mockito3.png
     alt: Mockito

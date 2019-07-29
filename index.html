@@ -12,7 +12,7 @@ aside: true
         <time id="publish-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date_to_long_string }}</time>
       </header>
       <a href="{{post.url | prepend: site.baseurl}}" class="mg-bt-1">            
-        {% assign image = post.images[0] %}
+        {% assign image = post.cover-image %}
         {% include image.html image=image styleClass="shadow"%}
       </a>
       <div class="">{{post.description | markdownify }}</div>
