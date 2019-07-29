@@ -11,6 +11,12 @@ categories: blog
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: In this post I show you how TDD is done with a Hello world Example in JAVA, step by step.
 excerpt_separator: <!--more-->
+
+cover-image:
+    url: /assets/img/tdd/TDD_1.png
+    alt: Test Driven Development Tutorial
+    title: Test Driven Development Demo
+
 images: 
 
   - url: /assets/img/tdd/tdd_illustration.png
@@ -847,7 +853,7 @@ TDD KATAs to the rescue.
 
 __KATA__ has its roots in Japan.
 
-"KATA means a detailed or defined set of movements to be practiced over and over again.""
+"KATA means a detailed or defined set of movements to be practiced over and over again."
 
 __TDD Kata is a tiny bit of coding that you could repeat over and over again.__
 
