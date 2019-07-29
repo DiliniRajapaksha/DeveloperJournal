@@ -19,6 +19,9 @@
   <title>{{ page.title }}</title>
   <script src="//a.mailmunch.co/app/v1/site.js" id="mailmunch-script" data-mailmunch-site-id="400395" async="async"></script>
 
+
+
+
 <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href={{ "/favicon/apple-touch-icon.png" | prepend: site.baseurl }}>
   <link rel="icon" type="image/png" sizes="32x32" href={{ "/favicon/favicon-32x32.png" | prepend: site.baseurl }}>
@@ -30,7 +33,10 @@
   <meta name="theme-color" content="#ffffff">
 
   <meta name='date' content='{{ page.date }}'>
-
+  <div itemscope="" itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="dateModified" content='{{ page.last-updated }}'>
+  </div>
+  
 </head>
 
   <body>

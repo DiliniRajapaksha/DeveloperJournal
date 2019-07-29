@@ -4,12 +4,17 @@ title: Java Code House
 aside: true
 ---
 
-<ul class="post-list">
+<ul class="post-list" itemscope="" itemtype="http://schema.org/CreativeWork">
   {% for post in site.posts %}
     <li class="post-excerpt">
       <header class="mg-bt-1">
-        <h1 class="post-title" ><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>    
-        <time id="publish-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date_to_long_string }}</time>
+        <h1 class="post-title" ><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+        {% if post.last-updated %}
+          <time id="publish-date" datetime="{{ post.last-updated | date_to_xmlschema }}" itemprop="dateModified">{{ post.last-updated | date_to_long_string }}</time>
+        {% else %}
+          <time id="publish-date" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date_to_long_string }}</time>
+        {% endif %}
+
       </header>
       <a href="{{post.url | prepend: site.baseurl}}" class="mg-bt-1">            
         {% assign image = post.cover-image %}
