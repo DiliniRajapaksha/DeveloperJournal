@@ -22,14 +22,14 @@ Spring boot is a framework which helps create standalone Spring applications tha
 
 [What is Spring Boot](#)
 
-[how is Spring Boot different from Spring framework](#)
+<!-- [how is Spring Boot different from Spring framework](#) -->
 
 
-[What's the difference between Spring Boot and Spring MVC](#)
-
-[What are Spring boot starters](#)
+<!-- [What's the difference between Spring Boot and Spring MVC](#) -->
 
 [What is Spring Boot Initializer](#)
+
+[What are Spring boot starters](#)
 
 [How to run a Spring boot application]
 

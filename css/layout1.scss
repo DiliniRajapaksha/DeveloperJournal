@@ -392,6 +392,29 @@ hr {
     font-weight: bold;
  }
 
+ .ad{
+
+ 	.ad-header{
+ 		margin-left: -2em;
+	    margin-right: -2em;
+	    margin-top: -2em;
+	    padding-top: 2em;
+	    background: #34302d;
+	    padding-bottom: 0.5em;
+	    margin-bottom: 1em;
+	    color: #6db33f;
+
+	 	h2{
+	    	font-size: 2em;
+	 	}
+
+ 	}
+
+ }
+ .ad .button{
+	background-color: #6db33f;
+}
+
  @media only screen and (max-width : 960px) {
 
 	.side-bar{
