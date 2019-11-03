@@ -78,7 +78,7 @@ Spring Boot Actuator - is a feature that is used for internal inspection for our
 "
 
 
-If you've ever set up a spring application in the past, you would know the pain! How much configuration that has to be done. Well, Spring Boot kind of makes a spring application developer's life easier. 
-Spring Boot still uses Spring framework under the hood, but almost all of the configuration is done for you if you wish.
+If you've ever set up a spring application in the past, you would know the pain! How much configuration that has to be done. Well, Spring Boot kind of makes a Spring application developer's life easier. 
+Spring Boot still uses the Spring framework under the hood, but almost all of the configuration is done for you if you wish.
 
-Whether you use spring boot or spring framework, you would still create a spring application at the end. The differences are in the process. how fast and how easy things can get during the developement.
+Whether you use Spring Boot or Spring framework, you would still create a Spring application at the end. The differences are in the process. how fast and how easy things can get during development.
