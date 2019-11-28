@@ -51,7 +51,7 @@ Spring Boot is a framwork or rather a tool built on top of spring framework whic
 In other words, Spring Boot is an extention of spring framework, intended to simplify and accelerate the development of enterprise applications 
 You can set up a spring application using Spring Boot (without having to write a single line of xml or any configuration what so ever) to the point where it is ready to be deployed and run in a matter of minutes :joy:. So it spares the developers more time to focus on implementing the application logic rather than project set up and configuration.
 
-How is it possible? Well, Spring Boot starters and Auto configuration makes the project set up so quick and easy that you only have to know which kind of application that you want create. For example if you tell the spring initializer that you want to create a web application, it will create the build file with all the required dependencies and the project folder structure along with a sample applicaiton class which you can just run.
+How is it possible? Well, Spring Boot starters and Auto configuration makes the project set up so quick and easy that you only have to know which kind of application that you want create. For example if you tell the [Spring Initializr](#spring-initilizr) that you want to create a web application, it will create the build file with all the required dependencies and the project folder structure along with a sample applicaiton class which you can just run.
 
 But this doesn't mean that you are confined to what has been chosen or configured by the framework for you. You can customize whatever is needed according to your preference or requirement.
 
@@ -59,6 +59,12 @@ So starters and auto configuration speeds up the project set up and eleminates c
 It's the Spring Boot Actuator, which let's you monitor and interact with the applicaiton once it's deployed. Actuator can also be configured to support CORS.
 
 Oh by the way, Spring Boot also embeds a server, such as TOMCAT or Reactor Netty depending on the kind of application that you create, so You can bundle up your web application as a jar file and just run it without having to have a server. We'll look at embeded servers and how to deploy to an external server in a little while.
+
+<hr>
+
+## The Spring Initializr
+
+<hr>
 
 
 

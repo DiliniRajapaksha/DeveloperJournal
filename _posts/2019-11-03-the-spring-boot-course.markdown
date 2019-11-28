@@ -344,7 +344,7 @@ E.g:
 **You would also be able to download the completed project in the last module.**
 </div>
 
-
+<!-- 
 # FREE LESSONS
 
 <hr class="gray">
@@ -366,4 +366,4 @@ E.g:
 {: .mg-tp-3 .mg-bt-1 .center}
 
 {% assign video = page.youtube-videos[2] %}
-{% include youtube-video.html video=video %}
+{% include youtube-video.html video=video %} -->

@@ -380,7 +380,7 @@ footer{
 .btn-md-play{
 	padding: 0.5em 1em;
 	color: #ffffff;
-	background-color: var(--sp-bt-green);
+	background-color: var(--pink);
 	@include vendor-prefix(border-radius, 5px);	
 	margin: 1em 0em;
 /*    font-family: roboto;
@@ -867,3 +867,12 @@ hr.gray{
   grid-area: video;
 }
 /* end video post */
+
+.course-deal{
+    margin-top: 2em;
+    margin-bottom: 0em;
+    color: #ffffff;
+    background-color: var(--red);
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
