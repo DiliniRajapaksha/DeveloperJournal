@@ -55,7 +55,7 @@ Throughout this course, we’ll build a **REST API** which would **save retrieve
 ### PROJECT SET UP
 {: .module-title .center}
 
-#### Lesson 1: Set up the project using Spring Initializr  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch now!](#spring-initializr){: .btn-sm-play}
+#### Lesson 1: Set up the project using Spring Initializr  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch now!](https://javacodehouse-training.thinkific.com/courses/spring-boot){: .btn-sm-play}
 {: .lesson-title}
 
 
@@ -73,7 +73,7 @@ Throughout this course, we’ll build a **REST API** which would **save retrieve
 
 
 
-#### Lesson 2: Set up the project using Gradle without Spring Initializr  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch now!](#gradle){: .btn-sm-play}
+#### Lesson 2: Set up the project using Gradle without Spring Initializr  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch now!](https://javacodehouse-training.thinkific.com/courses/spring-boot){: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -181,7 +181,7 @@ In this lesson, we move the business logic to the service layer by refactoring t
 
 </div>
 
-#### Lesson 8: Making a Spring Boot Application  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch now!](#spring-boot){: .btn-sm-play}
+#### Lesson 8: Making a Spring Boot Application  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch now!](https://javacodehouse-training.thinkific.com/courses/spring-boot){: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
