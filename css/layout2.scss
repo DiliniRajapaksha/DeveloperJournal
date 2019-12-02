@@ -10,6 +10,7 @@
 	--pink:#ff7770;
 	--gray:#eee;
 	--red:#C02F1D;
+	--bright-red:#e5011e;
 	--blue:#0074D9;
 	--yellow:#ffca00;
 	--sp-bt-dark:#34302D;
@@ -380,7 +381,7 @@ footer{
 .btn-md-play{
 	padding: 0.5em 1em;
 	color: #ffffff;
-	background-color: var(--pink);
+	background-color: var(--bright-red);
 	@include vendor-prefix(border-radius, 5px);	
 	margin: 1em 0em;
 /*    font-family: roboto;
@@ -872,7 +873,7 @@ hr.gray{
     margin-top: 2em;
     margin-bottom: 0em;
     color: #ffffff;
-    background-color: var(--red);
+    background-color: var(--bright-red);
     padding-top: 2em;
     padding-bottom: 1em;
 }
