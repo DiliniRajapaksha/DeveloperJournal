@@ -16,7 +16,7 @@ description: In this Spring Boot Crash Course I will teach you how to build a RE
 excerpt_separator: <!--more-->
 
 cover-image:
-    url: /assets/img/spring-boot-course/intro.png
+    url: /assets/img/spring-boot-course/christmas-special.png
     alt: Learn Spring Boot 
     title: The Spring Boot Course
 
@@ -326,7 +326,14 @@ Write some integration tests for deleting the comment
 
 </div>
 
+<div class="mg-tp-3 center">
+<a class="btn-md-play" href="https://javacodehouse-training.thinkific.com/courses/spring-boot" target="_blank">
+<i class="fa fa-play-circle" aria-hidden="true"></i> Enrol Now for just $3.99!
+</a>  
 </div>
+
+</div>
+
 
 <div class="border-box">
 	
