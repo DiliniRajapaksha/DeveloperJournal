@@ -1,29 +1,25 @@
- <header>
+<div class="nav-bar">
+	<div class="logo">
+		<a class="brand" href="{{"/index.html" | prepend: site.baseurl}}"> 
+			<p class="brand-lg">JAVA</p>  
+			<p class="brand-sm">CODE HOUSE</p>
+		</a>
+	</div>
 
-  <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-       <a class="navbar-brand" href="{{"/index.html" | prepend: site.baseurl}}"><img src="{{ "/assets/img/logo2.png" | prepend: site.baseurl }}"></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-        
-      <ul class="nav navbar-nav navbar-right">
-        <li class="nav-item">
-          <a class="nav-link" href="{{"/index.html" | prepend: site.baseurl}}">HOME</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="{{"/contact.html" | prepend: site.baseurl}}" target="_blank">CONTACT US</a>
-        </li>
-        <!-- <li class="nav-item ">
-          <a class="nav-link" href="{{"/about-me.html" | prepend: site.baseurl}}" target="_blank"><img class="img-circle img-sm" src="{{"/assets/img/self.jpg" | prepend: site.baseurl }}"></a>
-        </li> -->
-      </ul>
-    </div>
-  </div>
-</nav>
-</header>
+	<ul class="nav-items">
+		<li class="nav-item"><a href="{{"/index.html" | prepend: site.baseurl}}">HOME</a></li>
+		<li class="nav-item"><a href="{{"/contact" | prepend: site.baseurl}}" target="_blank">CONTACT US</a></li>
+	</ul>
+
+	<ul class="nav-btn">
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>	
+</div>
+
+<!-- mobile toggle -->
+<ul class="nav-verticle">
+	<li class="nav-item"><a href="{{"/index.html" | prepend: site.baseurl}}">HOME</a></li>
+	<li class="nav-item"><a href="{{"/contact" | prepend: site.baseurl}}" target="_blank">CONTACT US</a></li>
+</ul>

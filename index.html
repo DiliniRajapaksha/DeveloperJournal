@@ -1,41 +1,27 @@
 ---
 layout: default
 title: Java Code House
+aside: true
 ---
 
- <div class="container">
-        
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-      <div class="post-excerpt">
-       <!--  <header class="post-header">
-        <h1><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-        <div class="post-meta"><h6>{{ post.date | date: '%B %d, %Y' }}</h6></div>
-        </header> -->
-        <div class="post-item"> 
-            <header class="post-header">
-              <h1><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-              <div class="post-meta"><h6>{{ post.date | date: '%B %d, %Y' }}</h6></div>
-            </header>
-          <!-- <div class="post-item-image col-md-6"> -->
-            <a href="{{post.url | prepend: site.baseurl}}">            
-              {% assign image = post.images[0] %}
-              {% include image.html image=image styleClass="shadow"%}
-            </a>
-          <!-- </div> -->
-          <!-- <div class="post-item-intro"> -->
-            <div class="post-item-desc">{{post.description}}</div>
-            <a href="{{post.url | prepend: site.baseurl}}" class="btn btn-default">Read More</a>
-          </div>
-        <!-- </div> -->
-        
-        </div>
+<ul class="post-list" itemscope="" itemtype="http://schema.org/CreativeWork">
+  {% for post in site.posts %}
+    <li class="post-excerpt">
+      <header class="mg-bt-1">
+        <h1 class="post-title" ><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+        {% if post.last-updated %}
+          <time id="publish-date" datetime="{{ post.last-updated | date_to_xmlschema }}" itemprop="dateModified">{{ post.last-updated | date_to_long_string }}</time>
+        {% else %}
+          <time id="publish-date" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date_to_long_string }}</time>
+        {% endif %}
 
-      </li>
-    {% endfor %}
-  </ul>
-
-  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
-
-</div>
+      </header>
+      <a href="{{post.url | prepend: site.baseurl}}" class="mg-bt-1">            
+        {% assign image = post.cover-image %}
+        {% include image.html image=image styleClass="shadow"%}
+      </a>
+      <div class="">{{post.description | markdownify }}</div>
+      <a href="{{post.url | prepend: site.baseurl}}" class="btn">Read More</a>
+    </li>
+  {% endfor %}
+</ul>

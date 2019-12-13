@@ -12,10 +12,19 @@ email: dilini.javacodehouse@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Java code house is a resource for developers to learn and share emerging technologies in the software development field.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.javacodehouse.com" # the base hostname & protocol for your site
+url: "https://www.javacodehouse.com" # the base hostname & protocol for your site
 twitter_username: sewdil
 github_username:  DiliniRajapaksha
+twitter:
+  username: sewdil
+logo: /assets/img/logo.png
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jemoji
+permalink: /:categories/:title/
+
+general_mailmunch_popup: mailmunch-pop-747983
