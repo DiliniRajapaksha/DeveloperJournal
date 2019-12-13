@@ -1,0 +1,4 @@
+<a href="{{include.ad.url | prepend: site.baseurl}}" class="mg-bt-1">            
+    {% assign image = include.ad.img %}
+    {% include image.html image=image styleClass="shadow"%}
+</a>

@@ -32,6 +32,14 @@ content-upgrade:
     img: /assets/img/download-side.png
     list-builder-id: f3470674-5ce6-4f33-b483-d1a544b38131
     mailmunch-href: mailmunch-pop-743283
+
+ads:
+    - url: /courses/the-spring-boot-course
+      img: 
+        url: /assets/img/spring-boot-course/christmas-special.png
+        alt: Spring Boot Course
+        title: Spring Boot Course
+
     
 ---
 
@@ -137,6 +145,11 @@ In this tutorial we will look into the basics of JUnit 4 which are essential to 
 ~~~
 {: .language-java}
 
+
+<div>
+{% assign ad = page.ads[0] %}
+{% include inline-ad.html ad=ad %}
+</div>
 
 
 <hr>
