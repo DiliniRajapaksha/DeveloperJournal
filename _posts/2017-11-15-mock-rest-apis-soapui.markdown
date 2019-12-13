@@ -119,6 +119,13 @@ images:
     title: Create Rest project
     max-width: 900px
 
+ads:
+    - url: /courses/the-spring-boot-course
+      img: 
+        url: /assets/img/spring-boot-course/christmas-special.png
+        alt: Spring Boot Course
+        title: Spring Boot Course
+
 redirect_from:
   - /mock-rest-apis-soapui
 
@@ -267,6 +274,12 @@ The mock service can also be called using a browser
 <div class="screen-shot mg-bt-1">
 {% assign image = page.images[16] %}
 {% include image.html image=image  styleClass="gray-border-10" %}
+</div>
+
+
+<div>
+{% assign ad = page.ads[0] %}
+{% include inline-ad.html ad=ad %}
 </div>
 
 

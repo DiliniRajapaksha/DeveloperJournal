@@ -26,6 +26,13 @@ images:
     title: Mockito
 image: /assets/img/mockito/mockito3.png
 
+ads:
+    - url: /courses/the-spring-boot-course
+      img: 
+        url: /assets/img/spring-boot-course/christmas-special.png
+        alt: Spring Boot Course
+        title: Spring Boot Course
+
 redirect_from:
   - /mockito-tutorial
 
@@ -272,6 +279,12 @@ public class CustomerServiceTest {
 
 ~~~
 {: .language-java}
+
+<div>
+{% assign ad = page.ads[0] %}
+{% include inline-ad.html ad=ad %}
+</div>
+
 
 <hr>
 
