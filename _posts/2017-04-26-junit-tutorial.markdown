@@ -36,7 +36,7 @@ content-upgrade:
 ads:
     - url: /courses/the-spring-boot-course
       img: 
-        url: /assets/img/spring-boot-course/christmas-special.png
+        url: /assets/img/spring-boot-course/course-ad.png
         alt: Spring Boot Course
         title: Spring Boot Course
 
@@ -146,7 +146,7 @@ In this tutorial we will look into the basics of JUnit 4 which are essential to 
 {: .language-java}
 
 
-<div>
+<div class="center">
 {% assign ad = page.ads[0] %}
 {% include inline-ad.html ad=ad %}
 </div>

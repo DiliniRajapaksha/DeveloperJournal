@@ -29,7 +29,7 @@ image: /assets/img/mockito/mockito3.png
 ads:
     - url: /courses/the-spring-boot-course
       img: 
-        url: /assets/img/spring-boot-course/christmas-special.png
+        url: /assets/img/spring-boot-course/course-ad.png
         alt: Spring Boot Course
         title: Spring Boot Course
 
@@ -280,7 +280,7 @@ public class CustomerServiceTest {
 ~~~
 {: .language-java}
 
-<div>
+<div class="center">
 {% assign ad = page.ads[0] %}
 {% include inline-ad.html ad=ad %}
 </div>
