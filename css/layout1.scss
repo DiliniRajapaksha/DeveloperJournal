@@ -10,6 +10,7 @@
 	--pink:#ff7770;
 	--gray:#eee;
 	--red:#e5011e;
+	--sp-bt-green:#6DB33F;
 }
 
 /*// Our variables*/
@@ -405,7 +406,7 @@ hr {
 	    background: #34302d;
 	    padding-bottom: 0.5em;
 	    margin-bottom: 1em;
-	    color: #6db33f;
+	    color: var(--sp-bt-green);
 
 	 	h2{
 	    	font-size: 2em;
@@ -415,7 +416,7 @@ hr {
 
  }
  .ad .button{
-	background-color: var(--red);
+	background-color: var(--sp-bt-green);
 }
 
  @media only screen and (max-width : 960px) {
@@ -544,4 +545,15 @@ pre{
     color: red!important;
     margin: 0;
     line-height: 1.5em;
+}
+
+.ad-inline-img{
+    width: 80%;
+    max-width: 45em;
+    border: 11px solid #d4b500;
+    margin: 3em auto;
+}
+
+.center{
+	text-align: center;
 }
