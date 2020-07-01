@@ -750,6 +750,15 @@ pre{
 	background-color: var(--sp-bt-dark);
 }
 
+.bg-sp-bt-green{
+	background-color: var(--sp-bt-green);
+}
+
+.sp-bt-header{
+	/*background-color: var(--sp-bt-green);*/
+	color: var(--sp-bt-green);
+}
+
 @media only screen and (max-width : 500px) {
 	.font-lg{
 		font-size: 1em;
@@ -761,6 +770,10 @@ pre{
 
 	.post-title{
 		font-family: 'Montserrat', sans-serif !important;
+		color: var(--sp-bt-green);
+	}
+	hr{
+		border-top: 1px solid var(--sp-bt-green);
 	}
 
 }
@@ -818,7 +831,7 @@ pre{
     margin-bottom: 0;
     padding: 1em;
     color: #ffffff;
-    background-color: var(--sp-bt-dark);
+    background-color: #4a4a4a;
 }
 
 .lesson-title:hover{

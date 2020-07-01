@@ -1,9 +1,9 @@
 ---
 
 layout: course-page
-header-style: bg-sp-bt
+header-style: sp-bt-header bg-dark-gray
 intro-style: bg-sp-bt
-title-style: sp-bt
+title-style: sp-bt-header
 title-tag:  "Learn Spring Boot in 2 hours"
 title-post-pre: "Learn"
 title-post: "Spring Boot"
@@ -12,11 +12,11 @@ date:   2019-11-03
 categories: courses
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: In this Spring Boot Crash Course I will teach you how to build a REST API with Spring Boot in just 2 hours.
-
+ 
 excerpt_separator: <!--more-->
 
 cover-image:
-    url: /assets/img/spring-boot-course/intro.png
+    url: /assets/img/spring-boot-course/thumb.jpg
     alt: Learn Spring Boot 
     title: The Spring Boot Course
 
