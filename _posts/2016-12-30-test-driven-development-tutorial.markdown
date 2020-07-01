@@ -1,5 +1,6 @@
 ---
 layout: post2
+order: 1
 comments: true
 header-style: bg-dark-gray
 intro-style: bg-dark-gray
@@ -10,11 +11,11 @@ date:   2016-12-30 13:33:41 +1100
 last-updated: 2019-07-29
 categories: blog
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
-description: In this post I show you how TDD is done with a Hello world Example in JAVA, step by step.
+description: All you need to know about TDD to get started and how it's done with a hands on example!
 excerpt_separator: <!--more-->
 
 cover-image:
-    url: /assets/img/tdd/TDD_1.png
+    url: /assets/img/tdd/TDD-thumb.png
     alt: Test Driven Development Tutorial
     title: Test Driven Development Demo
 

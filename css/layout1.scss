@@ -403,11 +403,10 @@ hr {
 	    margin-right: -2em;
 	    margin-top: -2em;
 	    padding-top: 2em;
-	    background: #34302d;
+	    background-color: var(--sp-bt-green);
 	    padding-bottom: 0.5em;
 	    margin-bottom: 1em;
-	    color: var(--sp-bt-green);
-
+	    color: #ffffff;
 	 	h2{
 	    	font-size: 2em;
 	 	}
@@ -556,4 +555,8 @@ pre{
 
 .center{
 	text-align: center;
+}
+
+.post-thumb{
+	max-width: 1140px;
 }
