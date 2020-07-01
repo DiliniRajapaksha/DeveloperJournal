@@ -4,7 +4,7 @@ title: Java Code House
 aside: true
 ---
 
-<ul class="post-list" itemscope="" itemtype="http://schema.org/CreativeWork">
+<!-- <ul class="post-list" itemscope="" itemtype="http://schema.org/CreativeWork">
   {% for post in site.posts %}
     <li class="post-excerpt">
       <header class="mg-bt-1">
@@ -18,7 +18,30 @@ aside: true
       </header>
       <a href="{{post.url | prepend: site.baseurl}}" class="mg-bt-1">            
         {% assign image = post.cover-image %}
-        {% include image.html image=image styleClass="shadow"%}
+        {% include image.html image=image styleClass="shadow post-thumb"%}
+      </a>
+      <div class="">{{post.description | markdownify }}</div>
+      <a href="{{post.url | prepend: site.baseurl}}" class="btn">Read More</a>
+    </li>
+  {% endfor %}
+</ul> -->
+
+<ul class="post-list" itemscope="" itemtype="http://schema.org/CreativeWork">
+  {% assign posts = site.posts | sort: 'order' %}
+  {% for post in posts %}
+    <li class="post-excerpt">
+      <header class="mg-bt-1">
+        <h1 class="post-title" ><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+        {% if post.last-updated %}
+          <time id="publish-date" datetime="{{ post.last-updated | date_to_xmlschema }}" itemprop="dateModified">{{ post.last-updated | date_to_long_string }}</time>
+        {% else %}
+          <time id="publish-date" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date_to_long_string }}</time>
+        {% endif %}
+
+      </header>
+      <a href="{{post.url | prepend: site.baseurl}}" class="mg-bt-1">            
+        {% assign image = post.cover-image %}
+        {% include image.html image=image styleClass="shadow post-thumb"%}
       </a>
       <div class="">{{post.description | markdownify }}</div>
       <a href="{{post.url | prepend: site.baseurl}}" class="btn">Read More</a>
