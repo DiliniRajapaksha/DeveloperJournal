@@ -1,7 +1,7 @@
 
  <head>
   
-  <link rel="stylesheet" href={{ "/css/layout1.css" | prepend: site.baseurl }}>
+  <link rel="stylesheet" href={{ "/css/layout1.css" | prepend: site.baseurl }}?{{ site.time | date: '%s%N' }}">
   
   <link rel="stylesheet" href={{ "/fonts/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}>
   <!-- Google Tag Manager -->

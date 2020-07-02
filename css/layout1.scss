@@ -561,13 +561,14 @@ pre{
 	max-width: 1140px;
 }
 
-.back-to-top *{
+.back-to-top{
     position: fixed;
     padding: 1em;
     bottom: 2em;
     right: 1em;
     color: var(--turquoise)!important;
 }
-/*.back-to-top a{
-    	color: var(--turquoise)!important;
-    }*/
+
+.back-to-top *{
+    color: var(--turquoise)!important;
+}

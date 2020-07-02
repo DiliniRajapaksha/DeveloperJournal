@@ -890,10 +890,15 @@ hr.gray{
     padding-top: 2em;
     padding-bottom: 1em;
 }
-.back-to-top *{
+
+.back-to-top{
     position: fixed;
     padding: 1em;
     bottom: 2em;
     right: 1em;
+    color: var(--turquoise)!important;
+}
+
+.back-to-top *{
     color: var(--turquoise)!important;
 }
