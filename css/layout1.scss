@@ -305,7 +305,7 @@ main{
 	padding: 0 4vw;
 	grid-area: main;
 	display: grid;
-	grid: "article" "comments" / 1fr;
+	grid: "article" "article-footer" / 1fr;
 }
 
 article{
@@ -315,8 +315,8 @@ article{
 	justify-content: center;
 }
 
-.comments{
-	grid-area: comments;
+.article-footer{
+	grid-area: article-footer;
 }
 /*.visual{
 	max-width: 650px;
@@ -564,11 +564,20 @@ pre{
 .back-to-top{
     position: fixed;
     padding: 1em;
-    bottom: 2em;
+    bottom: 3em;
     right: 1em;
     color: var(--turquoise)!important;
 }
 
 .back-to-top *{
     color: var(--turquoise)!important;
+}
+
+.comments{
+	max-width: 1000px;
+  	margin: 2em auto;
+}
+
+#hyvor-talk-view{
+  	padding: 0 3em;
 }

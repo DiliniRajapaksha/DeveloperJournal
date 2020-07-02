@@ -1,9 +1,10 @@
 {% if page.comments %}
-<div id="hyvor-talk-view"></div>
+<div class="comments">
+	<div id="hyvor-talk-view"></div>
+</div>
 <script type="text/javascript">
     var HYVOR_TALK_WEBSITE = 1073; // DO NOT CHANGE THIS
     var HYVOR_TALK_CONFIG = {
-        url: '{{ page.url | absolute_url }}',
         id: '{{ page.url | absolute_url }}'
     };
 </script>

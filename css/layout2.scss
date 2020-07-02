@@ -332,7 +332,7 @@ main{
 	padding: 0 10vw;
 	grid-area: main;
 	display: grid;
-	grid: "article" "comments" / 1fr;
+	grid: "article" "article-footer" / 1fr;
 }
 
 article{
@@ -349,8 +349,8 @@ article{
 	padding-top: 3em;
 }
 
-.comments{
-	grid-area: comments;
+.article-footer{
+	grid-area: article-footer;
 }
 /*.visual{
 	max-width: 650px;
@@ -894,11 +894,21 @@ hr.gray{
 .back-to-top{
     position: fixed;
     padding: 1em;
-    bottom: 2em;
+    bottom: 2.5em;
     right: 1em;
     color: var(--turquoise)!important;
 }
 
 .back-to-top *{
     color: var(--turquoise)!important;
+}
+
+
+.comments{
+	max-width: 1000px;
+  	margin: 2em auto;
+}
+
+#hyvor-talk-view{
+  	padding: 0 3em;
 }
