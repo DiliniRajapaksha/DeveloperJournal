@@ -403,10 +403,10 @@ hr {
 	    margin-right: -2em;
 	    margin-top: -2em;
 	    padding-top: 2em;
-	    background-color: var(--sp-bt-green);
+	    background-color: #e2e2e2;
 	    padding-bottom: 0.5em;
 	    margin-bottom: 1em;
-	    color: #ffffff;
+	    color: var(--sp-bt-green);
 	 	h2{
 	    	font-size: 2em;
 	 	}
@@ -560,3 +560,14 @@ pre{
 .post-thumb{
 	max-width: 1140px;
 }
+
+.back-to-top *{
+    position: fixed;
+    padding: 1em;
+    bottom: 2em;
+    right: 1em;
+    color: var(--turquoise)!important;
+}
+/*.back-to-top a{
+    	color: var(--turquoise)!important;
+    }*/
