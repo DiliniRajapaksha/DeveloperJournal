@@ -78,6 +78,10 @@ redirect_from:
 
 {::options parse_block_html="true" /}
 
+<div class="hidden">
+    {% assign image = page.cover-image %}
+    {% include image.html image=image %}
+</div>
 
 In this post, I'll show you how TDD is done, step by step with a simple example. 
 
