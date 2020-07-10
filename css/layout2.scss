@@ -639,6 +639,11 @@ pre{
 .center{
 	text-align: center;
 }
+
+div.center{
+	margin: 0 auto;
+}
+
 .center-box{
 	margin: 3em auto;
 	max-width: 700px;
@@ -858,7 +863,12 @@ pre{
 }
 
 hr.gray{
-	border-top: 1px solid #f1f1f1;
+	display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 /* video post */

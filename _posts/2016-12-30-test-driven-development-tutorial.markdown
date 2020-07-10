@@ -13,6 +13,7 @@ categories: blog
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: All you need to know about TDD to get started and how it's done with a hands on example!
 excerpt_separator: <!--more-->
+name: tdd 
 
 cover-image:
     url: /assets/img/tdd/TDD-thumb.png
@@ -872,5 +873,30 @@ Not a new one every day, but the same coding exercise until you get sick of it.
 So, head over to [this repository](https://github.com/mwhelan/Katas){:target="_blank"} where you can find a list of Katas to practice and start now.
 
 
-Please leave a comment below and let me know which KATA you got started with!
+
+<hr class="gray">
+
+## Want to learn how TDD is done in a Spring Boot application? 
+{: .center}
+
+Check out the following course. <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+{: .center}
+
+In this course you will learn how to write unit tests before implementing a single line of bussiness logic, and also how to write seperate integration tests, while building a REST API with Spring Boot.
+
+<div class="maxw-700 center" markdown="0">
+    <div class="mg-tp-1 video-container center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TtQcdMr-MPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>  
+</div>
+
+<hr class="gray">
+
+{% include related-post.html post-name='junit' title = "Unit testing with JUnit 4" %}
+
+<hr class="gray">
+
+
+{% include related-post.html post-name='mockito' title = "Learn to mock with Mockito" %}
+
 {: .mg-bt-3}
