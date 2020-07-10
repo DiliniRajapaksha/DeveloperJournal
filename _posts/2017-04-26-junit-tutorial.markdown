@@ -8,6 +8,7 @@ categories: blog
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: In this tutorial we will look into the basics of JUnit 4 which are essential to writting quality unit tests that makes sense and are easy to maintain.
 excerpt_separator: <!--more-->
+name: junit
 cover-image: 
     url: /assets/img/junit/junit.png
     alt: How to write great unit tests with JUnit
@@ -334,7 +335,30 @@ public class GreetingTest {
 Again more elaborated examples could be found in the [JUnit4 wiki for Parameterized tests](https://github.com/junit-team/junit4/wiki/Parameterized-tests){:target="_blank"}
 
 
+<hr>
 
-Have you tried **TDD**? check this out! [Get started with Test Driven Development (A beginner's guide)]({% post_url 2016-12-30-test-driven-development-tutorial %})
+## Want to see how to write JUnit tests in a Spring Boot application? 
+{: .center}
 
-Please leave a comment and let me know if you liked it!
+Check out the following course. <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+{: .center}
+
+In this course you will learn how to write proper unit tests to test business logic in a Test First manner (or TDD), and also how to write seperate integration tests.
+
+<div class="maxw-700 center">
+    <div class="mg-tp-1 video-container center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TtQcdMr-MPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>  
+</div>
+
+
+<hr>
+
+{% include related-post.html post-name='tdd' title = "Learn TDD" %}
+
+<hr>
+
+
+{% include related-post.html post-name='mockito' title = "Learn to mock with Mockito" %}
+
+<hr>

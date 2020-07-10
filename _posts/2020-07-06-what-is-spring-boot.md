@@ -63,4 +63,17 @@ It's the **Spring Boot Actuator**, which lets you monitor and interact with the 
 Oh, by the way, Spring Boot also embeds a server, such as TOMCAT or Reactor Netty depending on the kind of application that you create, so You can bundle up your web application as a jar file and just run it without having to have a server.
 
 
+<hr>
+
+## Want to get started with Spring Boot?
+{: .center}
+
+Check out the following course. <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+{: .center}
+
+<div class="maxw-700 center">
+    <div class="mg-tp-1 video-container center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TtQcdMr-MPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>  
+</div>
 
