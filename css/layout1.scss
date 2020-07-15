@@ -88,8 +88,16 @@ video {
   border: 5px solid var(--brand-color);
 }
 
-ul, ol{
+/*ul, ol{
 	line-height: 2.5em;
+}*/
+
+li{
+	margin-bottom: 1em;
+
+	p{
+		margin-bottom: 0px;
+	}
 }
 
 .container{
@@ -516,6 +524,9 @@ pre{
 .mg-bt-3{
 	margin-bottom: 3em;
 }
+.mg-tp-1{
+	margin-top: 1em;
+}
 .gray-border-10{
 	border: 10px solid #CCCCCC;
 }
@@ -601,4 +612,26 @@ div.center {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.screen-shot{
+	margin: 1em;
+	border: 10px solid #CCCCCC;
+	margin-bottom: 3em;
+}
+
+.related-post{
+
+ 	a{
+		color: var(--title-color);
+		text-decoration: none;
+	}
+	
+	a:visited{
+		color: var(--title-color);
+	}
+
+	a:hover{
+		color: var(--turquoise);
+	}
 }
