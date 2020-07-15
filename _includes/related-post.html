@@ -1,7 +1,9 @@
 
 {% assign post = site.posts | where: 'name', include.post-name | first %}
 
-<h2 class="center mg-bt-1">{{include.title}}</h2> 
+
+<h2 class="center mg-bt-1 related-post"><a href="{{ post.url | prepend: site.baseurl }}" target="_blank">{{include.title}}</a></h2> 
+
 
 <div class="center maxw-700" markdown="0">
     <a href="{{ post.url | prepend: site.baseurl }}" target="_blank">

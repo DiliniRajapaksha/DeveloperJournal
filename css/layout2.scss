@@ -943,3 +943,20 @@ hr.gray{
     width: 100%;
     height: 100%;
 }
+
+.related-post{
+
+ 	a{
+
+		color: var(--title-color);
+		text-decoration: none;
+	}
+	
+	a:visited{
+		color: var(--title-color);
+	}
+
+	a:hover{
+		color: var(--turquoise);
+	}
+}

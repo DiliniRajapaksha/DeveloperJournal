@@ -12,12 +12,40 @@ description: "Spring Boot is a framework or rather a tool built on top of spring
 excerpt_separator: <!--more-->
 
 images: 
-  - url: /assets/img/spring-boot/what-is-spring-boot.png
+  - url: /assets/img/spring-boot/what-is-spring-boot.jpg
     alt: What is Spring Boot
     title: What is Spring Boot
+  - url: /assets/img/spring-boot/Spring initializr/Spring Initializr website.jpg
+    alt: Spring Initializr website
+    title: Spring Initializr website
+  - url: /assets/img/spring-boot/Spring initializr/Spring Initializr - select build tool.jpg
+    alt: Spring Initializr - select build tool
+    title: Spring Initializr - select build tool
+  - url: /assets/img/spring-boot/Spring initializr/Spring Initializr-defaults.jpg
+    alt: Spring Initializr-defaults
+    title: Spring Initializr-defaults
+  - url: /assets/img/spring-boot/Spring initializr/Spring Initializr-addDependencies.jpg
+    alt: Spring Initializr-defaults
+    title: Spring Initializr-defaults
+  - url: /assets/img/spring-boot/Spring initializr/Spring Initializr-Dependencies.jpg
+    alt: Spring Initializr-defaults
+    title: Spring Initializr-defaults
+  - url: /assets/img/spring-boot/Spring initializr/Spring Initializr-Dependencies-1.jpg
+    alt: Spring Initializr-defaults
+    title: Spring Initializr-defaults
+  - url: /assets/img/spring-boot/Spring initializr/Spring Initializr-Dependencies-2.jpg
+    alt: Spring Initializr-defaults
+    title: Spring Initializr-defaults
+  - url: /assets/img/spring-boot/Spring initializr/Spring Initializr-Dependencies-3.jpg
+    alt: Spring Initializr-defaults
+    title: Spring Initializr-defaults
+  - url: /assets/img/spring-boot/Spring initializr/Spring Initializr-Dependencies-4.jpg
+    alt: Spring Initializr-defaults
+    title: Spring Initializr-defaults
+
 
 cover-image: 
-    url: /assets/img/spring-boot/what-is-spring-boot.png
+    url: /assets/img/spring-boot/what-is-spring-boot.jpg
     alt: What is Spring Boot
     title: What is Spring Boot
 ---
@@ -26,7 +54,7 @@ cover-image:
 If you've ever set up a spring application in the past, you would know the pain!
 How much configuration that has to be done.  :sweat:
 
-Well, Spring Boot makes the developer's life easier. :joy:
+Well, Spring Boot is here to make the developer's life easier. :joy:
 
 Spring Boot still uses the Spring framework under the hood, but almost all of the configuration is done for you if you wish.
 
@@ -35,6 +63,12 @@ Whether you use Spring Boot or Spring framework, you would still create a Spring
 So in this post let's take a look at the Spring Boot framework.
 
 <!--more-->
+
+<hr>
+
+# What is Spring Boot?
+
+<hr>
 
 **Spring Boot is a framework which helps create standalone Spring applications that are production-grade. 
 It's built on top of the Spring framework and takes an opinionated view of the Spring platform to minimize the configuration required by a typical Spring application.
@@ -52,7 +86,7 @@ How is it possible?
 
 Well, **Spring Boot starters** and **Autoconfiguration** makes the project set up so quick and easy that you only have to know which kind of application you want to create. 
 
-For example, if you tell the [Spring Initializr](#spring-initilizr) that you want to create a web application, it will create the build file with all the required dependencies and the project folder structure along with a sample application class which you can just run.
+For example, if you tell the [Spring Initializr](#spring-initializr) that you want to create a web application, it will create the build file with all the required dependencies and the project folder structure along with a sample application class which you can just run.
 
 But this doesn't mean that you are confined to what has been chosen or configured by the framework for you. You can customize whatever is needed according to your preference or requirement.
 
@@ -62,13 +96,37 @@ It's the **Spring Boot Actuator**, which lets you monitor and interact with the 
 
 Oh, by the way, Spring Boot also embeds a server, such as TOMCAT or Reactor Netty depending on the kind of application that you create, so You can bundle up your web application as a jar file and just run it without having to have a server.
 
+<hr>
+
+# Spring Initializr
+
+<hr>
+
+**Spring initializr is a website or a web-based tool that can be used to set up a Spring Boot project.**
+
+Of course, you can set up a Spring Boot project without using the Spring initializr, but the advantage of using the Spring initializr is that it speeds up the process and does most of the groundwork for you.
+
+All you have to do is to go to [start.spring.io](https://start.spring.io/) and add the spring boot starter dependencies that you want, (eg: web, JPA and H2 etc...) and generate the project!
+
+Spring initialzr will do the following:
+
+- Creates the build file with all the required dependencies, plugins and also takes care of the versions.
+- Creates the project structure or the folder structure for your project.
+
+Now you can start implementing, and yes you can do any customizations to the build file or the project setup as much as you like.
+
+<hr>
+
+{% include related-post.html post-name='spring-initializr' title = "How to set up a Spring Boot project using Spring Initializr" %}
+
+<hr>
 
 <hr>
 
 ## Want to get started with Spring Boot?
 {: .center}
 
-Check out the following course. <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+Check out the course. <i class="fa fa-hand-o-down" aria-hidden="true"></i>
 {: .center}
 
 <div class="maxw-700 center">
@@ -76,4 +134,3 @@ Check out the following course. <i class="fa fa-hand-o-down" aria-hidden="true">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/TtQcdMr-MPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>  
 </div>
-
