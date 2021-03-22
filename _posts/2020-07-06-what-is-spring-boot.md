@@ -15,42 +15,12 @@ images:
   - url: /assets/img/spring-boot/what-is-spring-boot.jpg
     alt: What is Spring Boot
     title: What is Spring Boot
-  - url: /assets/img/spring-boot/Spring initializr/Spring Initializr website.jpg
-    alt: Spring Initializr website
-    title: Spring Initializr website
-  - url: /assets/img/spring-boot/Spring initializr/Spring Initializr - select build tool.jpg
-    alt: Spring Initializr - select build tool
-    title: Spring Initializr - select build tool
-  - url: /assets/img/spring-boot/Spring initializr/Spring Initializr-defaults.jpg
-    alt: Spring Initializr-defaults
-    title: Spring Initializr-defaults
-  - url: /assets/img/spring-boot/Spring initializr/Spring Initializr-addDependencies.jpg
-    alt: Spring Initializr-defaults
-    title: Spring Initializr-defaults
-  - url: /assets/img/spring-boot/Spring initializr/Spring Initializr-Dependencies.jpg
-    alt: Spring Initializr-defaults
-    title: Spring Initializr-defaults
-  - url: /assets/img/spring-boot/Spring initializr/Spring Initializr-Dependencies-1.jpg
-    alt: Spring Initializr-defaults
-    title: Spring Initializr-defaults
-  - url: /assets/img/spring-boot/Spring initializr/Spring Initializr-Dependencies-2.jpg
-    alt: Spring Initializr-defaults
-    title: Spring Initializr-defaults
-  - url: /assets/img/spring-boot/Spring initializr/Spring Initializr-Dependencies-3.jpg
-    alt: Spring Initializr-defaults
-    title: Spring Initializr-defaults
-  - url: /assets/img/spring-boot/Spring initializr/Spring Initializr-Dependencies-4.jpg
-    alt: Spring Initializr-defaults
-    title: Spring Initializr-defaults
-
 
 cover-image: 
     url: /assets/img/spring-boot/what-is-spring-boot.jpg
     alt: What is Spring Boot
     title: What is Spring Boot
 ---
-
-
 
 If you've ever set up a spring application in the past, you would know the pain!
 How much configuration that has to be done.  :sweat:
@@ -135,6 +105,7 @@ dependencies {
 Similarly, if you want to use Spring Data Jpa, you would add the `spring-boot-starter-data-jpa` dependency to your project.
 
 **Below is a list of Spring Boot starter dependencies, each with the link to it's `build.gradle` file.**
+
 There’s a list of all the starters available in the [Spring Boot Documentation](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-starter){:target="_blank"} along with a brief description of each, and the table below is derived from it.
 
 
@@ -201,11 +172,13 @@ There’s a list of all the starters available in the [Spring Boot Documentation
 
 If you have worked with a typical spring application, you should be familiar with all the configurations that are needed such as, data sources, entity manager factories, dispatcher servlets and the list goes on. 
 
-How autoconfiguration works: The spring boot framework kind of looks at the jar dependencies that you have added and the existing configurations for the application if there is any, and then based on these, automatically configures your Spring application. 
+### How autoconfiguration works
+
+The spring boot framework kind of looks at the jar dependencies that you have added and the existing configurations for the application if there is any, and then based on these, automatically configures your Spring application. 
 
 For example, if H2 is on your classpath, and you have not manually configured any database connection beans, then Spring Boot auto-configures an in-memory database. How convenient is that? :satisfied:  
 
-However, auto-configuration is non-invasive. you can define your own configuration to replace specific parts of the auto-configuration as and when you want, but initially it is so much faster and easier to get started without having to deal with a lot of configuration manually.
+However, **auto-configuration is non-invasive**. you can define your own configuration to replace specific parts of the auto-configuration as and when you want, but initially it is so much faster and easier to get started without having to deal with a lot of configuration manually.
 
 Auto-configuration is the reason why the Pivotal team says ["It's a Kind of Magic!"](https://youtu.be/jDchAEHIht0){:target="_blank"}
 
@@ -233,8 +206,6 @@ Now you can start implementing, and yes you can do any customizations to the bui
 <hr>
 
 {% include related-post.html post-name='spring-initializr' title = "How to set up a Spring Boot project using Spring Initializr" %}
-
-
 
 <hr>
 
