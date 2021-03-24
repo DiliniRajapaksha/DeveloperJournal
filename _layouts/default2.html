@@ -4,7 +4,7 @@
 
  <head>
   
-  <link rel="stylesheet" href={{ "/css/layout2.css" | prepend: site.baseurl }}>
+  <link rel="stylesheet" href={{ "/css/layout2.css" | prepend: site.baseurl }}?{{ site.time | date: '%s%N' }}">
   <link rel="stylesheet" href={{ "/fonts/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}>
 
   <!-- Google Tag Manager -->
@@ -50,7 +50,8 @@
     <div class="container">
     
       {% include header.html %}
-
+      
+      {% include back-to-top.html %}
       <main>
         {{content}}
       </main>

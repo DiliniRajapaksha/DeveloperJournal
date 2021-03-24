@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-
+order: 4
 title:  "How to Mock REST API with SOAP UI (Step by step guide)"
 date:   2017-11-15 
 categories: blog
@@ -122,7 +122,7 @@ images:
 ads:
     - url: /courses/the-spring-boot-course
       img: 
-        url: /assets/img/spring-boot-course/christmas-special.png
+        url: /assets/img/spring-boot-course/course-ad.png
         alt: Spring Boot Course
         title: Spring Boot Course
 
@@ -277,7 +277,7 @@ The mock service can also be called using a browser
 </div>
 
 
-<div>
+<div class="center">
 {% assign ad = page.ads[0] %}
 {% include inline-ad.html ad=ad %}
 </div>

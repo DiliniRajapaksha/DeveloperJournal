@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-
+order: 3
 aside: true
 content-upgrade:
     title: SOURCE CODE
@@ -16,6 +16,7 @@ categories: blog
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: "Learn to write elegant unit tests and mock dependencies with Mockito. Mockito is a mocking framework for Java which is extremely easy to use, so this post will discuss all the cool features you need to know about mockito with simple and easy examples."
 excerpt_separator: <!--more-->
+name: mockito
 cover-image:
     url: /assets/img/mockito/mockito3.png
     alt: Mockito Tutorial
@@ -29,7 +30,7 @@ image: /assets/img/mockito/mockito3.png
 ads:
     - url: /courses/the-spring-boot-course
       img: 
-        url: /assets/img/spring-boot-course/christmas-special.png
+        url: /assets/img/spring-boot-course/course-ad.png
         alt: Spring Boot Course
         title: Spring Boot Course
 
@@ -280,7 +281,7 @@ public class CustomerServiceTest {
 ~~~
 {: .language-java}
 
-<div>
+<div class="center">
 {% assign ad = page.ads[0] %}
 {% include inline-ad.html ad=ad %}
 </div>
@@ -546,7 +547,8 @@ That's it on this post, please check out the below websites for more cool featur
 
 [Wiki page](https://github.com/mockito/mockito/wiki)
 
-Btw here's the part-1 [How to write great unit tests with JUnit]({% post_url 2017-04-26-junit-tutorial %})
+<hr>
 
-Please let me know how you liked this tutorial, and what you would want me to write about in future posts in the comments below.
+{% include related-post.html post-name='junit' title = "Unit testing with JUnit 4" %}
 
+<hr>

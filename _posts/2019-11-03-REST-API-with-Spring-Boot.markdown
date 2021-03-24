@@ -1,31 +1,31 @@
 ---
 
 layout: course-page
-header-style: bg-sp-bt
+header-style: sp-bt-header bg-dark-gray
 intro-style: bg-sp-bt
-title-style: sp-bt
+title-style: sp-bt-header
 title-tag:  "Learn Spring Boot in 2 hours"
 title-post-pre: "Learn"
 title-post: "Spring Boot"
 title-post-sub: "How to build a REST API with Spring Boot"
 date:   2019-11-03
-categories: courses
+categories: courses/spring-boot
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: In this Spring Boot Crash Course I will teach you how to build a REST API with Spring Boot in just 2 hours.
-
+ 
 excerpt_separator: <!--more-->
 
 cover-image:
-    url: /assets/img/spring-boot-course/christmas-special.png
+    url: /assets/img/spring-boot-course/thumb.jpg
     alt: Learn Spring Boot 
     title: The Spring Boot Course
 
 youtube-videos:
-    - url: https://youtu.be/C2-0IqY0Wfk
+    - url: https://youtu.be/pdX8BM9mi9E
       image:
           url: /assets/img/spring-boot-course/lesson1.png
           alt: 'Lesson 1'
-    - url: https://youtu.be/5fpGrH6O5tQ
+    - url: https://youtu.be/6YJq9Vng074
       image:
           url: /assets/img/spring-boot-course/lesson2.png
           alt: 'Lesson 2'
@@ -55,7 +55,7 @@ Throughout this course, we’ll build a **REST API** which would **save retrieve
 ### PROJECT SET UP
 {: .module-title .center}
 
-#### Lesson 1: Set up the project using Spring Initializr  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch now!](https://javacodehouse-training.thinkific.com/courses/spring-boot){: .btn-sm-play}
+#### [Lesson 1: Set up the project using Spring Initializr]({% post_url 2021-03-23-lesson-1-spring-initializr %}){: .lesson-title-link}  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!]({{ page.youtube-videos[0].url }}){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 
@@ -73,7 +73,7 @@ Throughout this course, we’ll build a **REST API** which would **save retrieve
 
 
 
-#### Lesson 2: Set up the project using Gradle without Spring Initializr  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch now!](https://javacodehouse-training.thinkific.com/courses/spring-boot){: .btn-sm-play}
+#### [Lesson 2: Set up the project using Gradle without Spring Initializr]({% post_url 2021-03-24-lesson-2-gradle-project-setup%}){: .lesson-title-link}  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!]({{ page.youtube-videos[1].url }}){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -328,7 +328,7 @@ Write some integration tests for deleting the comment
 
 <div class="mg-tp-3 center">
 <a class="btn-md-play" href="https://javacodehouse-training.thinkific.com/courses/spring-boot" target="_blank">
-<i class="fa fa-play-circle" aria-hidden="true"></i> Enrol Now for just $3.99!
+<i class="fa fa-play-circle" aria-hidden="true"></i> Enrol Now!
 </a>  
 </div>
 

@@ -1,5 +1,6 @@
 ---
 layout: post2
+order: 1
 comments: true
 header-style: bg-dark-gray
 intro-style: bg-dark-gray
@@ -10,11 +11,12 @@ date:   2016-12-30 13:33:41 +1100
 last-updated: 2019-07-29
 categories: blog
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
-description: In this post I show you how TDD is done with a Hello world Example in JAVA, step by step.
+description: All you need to know about TDD to get started and how it's done with a hands on example!
 excerpt_separator: <!--more-->
+name: tdd 
 
 cover-image:
-    url: /assets/img/tdd/TDD_1.png
+    url: /assets/img/tdd/TDD-thumb.png
     alt: Test Driven Development Tutorial
     title: Test Driven Development Demo
 
@@ -77,6 +79,10 @@ redirect_from:
 
 {::options parse_block_html="true" /}
 
+<div class="hidden">
+    {% assign image = page.cover-image %}
+    {% include image.html image=image %}
+</div>
 
 In this post, I'll show you how TDD is done, step by step with a simple example. 
 
@@ -867,5 +873,30 @@ Not a new one every day, but the same coding exercise until you get sick of it.
 So, head over to [this repository](https://github.com/mwhelan/Katas){:target="_blank"} where you can find a list of Katas to practice and start now.
 
 
-Please leave a comment below and let me know which KATA you got started with!
+
+<hr class="gray">
+
+## Want to learn how TDD is done in a Spring Boot application? 
+{: .center}
+
+Check out the following course. <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+{: .center}
+
+In this course you will learn how to write unit tests before implementing a single line of bussiness logic, and also how to write seperate integration tests, while building a REST API with Spring Boot.
+
+<div class="maxw-700 center" markdown="0">
+    <div class="mg-tp-1 video-container center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TtQcdMr-MPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>  
+</div>
+
+<hr class="gray">
+
+{% include related-post.html post-name='junit' title = "Unit testing with JUnit 4" %}
+
+<hr class="gray">
+
+
+{% include related-post.html post-name='mockito' title = "Learn to mock with Mockito" %}
+
 {: .mg-bt-3}
