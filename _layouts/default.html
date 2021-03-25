@@ -20,7 +20,10 @@
       </main>
 
       <aside>
-        {% include sidebar.html %}
+          {% if page.aside %}
+            {% include sidebar.html %}
+          {% endif %}
+        
       </aside>
    
       {% include footer.html %}
