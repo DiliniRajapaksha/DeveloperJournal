@@ -63,21 +63,21 @@ On Mac: `./gradlew eclipse`
 
 # Links
 
-Core Gradle plugins: <https://docs.gradle.org/current/userguide/plugin_reference.html>
+Core Gradle plugins: <https://docs.gradle.org/current/userguide/plugin_reference.html>{:target="_blank"}
 
-Build Init plugin - <https://docs.gradle.org/current/userguide/build_init_plugin.html>
+Build Init plugin - <https://docs.gradle.org/current/userguide/build_init_plugin.html>{:target="_blank"}
 
-Java plugin - <https://docs.gradle.org/current/userguide/java_plugin.html>
+Java plugin - <https://docs.gradle.org/current/userguide/java_plugin.html>{:target="_blank"}
 
-eclipse plugin - <https://docs.gradle.org/current/userguide/eclipse_plugin.html>
+eclipse plugin - <https://docs.gradle.org/current/userguide/eclipse_plugin.html>{:target="_blank"}
 
-idea plugin - <https://docs.gradle.org/current/userguide/idea_plugin.html>
+idea plugin - <https://docs.gradle.org/current/userguide/idea_plugin.html>{:target="_blank"}
 
-Gradle plugins portal:  <https://plugins.gradle.org/>
+Gradle plugins portal:  <https://plugins.gradle.org/>{:target="_blank"}
 
-Spring Boot plugin - <https://plugins.gradle.org/plugin/org.springframework.boot>
+Spring Boot plugin - <https://plugins.gradle.org/plugin/org.springframework.boot>{:target="_blank"}
 
-Spring dependency management plugin - <https://plugins.gradle.org/plugin/io.spring.dependency-management>
+Spring dependency management plugin - <https://plugins.gradle.org/plugin/io.spring.dependency-management>{:target="_blank"}
 
 <hr class="gray">
 
