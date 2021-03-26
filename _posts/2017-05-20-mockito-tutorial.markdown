@@ -28,9 +28,9 @@ images:
 image: /assets/img/mockito/mockito3.png
 
 ads:
-    - url: /courses/the-spring-boot-course
+    - url: /courses/spring-boot/REST-API-with-Spring-Boot
       img: 
-        url: /assets/img/spring-boot-course/course-ad.png
+        url: /assets/img/spring-boot-course/thumb.jpg
         alt: Spring Boot Course
         title: Spring Boot Course
 

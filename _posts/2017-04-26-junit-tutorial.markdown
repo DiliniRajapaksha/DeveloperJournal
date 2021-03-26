@@ -36,9 +36,9 @@ content-upgrade:
     mailmunch-href: mailmunch-pop-743283
 
 ads:
-    - url: /courses/the-spring-boot-course
+    - url: /courses/spring-boot/REST-API-with-Spring-Boot
       img: 
-        url: /assets/img/spring-boot-course/course-ad.png
+        url: /assets/img/spring-boot-course/thumb.jpg
         alt: Spring Boot Course
         title: Spring Boot Course
 
@@ -345,11 +345,16 @@ Check out the following course. <i class="fa fa-hand-o-down" aria-hidden="true">
 
 In this course you will learn how to write proper unit tests to test business logic in a Test First manner (or TDD), and also how to write seperate integration tests.
 
-<div class="maxw-700 center">
+<div class="center">
+{% assign ad = page.ads[0] %}
+{% include inline-ad.html ad=ad %}
+</div>
+
+<!-- <div class="maxw-700 center">
     <div class="mg-tp-1 video-container center">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/TtQcdMr-MPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>  
-</div>
+</div> -->
 
 
 <hr>

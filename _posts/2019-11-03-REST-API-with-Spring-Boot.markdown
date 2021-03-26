@@ -99,7 +99,7 @@ Then generate the eclipse configuration files and import the project to eclipse.
 ### DESIGN
 {: .module-title .center}
 
-#### Lesson 3: Design
+#### Lesson 3: Design <span> Coming Soon </span>{: .btn-sm-play-pink}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -181,7 +181,7 @@ In this lesson, we move the business logic to the service layer by refactoring t
 
 </div>
 
-#### Lesson 8: Making a Spring Boot Application  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch now!](https://javacodehouse-training.thinkific.com/courses/spring-boot){: .btn-sm-play}
+#### Lesson 8: Making a Spring Boot Application 
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -324,12 +324,6 @@ Write some integration tests for deleting the comment
 
 </div>
 
-</div>
-
-<div class="mg-tp-3 center">
-<a class="btn-md-play" href="https://javacodehouse-training.thinkific.com/courses/spring-boot" target="_blank">
-<i class="fa fa-play-circle" aria-hidden="true"></i> Enrol Now!
-</a>  
 </div>
 
 </div>
