@@ -16,6 +16,14 @@ images:
     alt: What is Spring Boot
     title: What is Spring Boot
 
+
+ads:
+    - url: /courses/spring-boot/REST-API-with-Spring-Boot
+      img: 
+        url: /assets/img/spring-boot-course/thumb.jpg
+        alt: Spring Boot Course
+        title: Spring Boot Course
+
 cover-image: 
     url: /assets/img/spring-boot/what-is-spring-boot.jpg
     alt: What is Spring Boot
@@ -215,8 +223,7 @@ Now you can start implementing, and yes you can do any customizations to the bui
 Check out the course. <i class="fa fa-hand-o-down" aria-hidden="true"></i>
 {: .center}
 
-<div class="maxw-700 center">
-    <div class="mg-tp-1 video-container center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/TtQcdMr-MPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>  
+<div class="center">
+{% assign ad = page.ads[0] %}
+{% include inline-ad.html ad=ad %}
 </div>
