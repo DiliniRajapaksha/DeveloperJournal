@@ -29,6 +29,10 @@ youtube-videos:
       image:
           url: /assets/img/spring-boot-course/lesson2.png
           alt: 'Lesson 2'
+    - url: https://youtu.be/4OqQtCRb2r8
+      image:
+          url: /assets/img/spring-boot-course/lesson3.png
+          alt: 'Lesson 3'
     - url: https://youtu.be/nSu1wMXsPqY
       image:
           url: /assets/img/spring-boot-course/lesson8.png
@@ -99,7 +103,7 @@ Then generate the eclipse configuration files and import the project to eclipse.
 ### DESIGN
 {: .module-title .center}
 
-#### Lesson 3: Design <span> Coming Soon </span>{: .btn-sm-play-pink}
+#### [Lesson 3: Design]({% post_url 2021-03-28-lesson-3-design%}){: .lesson-title-link}  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!]({{ page.youtube-videos[2].url }}){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -126,7 +130,7 @@ Then generate the eclipse configuration files and import the project to eclipse.
 This module consists of several lessons on **Unit Testing, Implementation** and also **Integration Testing** the API.
 {: .pd-1}
 
-#### Lesson 4: Endpoint implementation to retrieve comments - part 1 (The Controller)
+#### Lesson 4: Endpoint implementation to retrieve comments - part 1 (The Controller)  <span> Coming Soon </span>{: .btn-sm-play-pink}
 {: .lesson-title}
 
 <div class="arrow-down" />
