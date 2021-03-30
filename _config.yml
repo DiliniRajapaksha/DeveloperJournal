@@ -27,4 +27,6 @@ plugins:
   - jemoji
 permalink: /:categories/:title/
 
+course-url: /courses/spring-boot/
+
 general_mailmunch_popup: mailmunch-pop-747983

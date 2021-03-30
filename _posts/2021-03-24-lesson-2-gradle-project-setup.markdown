@@ -1,6 +1,6 @@
 ---
 
-layout: post
+layout: lesson
 comments: true
 
 title:  "REST API with Spring Boot | Lesson 2"
@@ -21,10 +21,12 @@ cover-image:
     alt: spring initializr
     title: spring initializr
 
----
+next-lesson:
+    title: Lesson 3 - Designing the REST API
+    url: lesson-3-design
 
-{% assign video = page.youtube %}
-{% include youtube-video.html video=video %}
+
+---
 
 <hr class="gray">
 
@@ -81,7 +83,5 @@ Spring dependency management plugin - <https://plugins.gradle.org/plugin/io.spri
 
 <hr class="gray">
 
-## Next
 
-### Lesson 3: Design (Coming up soon)
 

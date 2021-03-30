@@ -17,6 +17,17 @@ layout: default
 	<div class="content" itemprop="articleBody">
 	  	{{ content }}
 	</div>
+
+	{% if page.next-lesson %}
+		<div class="next">
+			<h2>Next</h2>
+			{% if page.next-lesson.url %}
+				<h3><a href="{{ page.next-lesson.url | prepend: site.course-url }}">{{ page.next-lesson.title }}</a></h3>
+			{% else %}
+				<h3>{{ page.next-lesson.title }} (Coming soon)</h3>
+			{% endif %}
+		</div>
+	{% endif %}
 </article>
 <div class="article-footer">
 	
