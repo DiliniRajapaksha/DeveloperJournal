@@ -26,8 +26,11 @@ images:
     alt: Spring Boot Application architecture
     title: Spring Boot Application architecture
 
----
+next-lesson:
+    title: Lesson 4 - Endpoint implementation to retrieve comments - part 1 (Controller)
+    url: lesson-4-testing-implementation
 
+---
 
 
 <hr>
@@ -184,9 +187,4 @@ The application code is organised into three layers.
 |Controller|holds the API classes which would serve the incoming requests|
 {: .table}
 
-
-
-## Next
-
-### Lesson 4: Endpoint implementation to retrieve comments - part 1 (The Controller) | Coming soon
 
