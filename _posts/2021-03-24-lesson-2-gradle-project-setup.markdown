@@ -81,7 +81,7 @@ Spring Boot plugin - <https://plugins.gradle.org/plugin/org.springframework.boot
 
 Spring dependency management plugin - <https://plugins.gradle.org/plugin/io.spring.dependency-management>{:target="_blank"}
 
-<hr class="gray">
+
 
 
 
