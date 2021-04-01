@@ -1,9 +1,9 @@
 ---
 
-layout: post
+layout: lesson
 comments: true
 
-title:  "REST API with Spring Boot | Lesson 1"
+title:  "REST API with Spring Boot | Lesson 1 | Spring Initializr"
 date:   2021-03-23
 categories: courses/spring-boot
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
@@ -21,10 +21,12 @@ cover-image:
     alt: spring initializr
     title: spring initializr
 
----
 
-{% assign video = page.youtube %}
-{% include youtube-video.html video=video %}
+next-lesson:
+    title: Lesson 2 - Set up the project using Gradle without Spring Initializr
+    url: lesson-2-gradle-project-setup
+
+---
 
 <hr class="gray">
 
@@ -104,12 +106,9 @@ Spring boot starters:
 
 <hr>
 
-* The Spring Initializr UI shown in the video above has been updated, if you want to see the latest, checkout this [Spring Initializr]({% post_url 2020-07-13-spring-initializr %}) tutorial 
+The Spring Initializr UI shown in the video above has been updated, if you want to see the latest, checkout this [Spring Initializr]({% post_url 2020-07-13-spring-initializr %}) tutorial 
+{: .gray-box}
 
-<hr>
 
-## Next
-
-### Lesson 2: [Set up the project using Gradle without Spring Initializr]({% post_url 2021-03-24-lesson-2-gradle-project-setup %})
 
 

@@ -23,20 +23,20 @@ cover-image:
 youtube-videos:
     - url: https://youtu.be/pdX8BM9mi9E
       image:
-          url: /assets/img/spring-boot-course/lesson1.png
+          url: /assets/img/spring-boot-course/Lesson 1 - Spring Initializr.png
           alt: 'Lesson 1'
     - url: https://youtu.be/6YJq9Vng074
       image:
-          url: /assets/img/spring-boot-course/lesson2.png
+          url: /assets/img/spring-boot-course/Lesson 2 - Gradle.png
           alt: 'Lesson 2'
     - url: https://youtu.be/4OqQtCRb2r8
       image:
-          url: /assets/img/spring-boot-course/lesson3.png
+          url: /assets/img/spring-boot-course/Lesson 3 - Design.png
           alt: 'Lesson 3'
     - url: https://youtu.be/Gq0gBKKLM-I
       image:
-          url: /assets/img/spring-boot-course/lesson3.png
-          alt: 'Lesson 3'          
+          url: /assets/img/spring-boot-course/Lesson 4 - controller.png
+          alt: 'Lesson 4'          
     - url: https://youtu.be/nSu1wMXsPqY
       image:
           url: /assets/img/spring-boot-course/lesson8.png
