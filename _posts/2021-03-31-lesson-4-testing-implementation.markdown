@@ -23,7 +23,7 @@ cover-image:
 
 next-lesson:
     title: Lesson 5 - Endpoint implementation to retrieve comments - part 2 (The Service) 
-    url:
+    url: https://youtu.be/LJjgx3Dra90
 
 ---
 
