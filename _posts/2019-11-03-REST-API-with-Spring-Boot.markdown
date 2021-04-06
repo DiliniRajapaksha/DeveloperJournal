@@ -156,7 +156,7 @@ That means, as, in all of the implementations throughout the project, we **write
 {: .pd-1}
 </div>
 
-#### Lesson 5: Endpoint implementation to retrieve comments - part 2 (The Service)({% post_url 2021-04-05-lesson-5-testing-implementation%}){: .lesson-title-link}  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!]({{ page.youtube-videos[4].url }}){:target="_blank"}{: .btn-sm-play}
+#### [Lesson 5: Endpoint implementation to retrieve comments - part 2](The Service)({% post_url 2021-04-05-lesson-5-testing-implementation%}){: .lesson-title-link}  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!]({{ page.youtube-videos[4].url }}){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
