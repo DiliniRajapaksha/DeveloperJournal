@@ -11,7 +11,7 @@ description: "Unit Testing and Implementation of the Service"
 excerpt_separator: <!--more-->
 
 youtube:
-    url: https://youtu.be/Gq0gBKKLM-I
+    url: https://youtu.be/LJjgx3Dra90
     image:
         url: /assets/img/spring-boot-course/Lesson 5 - service.png
         alt: 'Lesson 5'

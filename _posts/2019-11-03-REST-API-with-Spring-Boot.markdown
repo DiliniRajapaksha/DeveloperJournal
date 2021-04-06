@@ -36,7 +36,15 @@ youtube-videos:
     - url: https://youtu.be/Gq0gBKKLM-I
       image:
           url: /assets/img/spring-boot-course/Lesson 4 - controller.png
-          alt: 'Lesson 4'          
+          alt: 'Lesson 4'     
+    - url: https://youtu.be/LJjgx3Dra90
+      image:
+          url: /assets/img/spring-boot-course/Lesson 4 - controller.png
+          alt: 'Lesson 5'      
+    - url: https://youtu.be/UAs8rCeDBZU
+      image:
+          url: /assets/img/spring-boot-course/Lesson 4 - controller.png
+          alt: 'Lesson 6'    
     - url: https://youtu.be/nSu1wMXsPqY
       image:
           url: /assets/img/spring-boot-course/lesson8.png
@@ -148,7 +156,7 @@ That means, as, in all of the implementations throughout the project, we **write
 {: .pd-1}
 </div>
 
-#### Lesson 5: Endpoint implementation to retrieve comments - part 2 (The Service)
+#### Lesson 5: Endpoint implementation to retrieve comments - part 2 (The Service)({% post_url 2021-04-05-lesson-5-testing-implementation%}){: .lesson-title-link}  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!]({{ page.youtube-videos[4].url }}){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />

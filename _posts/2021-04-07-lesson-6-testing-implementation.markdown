@@ -3,7 +3,7 @@
 layout: lesson
 comments: true
 
-title:  "REST API with Spring Boot | Lesson 6 | Endpoint implementation to retrieve comments - part 3 - The Repository"
+title:  "REST API with Spring Boot | Lesson 6 | Spring Data | The Repository"
 date:   2021-04-07
 categories: courses/spring-boot
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
