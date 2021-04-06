@@ -22,7 +22,7 @@ cover-image:
     title: Unit Testing and Implementation
 
 next-lesson:
-    title: Lesson 6 - Endpoint implementation to retrieve comments - part 3 - The Repository
-    url: 
+    title: Lesson 6 - Spring Data | The Repository
+    url: lesson-6-spring-data
 
 ---
