@@ -39,11 +39,11 @@ youtube-videos:
           alt: 'Lesson 4'     
     - url: https://youtu.be/LJjgx3Dra90
       image:
-          url: /assets/img/spring-boot-course/Lesson 4 - controller.png
+          url: /assets/img/spring-boot-course/Lesson 5 - service.png
           alt: 'Lesson 5'      
     - url: https://youtu.be/UAs8rCeDBZU
       image:
-          url: /assets/img/spring-boot-course/Lesson 4 - controller.png
+          url: /assets/img/spring-boot-course/Lesson 6 - Repository.png
           alt: 'Lesson 6'    
     - url: https://youtu.be/nSu1wMXsPqY
       image:
@@ -156,7 +156,7 @@ That means, as, in all of the implementations throughout the project, we **write
 {: .pd-1}
 </div>
 
-#### [Lesson 5: Endpoint implementation to retrieve comments - part 2](The Service)({% post_url 2021-04-05-lesson-5-testing-implementation%}){: .lesson-title-link}  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!]({{ page.youtube-videos[4].url }}){:target="_blank"}{: .btn-sm-play}
+#### [Lesson 5: Endpoint implementation to retrieve comments - part 2 | The Service ]({% post_url 2021-04-05-lesson-5-testing-implementation%}){: .lesson-title-link}  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!]({{ page.youtube-videos[4].url }}){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -167,7 +167,7 @@ In this lesson, we move the business logic to the service layer by refactoring t
 
 </div>
 
-#### Lesson 6: Endpoint implementation to retrieve comments - part 3 (The Repository)
+#### [Lesson 6: Endpoint implementation to retrieve comments - part 3 | Spring Data]({% post_url 2021-04-07-lesson-6-spring-data%}){: .lesson-title-link}  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!]({{ page.youtube-videos[5].url }}){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
