@@ -46,9 +46,9 @@ youtube-videos:
           url: /assets/img/spring-boot-course/Lesson 6 - Repository.png
           alt: 'Lesson 6'    
     - url: https://youtu.be/BBE3MJLuTqU
-          image:
-              url: /assets/img/spring-boot-course/Lesson 7 - int1.png
-              alt: 'Lesson 7'    
+      image:
+          url: /assets/img/spring-boot-course/Lesson 7 - int1.png
+          alt: 'Lesson 7'    
     - url: https://youtu.be/nSu1wMXsPqY
       image:
           url: /assets/img/spring-boot-course/lesson8.png

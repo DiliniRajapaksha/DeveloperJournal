@@ -47,14 +47,14 @@ next-lesson:
 
 <hr>
 
-Now that I have implemented a apart of the API across all 3 layers, it's time to write an integration test.
+Now that I have implemented a part of the API across all 3 layers, it's time to write an integration test.
 
 <div class="img-md">
   {% assign image = page.images[0] %}
     {% include image.html image=image %}
 </div> 
 
-For the integration test I want to send a get request to the api and it should go through all three layers and come back with a response, and this response will be asserted according to the expectations of the api.
+For the integration test, I want to send a get request to the API and it should go through all three layers and come back with a response, and this response will be asserted according to the expectations of the API.
 
 
 ### Two approaches to Integration testing with Spring
@@ -74,7 +74,7 @@ For the integration test I want to send a get request to the api and it should g
       {% include image.html image=image %}
   </div>
 
-So I'm going to use the second approach in my integration tests. For this I need the support of the `MockMvc` class.
+So I'm going to use the second approach in my integration tests. For this, I need the support of the `MockMvc` class.
 
 Using the `MockMvc` I can `perform` GET, POST, AND DELETE operations. 
 
@@ -111,20 +111,20 @@ Let's see why we need them.
 
 ### @RunWith(SpringRunner.class)
 
-This will bring Spring’s testing support to our JUnit test, such as loading the application context and autowiring the beans.
+This will bring Spring’s testing support to our JUnit test, such as loading the application context and auto wiring the beans.
 
-*This annotations is not required when using JUnit5*
+* This annotation is not required when using JUnit5*
 
 
 ### @SpringBootTest 
 
-This annotation tells the `SpringRunner` to start the applicaiton as a Spring Boot application. 
+This annotation tells the `SpringRunner` to start the application as a Spring Boot application. 
 
-By default, it does not start a server, instead it loads a web ApplicationContext and provides a mock web environment. You can use the webEnvironment attribute if you want to set other options such as `RANDOM_PORT`, `DEFINED_PORT`, or `NONE`.
+By default, it does not start a server, instead, it loads a web ApplicationContext and provides a mock web environment. You can use the webEnvironment attribute if you want to set other options such as `RANDOM_PORT`, `DEFINED_PORT`, or `NONE`.
 
 Read more at <https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-testing-spring-boot-applications>
 
-### Difference between `@SpringBootTest` and `@WebMvcTest`
+### Difference between @SpringBootTest and @WebMvcTest
 
 **`@SpringBootTest`** will load the complete application and autowire all the beans, which makes it a bit slow. 
 
@@ -133,7 +133,7 @@ Use **`@WebMvcTest`** if you only want to test the Controller layer and happy to
 
 ### @AutoConfigureMockMvc
 
-This annotations auto configures the `MockMvc`.
+This annotation auto-configures the `MockMvc`.
 
 <hr>
 
@@ -150,7 +150,6 @@ package com.comment;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.*;
 import static org.hamcrest.Matchers.*;
 import javax.inject.Inject;
 
@@ -181,7 +180,7 @@ public class CommentApiTest {
   @Test
   public void testCommentApiGetCommentsByPostId_statusOk() throws Exception {
 
-    mvc.perform(get("/posts/1/comments")).andExpect(status().isOk()).andDo(print());
+    mvc.perform(get("/posts/1/comments")).andExpect(status().isOk());
 
   }
 
