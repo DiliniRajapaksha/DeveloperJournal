@@ -37,7 +37,7 @@ images:
 
 next-lesson:
     title: Lesson 7 - Integration testing - part 1
-    url: https://youtu.be/BBE3MJLuTqU
+    url: lesson-7-integration-testing-with-spring-boot
 
 ---
 

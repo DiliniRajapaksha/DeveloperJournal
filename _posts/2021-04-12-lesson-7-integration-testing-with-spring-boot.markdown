@@ -4,7 +4,7 @@ layout: lesson
 comments: true
 
 title:  "REST API with Spring Boot | Lesson 7 | Integration Testing with Spring Boot"
-date:   2021-04-09
+date:   2021-04-12
 categories: courses/spring-boot
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: "Spring Boot support for Integration Testing"
@@ -113,7 +113,7 @@ Let's see why we need them.
 
 This will bring Spring’s testing support to our JUnit test, such as loading the application context and auto wiring the beans.
 
-* This annotation is not required when using JUnit5*
+*This annotation is not required when using JUnit5*
 
 
 ### @SpringBootTest 
@@ -126,9 +126,9 @@ Read more at <https://docs.spring.io/spring-boot/docs/current/reference/htmlsing
 
 ### Difference between @SpringBootTest and @WebMvcTest
 
-**`@SpringBootTest`** will load the complete application and autowire all the beans, which makes it a bit slow. 
+`@SpringBootTest` will load the complete application and autowire all the beans, which makes it a bit slow. 
 
-Use **`@WebMvcTest`** if you only want to test the Controller layer and happy to mock all other dependencies, tests will run much faster.
+Use `@WebMvcTest` if you only want to test the Controller layer and happy to mock all other dependencies, tests will run much faster.
 
 
 ### @AutoConfigureMockMvc

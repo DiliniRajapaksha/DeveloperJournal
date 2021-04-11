@@ -184,7 +184,7 @@ In this lesson, we move the business logic to the service layer by refactoring t
 
 </div>
 
-#### [Lesson 7: Integration testing - part 1]({% post_url 2021-04-09-lesson-7-integration-testing-1%}){: .lesson-title-link}  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!]({{ page.youtube-videos[6].url }}){:target="_blank"}{: .btn-sm-play}
+#### [Lesson 7: Integration testing - part 1]({% post_url 2021-04-12-lesson-7-integration-testing-with-spring-boot %}){: .lesson-title-link}  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!]({{ page.youtube-videos[6].url }}){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
