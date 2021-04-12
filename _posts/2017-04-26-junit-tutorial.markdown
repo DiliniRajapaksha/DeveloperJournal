@@ -41,6 +41,11 @@ ads:
         url: /assets/img/spring-boot-course/thumb.jpg
         alt: Spring Boot Course
         title: Spring Boot Course
+    - url: /courses/spring-boot/lesson-7-integration-testing-with-spring-boot
+      img: 
+        url: /assets/img/spring-boot-course/Lesson 7 - int1.png
+        alt: Integration Testing with Spring Boot
+        title: Integration Testing with Spring Boot
 
     
 ---
@@ -149,7 +154,7 @@ In this tutorial we will look into the basics of JUnit 4 which are essential to 
 
 
 <div class="center">
-{% assign ad = page.ads[0] %}
+{% assign ad = page.ads[1] %}
 {% include inline-ad.html ad=ad %}
 </div>
 
