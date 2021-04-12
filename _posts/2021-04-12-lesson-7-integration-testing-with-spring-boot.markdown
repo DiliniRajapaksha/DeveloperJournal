@@ -14,26 +14,26 @@ youtube:
     url: https://youtu.be/UAs8rCeDBZU
     image:
         url: /assets/img/spring-boot-course/Lesson 7 - int1.png
-        alt: 'Lesson 6'
+        alt: 'Integration Testing with Spring Boot'
 
 cover-image: 
     url: /assets/img/spring-boot-course/Lesson 7 - int1.png
-    alt: Spring Data
-    title: Spring Data
+    alt: Integration Testing with Spring Boot
+    title: Integration Testing with Spring Boot
 
 images: 
   - url: /assets/img/spring-boot-course/integration test/integration test.001.jpeg
-    alt: Spring Data 
-    title: Spring Data 
+    alt: Integration Testing with Spring Boot
+    title: Integration Testing with Spring Boot
   - url: /assets/img/spring-boot-course/integration test/integration test.002.jpeg
-    alt: Spring Data 
-    title: Spring Data 
+    alt: Integration Testing with Spring Boot
+    title: Integration Testing with Spring Boot
   - url: /assets/img/spring-boot-course/integration test/integration test.003.jpeg
-    alt: Spring Data 
-    title: Spring Data 
+    alt: Integration Testing with Spring Boot
+    title: Integration Testing with Spring Boot
   - url: /assets/img/spring-boot-course/integration test/integration test.004.jpeg
-    alt: Spring Data 
-    title: Spring Data 
+    alt: Integration Testing with Spring Boot
+    title: Integration Testing with Spring Boot
 
 next-lesson:
     title: Lesson 8 - Making it a Spring Boot Application
