@@ -79,7 +79,7 @@ a, a:visited, a:hover, a:active {
 	color: var(--turquoise);
 }
 
-h3{
+h3, h2{
 	margin-top: 2em;
 }
 
@@ -419,8 +419,10 @@ hr {
 	    padding-bottom: 0.5em;
 	    margin-bottom: 1em;
 	    color: var(--sp-bt-green);
+	 	
 	 	h2{
 	    	font-size: 2em;
+	    	margin-top: 0;
 	 	}
 
  	}

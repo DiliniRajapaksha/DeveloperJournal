@@ -3,6 +3,7 @@
 layout: course-page
 header-style: sp-bt-header bg-dark-gray
 intro-style: bg-sp-bt
+title:  "REST API with Spring Boot"
 title-style: sp-bt-header
 title-tag:  "Learn Spring Boot in 2 hours"
 title-post-pre: "Learn"
@@ -201,7 +202,7 @@ In this lesson, we move the business logic to the service layer by refactoring t
 
 </div>
 
-#### Lesson 8: Making a Spring Boot Application 
+#### [Lesson 8: Making a Spring Boot Application]({% post_url 2021-04-19-lesson-8-spring-boot-application %}){: .lesson-title-link}  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!]({{ page.youtube-videos[7].url }}){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
