@@ -13,11 +13,11 @@ excerpt_separator: <!--more-->
 youtube:
     url: https://youtu.be/nSu1wMXsPqY
     image:
-        url: /assets/img/spring-boot-course/Lesson 8 - spring boot app.png
+        url: /assets/img/spring-boot-course/Lesson 8 - Spring boot app.png
         alt: 'Spring Boot Application'
 
 cover-image: 
-    url: /assets/img/spring-boot-course/Lesson 8 - spring boot app.png
+    url: /assets/img/spring-boot-course/Lesson 8 - Spring boot app.png
     alt: Spring Boot Application
     title: Spring Boot Application
 
