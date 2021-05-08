@@ -217,10 +217,10 @@ Now you can start implementing, and yes you can do any customizations to the bui
 
 <hr>
 
-## Want to get started with Spring Boot?
+## Want To Get Started With Spring Boot?
 {: .center}
 
-Check out the course. <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+Check out the FREE course. <i class="fa fa-hand-o-down" aria-hidden="true"></i>
 {: .center}
 
 <div class="center">

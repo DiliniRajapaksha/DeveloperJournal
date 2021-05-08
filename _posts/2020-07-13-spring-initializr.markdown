@@ -60,6 +60,14 @@ cover-image:
     url: /assets/img/spring-boot/Spring initializr/how to use spring initializr.png
     alt: how to use spring initializr
     title: how to use spring initializr
+
+ads:
+    - url: /courses/spring-boot/REST-API-with-Spring-Boot
+      img: 
+        url: /assets/img/spring-boot-course/thumb.jpg
+        alt: Spring Boot Course
+        title: Spring Boot Course
+
 ---
 
 In this post, let's look at the Spring Initializr and how to use it.
@@ -336,3 +344,15 @@ So if you execute the `./gradlew test` command, you will be able to run the samp
 
 Now that you have a working project setup, you can get on with testing and implementation of your application. :tada:
 
+<hr>
+
+## Want To Get Started With Spring Boot?
+{: .center}
+
+Check out the FREE course. <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+{: .center}
+
+<div class="center">
+{% assign ad = page.ads[0] %}
+{% include inline-ad.html ad=ad %}
+</div>
