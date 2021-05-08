@@ -495,13 +495,23 @@ pre, code{
 	color: var(--title-color);
 	line-height: 1.42857143;
     color: #333;
-    word-break: break-all;
+    word-break: break-word;
     word-wrap: break-word;
     white-space: pre-wrap;
 }
 pre{
 	    overflow-x: auto;
 }
+
+@media only screen and (min-width : 900px) {
+	pre, code{
+
+	    word-break: normal;
+	    word-wrap: normal;
+	    white-space: pre-wrap;
+	}
+}
+
 
 .footer a, .footer a:visited{
 	color: white;
@@ -667,6 +677,14 @@ div.center {
 	}
 }
 
+.table-sp{
+
+	tr:nth-child(2), tr:nth-child(4), tr:nth-child(5){
+	
+		background-color: #fdffb1;
+	}
+}
+
 /* video post */
 .video-image-grid{
   display: grid;
@@ -707,4 +725,13 @@ div.center {
 .img-md{
 	max-width: 500px;
 	margin: 3em 0;
+}
+
+.img-md{
+	max-width: 900px;
+	margin: 3em 0;
+}
+
+.bold{
+	font-weight: bold;
 }
