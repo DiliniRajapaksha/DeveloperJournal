@@ -25,7 +25,7 @@ layout: default
 			{% if page.next-lesson.url %}
 				<h3><a href="{{ page.next-lesson.url | prepend: site.course-url }}">{{ page.next-lesson.title }}</a></h3>
 			{% elsif page.next-lesson.youtube-url %}
-				<h3><i class="fa fa-youtube-play pink" id="play-icon" aria-hidden="true"></i><a href="{{page.next-lesson.youtube-url}}">{{ page.next-lesson.title }}</a></h3>
+				<h3><i class="fa fa-youtube-play pink" id="play-icon" aria-hidden="true"></i><a href="{{page.next-lesson.youtube-url}}" target="_blank">{{ page.next-lesson.title }}</a></h3>
 				<!-- <h3>{{ page.next-lesson.title }} <a class="btn-sm-play" href="{{page.next-lesson.youtube-url}}"><i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!</a></h3>  -->
 			{% else %}
 				<h3>{{ page.next-lesson.title }}</h3>
