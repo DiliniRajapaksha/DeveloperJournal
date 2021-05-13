@@ -37,7 +37,7 @@ images:
 
 next-lesson:
     title: Lesson 8 - Making it a Spring Boot Application
-    url: 
+    url: lesson-8-spring-boot-application
 
 ---
 

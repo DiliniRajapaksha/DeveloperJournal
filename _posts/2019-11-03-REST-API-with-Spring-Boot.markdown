@@ -216,7 +216,7 @@ Here we discuss the spring boot annotations and then add all the required annota
 
 </div>
 
-#### Lesson 9: Spring Transaction handling
+#### [Lesson 9: Spring Transaction handling]({% post_url 2021-04-19-lesson-9-spring-transaction-handling %}){: .lesson-title-link}  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!](https://youtu.be/XL0EROsn5Yc){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -238,7 +238,7 @@ Here we discuss the spring boot annotations and then add all the required annota
 </div>
 
 
-#### Lesson 10: Integration testing - part 2
+#### Lesson 10: Integration testing - part 2 [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!](https://youtu.be/YMgNyfuTtz8){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -255,7 +255,7 @@ Here we discuss the spring boot annotations and then add all the required annota
 
 </div>
 
-#### Lesson 11: Endpoint implementation to save a comment
+#### Lesson 11: Endpoint implementation to save a comment [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!](https://youtu.be/fMHOldR44rQ){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -265,7 +265,7 @@ Unit tests and implementation of the endpoint for saving a comment.
 {: .pd-1}
 </div>
 
-#### Lesson 12: Integration testing part 3
+#### Lesson 12: Integration testing part 3 [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!](https://youtu.be/wTKs-XAgt2I){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -275,7 +275,7 @@ Write some integration tests for saving the comment
 {: .pd-1}
 </div>
 
-#### Lesson 13: End to end test
+#### Lesson 13: End to end test [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!](https://youtu.be/DwESsqPwlZc){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -290,7 +290,7 @@ Write some integration tests for saving the comment
 
 </div>
 
-#### Lesson 14: Endpoint implementation to delete a comment
+#### Lesson 14: Endpoint implementation to delete a comment [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!](https://youtu.be/qqYkfzbXIQ0){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -301,7 +301,7 @@ Physical delete vs Logical delete.
 {: .pd-1}
 </div>
 
-#### Lesson 15: Integration testing part 4
+#### Lesson 15: Integration testing part 4 [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!](https://youtu.be/NMOLPNtlQp0){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -319,7 +319,7 @@ Write some integration tests for deleting the comment
 ### Deployment
 {: .module-title .center}
 
-#### Lesson 16: Deployment
+#### Lesson 16: Deployment [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!](https://youtu.be/QAKlzQk0WuY){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -332,7 +332,7 @@ Write some integration tests for deleting the comment
 
 </div>
 
-#### Lesson 17: External Database
+#### Lesson 17: External Database [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!](https://youtu.be/YrVx11DSAjY){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
