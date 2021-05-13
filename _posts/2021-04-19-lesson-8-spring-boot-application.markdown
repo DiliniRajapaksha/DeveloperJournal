@@ -31,7 +31,7 @@ images:
 
 next-lesson:
     title: Lesson 9 - Transaction handling with Spring
-    url: 
+    url: lesson-9-spring-transaction-handling
 
 ---
 

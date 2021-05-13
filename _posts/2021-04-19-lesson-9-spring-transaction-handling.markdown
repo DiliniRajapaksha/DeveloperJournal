@@ -30,8 +30,9 @@ images:
     title: Spring transactions
 
 next-lesson:
-    title: Lesson 10 - Transaction handling with Spring
+    title: Lesson 10 - Integration Testing Part 2
     url: 
+    youtube-url: https://youtu.be/YMgNyfuTtz8
 
 ---
 
@@ -41,7 +42,7 @@ next-lesson:
 
 <hr>
 
-So what happens when a method is transactional? 
+What happens when a method is transactional? 
 
 The method executes inside of a transaction, if anything goes wrong in the middle of the method execution, the transaction will be rolled back, otherwise, it will be committed.
 
@@ -50,7 +51,7 @@ The method executes inside of a transaction, if anything goes wrong in the middl
     {% include image.html image=image %}
 </div>
 
-### Example
+### Transactional Method Example
 
 Let's say there were 100 comments in a database, and while a method is being executed, 30 of them were successfully streamed, but then something happens in the middle of it and it could not read from the database anymore. 
 
@@ -60,7 +61,7 @@ That prevents us from getting an incomplete list of comments.
 
 <hr>
 
-# How Spring Transactions work | What Happens Behind The Scene?
+# How Spring Transactions Work | What Happens Behind The Scene?
 
 <hr>
 
@@ -159,13 +160,14 @@ Spring transaction management also supports the `@Transactional` annotation from
 
 The `@Transactional` annotation can be placed on interfaces, classes, or both class and interface methods.
 
-> "Spring recommends that you only annotate concrete classes (and methods of concrete classes) with the @Transactional annotation, as opposed to annotating interfaces. You certainly can place the @Transactional annotation on an interface (or an interface method), but this works only as you would expect it to if you are using interface-based proxies. The fact that Java annotations are not inherited from interfaces means that if you are using class-based proxies ( proxy-target-class="true") or the weaving-based aspect ( mode="aspectj"), then the transaction settings are not recognized by the proxying and weaving infrastructure, and the object will not be wrapped in a transactional proxy, which would be decidedly bad."     
+> "Spring recommends that you only annotate concrete classes (and methods of concrete classes) with the `@Transactional` annotation, as opposed to annotating interfaces. You certainly can place the `@Transactional` annotation on an interface (or an interface method), but this works only as you would expect it to if you are using interface-based proxies. The fact that Java annotations are not inherited from interfaces means that if you are using class-based proxies ( proxy-target-class="true") or the weaving-based aspect ( mode="aspectj"), then the transaction settings are not recognized by the proxying and weaving infrastructure, and the object will not be wrapped in a transactional proxy, which would be decidedly bad."     
 > --- [Spring Documentation](https://docs.spring.io/spring/docs/4.2.x/spring-framework-reference/html/transaction.html#transaction-declarative-annotations)   
 
 Don't worry if you are confused with the above excerpt, it's all explained below. <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+
 <hr>
 
-# Transaction Configuration
+# Transaction Configuration In Spring
 
 <hr>
 
@@ -205,16 +207,16 @@ This could be either true or false.
 
 The default value is **false**. In which case, **JDK interface-based proxies** are created. 
 
-If this attribute is set to **true**, then **CGLIB proxies** will be used, which are class-based, and therefore any @Transacation annotations on interfaces will be ignored.
+If this attribute is set to **true**, then **CGLIB proxies** will be used, which are class-based, and therefore any `@Transactional` annotations on interfaces will be ignored.
 
 
 ### The mode
 
 There are 2 values that can be applied to the `mode` attribute. `proxy` and `aspectJ`. 
 
-The default value of the mode attribute is **`proxy`**. It processes annotated beans to be proxied using Spring’s AOP framework, which would proxy interfaces annotated with @Transaction.
+The default value of the mode attribute is **`proxy`**. It processes annotated beans to be proxied using Spring’s AOP framework, which would proxy interfaces annotated with `@Transactional`.
 
-But when the mode is set to **`aspectJ`** the interfaces annotated with @Transaction will be ignored. 
+But when the mode is set to **`aspectJ`** the interfaces annotated with `@Transactional` will be ignored. 
 
 That's because,
 
@@ -228,11 +230,11 @@ That's because,
 
 1. only external method calls will be transactional. 
 
-    even though a method is marked with @Transactional annotation, if it is called within another method of the same object, it will not have transactional behaviour.
+    even though a method is marked with `@Transactional` annotation, if it is called within another method of the same object, it will not have transactional behaviour.
 
-2. you should apply the @Transactional annotation only to methods with **public** visibility. 
+2. you should apply the `@Transactional` annotation only to methods with **public** visibility. 
    
-    If you do annotate protected, private or package-visible methods with the @Transactional annotation, no error is raised, but the annotated method does not exhibit the configured transactional settings.
+    If you do annotate protected, private or package-visible methods with the `@Transactional` annotation, no error is raised, but the annotated method does not exhibit the configured transactional settings.
 
 *So if you want transactional behaviour in either self invocations or non-public methods, consider the use of `aspectJ` mode instead of `proxy`.*
 
@@ -241,7 +243,7 @@ That's because,
 ### What Happens In A Spring Boot Application
 
 In a Spring Boot application, transaction management is enabled by the framework, without having to add the @EnableTransactionManagement annotation, and the defaults are applied.
-Hence there is no restriction as to where to place the @Transactional annotations, but it is safer to follow the recommendation because in case those need to be changed later on.
+Hence there is no restriction as to where to place the `@Transactional` annotations, but it is safer to follow the recommendation because in case those need to be changed later on.
 
 <hr>
 
