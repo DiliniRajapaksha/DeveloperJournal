@@ -31,8 +31,8 @@ images:
 
 next-lesson:
     title: Lesson 10 - Integration Testing Part 2
-    url: 
-    youtube-url: https://youtu.be/YMgNyfuTtz8
+    url: lesson-10-integration-testing-2
+    youtube-url:
 
 ---
 
@@ -242,7 +242,7 @@ That's because,
 
 ### What Happens In A Spring Boot Application
 
-In a Spring Boot application, transaction management is enabled by the framework, without having to add the @EnableTransactionManagement annotation, and the defaults are applied.
+In a Spring Boot application, transaction management is enabled by the framework, without having to add the `@EnableTransactionManagement` annotation, and the defaults are applied.
 Hence there is no restriction as to where to place the `@Transactional` annotations, but it is safer to follow the recommendation because in case those need to be changed later on.
 
 <hr>
