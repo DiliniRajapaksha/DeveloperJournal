@@ -120,7 +120,7 @@ I would also use the @SqlGroup annotation to group these together.
 
 <hr>
 
-The response is a JSON, so I will use json path expressions to check that I'm getting the correct response. The [documentation](https://github.com/json-path/JsonPath) provide all the expresstions that can be used.
+The response is a JSON, so I will use json path expressions to check that I'm getting the correct response. The [documentation](https://github.com/json-path/JsonPath){:target="_blank"} provide all the expresstions that can be used.
 
 Following are some exapmles that I used in my testing.
 
@@ -133,6 +133,6 @@ jsonPath("$.length()", is(1))
 ```
 {: .language-java}
 
-
+Please find the complete codebase @ <https://github.com/JavaCodeHouse/comments-application>{:target="_blank"}
 
 

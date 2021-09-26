@@ -95,7 +95,7 @@ In order to apply transaction management, all you have to do is add the `@Transa
 
 The `@Transactional` annotation is metadata that specifies that an interface, class, or method must have transactional semantics. For example, "start a brand new read-only transaction when this method is invoked, suspending any existing transaction".
 
-There are quite a few settings that can be applied to this annotation. The following table from the [documentation](https://docs.spring.io/spring-framework/docs/4.2.x/spring-framework-reference/html/transaction.html#transaction-declarative-attransactional-settings) lists all of them. 
+There are quite a few settings that can be applied to this annotation. The following table from the [documentation](https://docs.spring.io/spring-framework/docs/4.2.x/spring-framework-reference/html/transaction.html#transaction-declarative-attransactional-settings){:target="_blank"} lists all of them. 
 
 ### @Transactional Settings
 
@@ -145,7 +145,7 @@ The next attribute I want to look at is `readOnly`, which is a boolean.
 Following is the excerpt from the spring data documentation which states this.
 
 > "It's definitely reasonable to use transactions for read only queries and we can mark them as such by setting the readOnly flag. This will not, however, act as check that you do not trigger a manipulating query (although some databases reject INSERT and UPDATE statements inside a read only transaction). The readOnly flag instead is propagated as hint to the underlying JDBC driver for performance optimizations. Furthermore, Spring will perform some optimizations on the underlying JPA provider. E.g. when used with Hibernate the flush mode is set to NEVER when you configure a transaction as readOnly which causes Hibernate to skip dirty checks (a noticeable improvement on large object trees)."
-> --- [Spring Documentation](https://docs.spring.io/spring-data/jpa/docs/1.5.0.RELEASE/reference/html/jpa.repositories.html)
+> --- [Spring Documentation](https://docs.spring.io/spring-data/jpa/docs/1.5.0.RELEASE/reference/html/jpa.repositories.html){:target="_blank"}
 
 ### **`timeout`**
 
@@ -161,7 +161,7 @@ Spring transaction management also supports the `@Transactional` annotation from
 The `@Transactional` annotation can be placed on interfaces, classes, or both class and interface methods.
 
 > "Spring recommends that you only annotate concrete classes (and methods of concrete classes) with the `@Transactional` annotation, as opposed to annotating interfaces. You certainly can place the `@Transactional` annotation on an interface (or an interface method), but this works only as you would expect it to if you are using interface-based proxies. The fact that Java annotations are not inherited from interfaces means that if you are using class-based proxies ( proxy-target-class="true") or the weaving-based aspect ( mode="aspectj"), then the transaction settings are not recognized by the proxying and weaving infrastructure, and the object will not be wrapped in a transactional proxy, which would be decidedly bad."     
-> --- [Spring Documentation](https://docs.spring.io/spring/docs/4.2.x/spring-framework-reference/html/transaction.html#transaction-declarative-annotations)   
+> --- [Spring Documentation](https://docs.spring.io/spring/docs/4.2.x/spring-framework-reference/html/transaction.html#transaction-declarative-annotations){:target="_blank"}   
 
 Don't worry if you are confused with the above excerpt, it's all explained below. <i class="fa fa-hand-o-down" aria-hidden="true"></i>
 
@@ -221,7 +221,7 @@ But when the mode is set to **`aspectJ`** the interfaces annotated with `@Transa
 That's because,
 
 > The aspect that interprets @Transactional annotations is the AnnotationTransactionAspect. When using this aspect, you must annotate the implementation class (and/or methods within that class), not the interface (if any) that the class implements. AspectJ follows Java’s rule that annotations on interfaces are not inherited. 
-> --- [Spring Documentation](https://docs.spring.io/spring/docs/4.2.x/spring-framework-reference/html/aop.html#aop-aj-ltw-spring)
+> --- [Spring Documentation](https://docs.spring.io/spring/docs/4.2.x/spring-framework-reference/html/aop.html#aop-aj-ltw-spring){:target="_blank"}
 
 <div class="border-box" markdown="1">
     
@@ -247,6 +247,6 @@ Hence there is no restriction as to where to place the `@Transactional` annotati
 
 <hr>
 
-**I highly recommend reading the [documentation](https://docs.spring.io/spring/docs/4.2.x/spring-framework-reference/html/transaction.html) for Spring transaction management as we cannot cover everything here.**
+**I highly recommend reading the [documentation](https://docs.spring.io/spring/docs/4.2.x/spring-framework-reference/html/transaction.html){:target="_blank"} for Spring transaction management as we cannot cover everything here.**
 
 

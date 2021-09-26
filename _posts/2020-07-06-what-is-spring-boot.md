@@ -112,10 +112,10 @@ dependencies {
 
 Similarly, if you want to use Spring Data Jpa, you would add the `spring-boot-starter-data-jpa` dependency to your project.
 
-**Below is a list of Spring Boot starter dependencies, each with the link to it's `build.gradle` file.**
 
 There’s a list of all the starters available in the [Spring Boot Documentation](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-starter){:target="_blank"} along with a brief description of each, and the table below is derived from it.
 
+## List of popular Spring Boot starter dependencies, each with the link to its `build.gradle` file
 
 |---
 | Name | Description |
