@@ -109,7 +109,7 @@ This allows registering extra beans in the context.
 Spring Boot favours Java-based configuration, and in the documentation, it is said that,
 
 > Although it is possible to use SpringApplication with XML sources, we generally recommend that your primary source be a single @Configuration class. Usually, the class that defines the main method is a good candidate as the primary @Configuration.
-> --- [Spring Boot Reference Guide](https://docs.spring.io/spring-boot/docs/2.0.x/reference/html/using-boot-configuration-classes.html)
+> --- [Spring Boot Reference Guide](https://docs.spring.io/spring-boot/docs/2.0.x/reference/html/using-boot-configuration-classes.html){:target="_blank"}
 
 
 ## 3. The main Method
@@ -146,7 +146,7 @@ public class Application {
 
 
 > In Spring’s approach to building RESTful web services, HTTP requests are handled by a controller. 
-> --- [Spring | Guides](https://spring.io/guides/gs/rest-service/#initial)
+> --- [Spring | Guides](https://spring.io/guides/gs/rest-service/#initial){:target="_blank"}
 
 But then, how is this controller identified by the framework? 
 
@@ -219,7 +219,7 @@ A Service class should also be annotated for it to be eligible for auto-wiring.
 There is the `@Component` annotation which indicates that a class is a "component" and it is considered as a candidate for auto-detection when using annotation-based configuration and classpath scanning.
 
 > `@Component` is a generic stereotype for any Spring-managed component. `@Repository`, `@Service`, and `@Controller` are specializations of `@Component` for more specific use cases (in the persistence, service, and presentation layers, respectively). Therefore, you can annotate your component classes with `@Component`, but, by annotating them with `@Repository`, `@Service`, or `@Controller` instead, your classes are more properly suited for processing by tools or associating with aspects. For example, these stereotype annotations make ideal targets for pointcuts. `@Repository`, `@Service`, and `@Controller` can also carry additional semantics in future releases of the Spring Framework. Thus, if you are choosing between using `@Component` or `@Service` for your service layer, @Service is clearly the better choice. Similarly, as stated earlier, `@Repository` is already supported as a marker for automatic exception translation in your persistence layer.
-> --- [Spring Documentation](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-stereotype-annotations)
+> --- [Spring Documentation](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-stereotype-annotations){:target="_blank"}
 
 So, I'd annotate the service class with `@Service`.
 
@@ -264,7 +264,7 @@ All I have done to enable the functionality is that I have enabled auto-configur
 Spring will scan com.comment and all its sub-packages for interfaces extending Repository or one of its sub-interfaces. 
 
 > For each interface found, the infrastructure registers the persistence technology-specific FactoryBean to create the appropriate proxies that handle invocations of the query methods. Each bean is registered under a bean name that is derived from the interface name
-> --- [Spring Documentation](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.create-instances)
+> --- [Spring Documentation](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.create-instances){:target="_blank"}
 
 
 So I don't have to do anything to the comment repository interface, since it extends from `CrudRepository` which in turn extends from `Repository` interface, it is already eligible for auto-detection and dependency injection.

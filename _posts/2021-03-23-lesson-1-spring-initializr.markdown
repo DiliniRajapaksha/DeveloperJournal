@@ -52,7 +52,7 @@ But there's a one stop shop for all the dependency requirements of a Spring Boot
 That's the [Spring Boot Starters](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-starter){:target="_blank"}.
 All you have to do is select a few starter dependencies according the type of project and the starter  dependencies will take care of the rest.
 
-You can find a list of Spring Boot Starters and a link to each of the build files [here]({% post_url 2020-07-06-what-is-spring-boot %}#spring-boot-starters)
+You can find a list of Spring Boot Starters and a link to each of the build files [here]({% post_url 2020-07-06-what-is-spring-boot %}#spring-boot-starters){:target="_blank"}
 
 So for example, if you are building a REST API or a web project, you would add the `spring-boot-starter-web` dependency to your project and if you take a look at the [build](https://github.com/spring-projects/spring-boot/blob/master/spring-boot-project/spring-boot-starters/spring-boot-starter-web/build.gradle){:target="_blank"} file, you can see all the other dependencies it includes. And if you want to use spring data jpa, you would add the spring-boot-starter-data-jpa dependency.
 
@@ -106,7 +106,7 @@ Spring boot starters:
 
 <hr>
 
-The Spring Initializr UI shown in the video above has been updated, if you want to see the latest, checkout this [Spring Initializr]({% post_url 2020-07-13-spring-initializr %}) tutorial 
+The Spring Initializr UI shown in the video above has been updated, if you want to see the latest, checkout this [Spring Initializr]({% post_url 2020-07-13-spring-initializr %}){:target="_blank"} tutorial 
 {: .gray-box}
 
 
