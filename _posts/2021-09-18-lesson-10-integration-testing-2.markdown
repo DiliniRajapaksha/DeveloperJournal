@@ -7,7 +7,7 @@ title:  "REST API with Spring Boot | Lesson 10 | Integration Testing Part 2"
 date:   2021-09-26
 categories: courses/spring-boot
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
-description: "Spring Transaction Handling"
+description: "Integration Testing Part 2"
 excerpt_separator: <!--more-->
 
 youtube:
@@ -133,6 +133,6 @@ jsonPath("$.length()", is(1))
 ```
 {: .language-java}
 
-Please find the complete codebase @ <https://github.com/JavaCodeHouse/comments-application>{:target="_blank"}
+Please find the complete source code @ <https://github.com/JavaCodeHouse/comments-application>{:target="_blank"}
 
 
