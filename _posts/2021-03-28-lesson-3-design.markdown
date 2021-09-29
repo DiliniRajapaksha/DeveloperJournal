@@ -38,7 +38,7 @@ next-lesson:
 ## REST stands for REpresentational State Transfer.
 
 > REST-compliant web services allow the requesting systems to access and manipulate textual representations of web resources by using a uniform and predefined set of stateless operations.
-> ---  [Wikipedia contributors. (2021, March 23). Representational state transfer. In Wikipedia, The Free Encyclopedia. Retrieved 12:51, March 26, 2021](https://en.wikipedia.org/w/index.php?title=Representational_state_transfer&oldid=1013819612)
+> ---  [Wikipedia contributors. (2021, March 23). Representational state transfer. In Wikipedia, The Free Encyclopedia. Retrieved 12:51, March 26, 2021](https://en.wikipedia.org/w/index.php?title=Representational_state_transfer&oldid=1013819612){:target="_blank"}
 
 Simplifying further, a REST API communicates with clients in terms of resources on which a client could perform operations such as **Read or Retrieve, Create, Update and Delete.**
 {: .border-box}
@@ -105,7 +105,7 @@ A REST compliant web service has a predefined set of **stateless operations**, a
 ## 4 | Appropriate Use of HTTP status codes
 
 You can find all the HTTP status codes and what they mean on the following page.
-<https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>
+<https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>{:target="_blank"}
 
 #### Most commonly used HTTP Status codes
 
