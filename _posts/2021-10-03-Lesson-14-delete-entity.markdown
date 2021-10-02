@@ -4,7 +4,7 @@ layout: lesson
 comments: true
 
 title:  "REST API with Spring Boot | Lesson 14 | Delete Entity"
-date:   2021-09-30
+date:   2021-10-03
 categories: courses/spring-boot
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: "REST API for Deleting an entity"
@@ -22,8 +22,8 @@ cover-image:
     title: Spring Boot Application
 
 next-lesson:
-    title: Lesson 15 - End To End Testing
-    url: 
+    title: Lesson 15 - Integration Testing Part 4
+    url: Lesson-15-integration-testing-4
     youtube-url: https://youtu.be/NMOLPNtlQp0
 
 ---
