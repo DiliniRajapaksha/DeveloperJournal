@@ -4,7 +4,7 @@ layout: lesson
 comments: true
 
 title:  "REST API with Spring Boot | Lesson 13 | End To End Testing"
-date:   2021-10-01
+date:   2021-10-02
 categories: courses/spring-boot
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: "REST API End To End Testing"
