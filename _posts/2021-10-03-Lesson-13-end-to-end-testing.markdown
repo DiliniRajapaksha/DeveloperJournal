@@ -23,7 +23,7 @@ cover-image:
 
 next-lesson:
     title: Lesson 14 - Delete Entity
-    url: 
+    url: Lesson-14-delete-entity
     youtube-url: https://youtu.be/qqYkfzbXIQ0
 
 ---

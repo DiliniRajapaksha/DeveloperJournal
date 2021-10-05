@@ -2,6 +2,8 @@
 ---
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
 :root{
 	--turquoise:#7ecdd0;
 	--brand-color:#282828;
@@ -62,10 +64,9 @@ html, body{
 	font-size: 18px;
 	height: 100%;
 	margin: 0px;
-	font-family: "europa";
+	font-family: 'Nunito', sans-serif;
 	color: #1f1f1f;
-	line-height: 1.6em;
-	letter-spacing: .5px;
+	letter-spacing: 1px;
 	font-weight: 300;
 	font-style: normal;
 	background-color: #FFFFFF;
@@ -77,6 +78,11 @@ img{
 a, a:visited, a:hover, a:active {
 	text-decoration: none;
 	color: var(--turquoise);
+}
+
+h1, h2, h3{
+	font-family: var(--raleway-font);
+	line-height: 1.5em;
 }
 
 h3, h2{
@@ -773,4 +779,9 @@ div.center {
 
 #play-icon{
 margin-right: 0.5em;
+}
+
+.terminal{
+	background-color: #585858;
+	padding: 2em;
 }

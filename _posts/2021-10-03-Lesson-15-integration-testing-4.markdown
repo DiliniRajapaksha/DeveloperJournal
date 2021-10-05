@@ -14,7 +14,7 @@ youtube:
     url: https://youtu.be/NMOLPNtlQp0
     image:
         url: /assets/img/spring-boot-course/Lesson15-spring-boot.png
-        alt: 'Lesson14-spring-boot'
+        alt: 'Lesson15-spring-boot'
 
 cover-image: 
     url: /assets/img/spring-boot-course/Lesson15-spring-boot.png
@@ -75,6 +75,6 @@ next-lesson:
     }
 
 ```
-{: language-java}
+{: .language-java}
 
 Please find the complete source code @ <https://github.com/JavaCodeHouse/comments-application>{:target="_blank"}
