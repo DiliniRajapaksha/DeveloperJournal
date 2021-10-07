@@ -23,7 +23,7 @@ cover-image:
 
 next-lesson:
     title: Lesson 16 - Deployment
-    url: 
+    url: Lesson-16-Deployment
     youtube-url: https://youtu.be/QAKlzQk0WuY
 
 ---
