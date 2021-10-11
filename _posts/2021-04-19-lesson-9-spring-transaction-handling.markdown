@@ -152,6 +152,7 @@ Following is the excerpt from the spring data documentation which states this.
 `timeout` is the number of seconds before a transaction times out.
 
 ## javax.transaction.Transactional vs org.springframework.transaction.annotation.Transactional
+{: .long-word}
 
 Spring transaction management also supports the `@Transactional` annotation from Java (`javax.transaction.Transactional`) as a drop-in replacement for the `@Transactional` annotation provided by Spring. However, it lacks some of the settings available in the one from Spring such as `readOnly` and `timeout` which are quite useful. So I would use Spring's `@Transactional` annotation instead of the one from Java.
 

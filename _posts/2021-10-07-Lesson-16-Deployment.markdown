@@ -242,4 +242,4 @@ As you can see, The normal war file is smaller in size than the executable war f
 
 Now, to deploy this normal war file in the WildFly server, copy that into the deployments folder, and start the server.
 
-Please find the complete source code @ <https://github.com/JavaCodeHouse/comments-application>{:target="_blank"}
+Please find the complete source code @ <https://github.com/JavaCodeHouse/comments-application>{:target="_blank" .url}

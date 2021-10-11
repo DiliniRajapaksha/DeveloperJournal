@@ -100,9 +100,9 @@ Spring Initializer website: <https://start.spring.io>{:target="_blank"}
 
 Spring boot starters: 
 
-<https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-starter>{:target="_blank"}
+<https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-starter>{:target="_blank" .url}
 
-<https://github.com/spring-projects/spring-boot/tree/master/spring-boot-project/spring-boot-starters>{:target="_blank"}
+<https://github.com/spring-projects/spring-boot/tree/master/spring-boot-project/spring-boot-starters>{:target="_blank" .url}
 
 <hr>
 

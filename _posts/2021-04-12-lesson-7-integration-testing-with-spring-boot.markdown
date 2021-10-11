@@ -122,7 +122,7 @@ This annotation tells the `SpringRunner` to start the application as a Spring Bo
 
 By default, it does not start a server, instead, it loads a web ApplicationContext and provides a mock web environment. You can use the webEnvironment attribute if you want to set other options such as `RANDOM_PORT`, `DEFINED_PORT`, or `NONE`.
 
-Read more at <https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-testing-spring-boot-applications>{:target="_blank"}
+Read more at <https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-testing-spring-boot-applications>{:target="_blank" .url}
 
 ### Difference between @SpringBootTest and @WebMvcTest
 

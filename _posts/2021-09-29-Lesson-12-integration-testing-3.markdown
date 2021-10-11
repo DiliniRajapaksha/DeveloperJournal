@@ -100,4 +100,4 @@ In oder to return the proper response status code, the `@ResponseStatus` annotat
 {: .language-java}
 
 
-Please find the complete source code @ <https://github.com/JavaCodeHouse/comments-application>{:target="_blank"}
+Please find the complete source code @ <https://github.com/JavaCodeHouse/comments-application>{:target="_blank" .url}
