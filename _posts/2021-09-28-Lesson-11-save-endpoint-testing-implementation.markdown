@@ -83,4 +83,4 @@ next-lesson:
 ```
 {: .language-java}
 
-Please find the complete source code @ <https://github.com/JavaCodeHouse/comments-application>{:target="_blank"}
+Please find the complete source code @ <https://github.com/JavaCodeHouse/comments-application>{:target="_blank" .url}

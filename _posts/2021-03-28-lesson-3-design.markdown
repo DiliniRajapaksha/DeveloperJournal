@@ -105,7 +105,7 @@ A REST compliant web service has a predefined set of **stateless operations**, a
 ## 4 | Appropriate Use of HTTP status codes
 
 You can find all the HTTP status codes and what they mean on the following page.
-<https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>{:target="_blank"}
+<https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>{:target="_blank" .url}
 
 #### Most commonly used HTTP Status codes
 
