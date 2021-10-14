@@ -40,6 +40,8 @@ next-lesson:
 > REST-compliant web services allow the requesting systems to access and manipulate textual representations of web resources by using a uniform and predefined set of stateless operations.
 > ---  [Wikipedia contributors. (2021, March 23). Representational state transfer. In Wikipedia, The Free Encyclopedia. Retrieved 12:51, March 26, 2021](https://en.wikipedia.org/w/index.php?title=Representational_state_transfer&oldid=1013819612){:target="_blank"}
 
+{% include video-timestamp.html time=00 %}
+
 Simplifying further, a REST API communicates with clients in terms of resources on which a client could perform operations such as **Read or Retrieve, Create, Update and Delete.**
 {: .border-box}
 
@@ -49,6 +51,9 @@ Simplifying further, a REST API communicates with clients in terms of resources 
 
 <hr>
 
+Following are some of the basic but most overlooked REST API design principles.
+
+{% include video-timestamp.html time=53 %}
 
 ## 1 | Resources are nouns
 
@@ -132,9 +137,13 @@ Simply means to use links for navigating the API.
 
 <hr>
 
-# API Design 
+# How To Design A REST API
 
 <hr>
+
+Now let's design a REST API applying the basic principles.
+
+{% include video-timestamp.html time=202 %}
 
 ### Comments API design
 
@@ -174,6 +183,8 @@ I'm not allowing comment editing so PUT method will not be used.
 <hr>
 
 The application code is organised into three layers.
+
+{% include video-timestamp.html time=284 %}
 
 <div class="img-md">
 	{% assign image = page.images[0] %}
