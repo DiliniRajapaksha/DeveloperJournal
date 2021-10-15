@@ -3,7 +3,7 @@
 layout: lesson
 comments: true
 
-title:  "REST API with Spring Boot | Lesson 3 | Designing the REST API"
+title:  "Designing A Rest Api With Spring Boot"
 date:   2021-03-26
 categories: courses/spring-boot
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"

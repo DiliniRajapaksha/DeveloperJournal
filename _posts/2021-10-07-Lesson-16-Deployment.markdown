@@ -3,7 +3,7 @@
 layout: lesson
 comments: true
 
-title:  "REST API with Spring Boot | Lesson 16 | Deployment"
+title:  "How To Deploy A Spring Boot Application"
 date:   2021-10-07
 categories: courses/spring-boot
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"

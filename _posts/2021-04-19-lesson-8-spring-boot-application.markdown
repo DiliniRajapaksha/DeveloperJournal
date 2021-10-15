@@ -3,7 +3,7 @@
 layout: lesson
 comments: true
 
-title:  "REST API with Spring Boot | Lesson 8 | Spring Boot Application"
+title:  "Spring Boot Application"
 date:   2021-04-19
 categories: courses/spring-boot
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"

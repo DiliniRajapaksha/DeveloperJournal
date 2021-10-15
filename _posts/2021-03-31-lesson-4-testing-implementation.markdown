@@ -3,7 +3,7 @@
 layout: lesson
 comments: true
 
-title:  "REST API with Spring Boot | Lesson 4 | Unit Testing and Implementation"
+title:  "Unit Testing And Implementation Of REST API With Spring Boot"
 date:   2021-03-31
 categories: courses/spring-boot
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"

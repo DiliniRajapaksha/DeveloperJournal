@@ -3,7 +3,7 @@
 layout: lesson
 comments: true
 
-title:  "REST API with Spring Boot | Lesson 17 | Connecting To MySQL Database"
+title:  "Spring Boot How To Connect To MySQL Database"
 date:   2021-10-10
 categories: courses/spring-boot
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"

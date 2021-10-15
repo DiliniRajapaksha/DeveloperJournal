@@ -3,7 +3,7 @@
 layout: lesson
 comments: true
 
-title:  "REST API with Spring Boot | Lesson 13 | End To End Testing"
+title:  "End To End Testing Of Spring Boot Application"
 date:   2021-10-02
 categories: courses/spring-boot
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
