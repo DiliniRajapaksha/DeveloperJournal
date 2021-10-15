@@ -3,7 +3,7 @@
 layout: lesson
 comments: true
 
-title:  "REST API with Spring Boot | Lesson 9 | Spring Transaction Handling"
+title:  "Spring Transaction Management In REST API With Spring Boot"
 date:   2021-05-08
 categories: courses/spring-boot
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"

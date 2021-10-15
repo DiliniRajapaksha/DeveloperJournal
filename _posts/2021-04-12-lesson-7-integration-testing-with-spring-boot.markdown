@@ -3,7 +3,7 @@
 layout: lesson
 comments: true
 
-title:  "REST API with Spring Boot | Lesson 7 | Integration Testing with Spring Boot"
+title:  "Integration Testing with Spring Boot"
 date:   2021-04-12
 categories: courses/spring-boot
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"

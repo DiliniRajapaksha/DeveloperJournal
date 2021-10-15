@@ -3,7 +3,7 @@
 layout: lesson
 comments: true
 
-title:  "REST API with Spring Boot | Lesson 1 | Spring Initializr"
+title:  "How To Create Spring Boot Project With Spring Initializr"
 date:   2021-03-23
 categories: courses/spring-boot
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"

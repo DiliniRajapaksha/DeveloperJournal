@@ -3,7 +3,7 @@
 layout: lesson
 comments: true
 
-title:  "REST API with Spring Boot | Lesson 2"
+title:  "How To Set Up Spring Boot Project With Gradle"
 date:   2021-03-24
 categories: courses/spring-boot
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"

@@ -3,7 +3,7 @@
 layout: lesson
 comments: true
 
-title:  "REST API with Spring Boot | Lesson 12 | Integration Testing Part 3"
+title:  "Integration Testing REST API with Spring Boot Part 3"
 date:   2021-09-29
 categories: courses/spring-boot
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
