@@ -2,7 +2,11 @@
 ---
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');*/
+
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');*/
+
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Roboto:ital,wght@1,300&display=swap');*/
 
 :root{
 	--turquoise:#7ecdd0;
@@ -61,13 +65,15 @@ $on-laptop:        800px;
 }
 
 html, body{
-	font-size: 18px;
+	/*font-size: 18px;*/
 	height: 100%;
 	margin: 0px;
-	font-family: 'Nunito', sans-serif;
+	/*font-family: 'Nunito', sans-serif;*/
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
 	color: #1f1f1f;
 	letter-spacing: 1px;
-	font-weight: 300;
+	/*font-weight: 400;*/
 	font-style: normal;
 	background-color: #FFFFFF;
 }
@@ -418,7 +424,7 @@ hr {
 
 .side-bar{
 	position: fixed;
-    background: rgba(232,232,232, .39);
+    /*background: rgba(232,232,232, .39);*/
     text-align: center;
     padding: 2em;
  }
