@@ -61,13 +61,6 @@ cover-image:
     alt: how to use spring initializr
     title: how to use spring initializr
 
-ads:
-    - url: /courses/spring-boot/REST-API-with-Spring-Boot
-      img: 
-        url: /assets/img/spring-boot-course/thumb.jpg
-        alt: Spring Boot Course
-        title: Spring Boot Course
-
 ---
 
 In this post, let's look at the Spring Initializr and how to use it.
@@ -93,6 +86,8 @@ Spring initialzr will do the following:
 - Creates the project structure or the folder structure for your project.
 
 Now you can start implementing, and yes you can do any customizations to the build file or the project setup as much as you like.
+
+<span id="ezoic-pub-video-placeholder-1"></span>
 
 <hr>
 
