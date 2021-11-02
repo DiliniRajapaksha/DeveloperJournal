@@ -1,6 +1,6 @@
 ---
 
-layout: lesson
+layout: lesson-video
 comments: true
 
 title:  "End To End Testing Of Spring Boot Application"
@@ -10,20 +10,12 @@ markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: "REST API End To End Testing"
 excerpt_separator: <!--more-->
 
-youtube:
-    url: https://youtu.be/DwESsqPwlZc
-    image:
-        url: /assets/img/spring-boot-course/Lesson13-spring-boot.png
-        alt: 'Lesson13 - End To End Testing'
-
-cover-image: 
-    url: /assets/img/spring-boot-course/Lesson13-spring-boot.png
-    alt: Spring Boot Application
-    title: Spring Boot Application
-
 next-lesson:
     title: Lesson 14 - Delete Entity
     url: Lesson-14-delete-entity
     youtube-url: https://youtu.be/qqYkfzbXIQ0
 
 ---
+
+
+<span id="ezoic-pub-video-placeholder-2"></span>
