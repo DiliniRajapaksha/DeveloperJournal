@@ -1,6 +1,6 @@
 ---
 
-layout: lesson
+layout: lesson-video
 comments: true
 
 title:  "Spring Data | The Repository"
@@ -9,12 +9,6 @@ categories: courses/spring-boot
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: "Endpoint implementation to retrieve comments - part 3 - The Repository | Spring Data"
 excerpt_separator: <!--more-->
-
-youtube:
-    url: https://youtu.be/UAs8rCeDBZU
-    image:
-        url: /assets/img/spring-boot-course/Lesson 6 - Repository.png
-        alt: 'Lesson 6'
 
 cover-image: 
     url: /assets/img/spring-boot-course/Lesson 6 - Repository.png
@@ -40,6 +34,8 @@ next-lesson:
     url: lesson-7-integration-testing-with-spring-boot
 
 ---
+
+<span id="ezoic-pub-video-placeholder-3"></span>
 
 <hr>
 
@@ -82,6 +78,12 @@ Spring Data is going to do all the hard work getting the comment back and forth.
   	{% include image.html image=image %}
 </div>
 
+
+<!-- Ezoic - incontent_7 - incontent_7 -->
+<div id="ezoic-pub-ad-placeholder-115"> </div>
+<!-- End Ezoic - incontent_7 - incontent_7 -->
+
+
 <hr>
 
 # CRUD Repository Interface
@@ -103,5 +105,9 @@ You can create your Repository interface extending the CrudRepository interface 
 - findById(ID id)
 - save(S entity)
 - saveAll(Iterable\<S> entities)
+
+<!-- Ezoic - incontent_8 - incontent_8 -->
+<div id="ezoic-pub-ad-placeholder-116"> </div>
+<!-- End Ezoic - incontent_8 - incontent_8 -->
 
 	
