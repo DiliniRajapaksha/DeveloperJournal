@@ -94,7 +94,6 @@ Spring initialzr will do the following:
 
 Now you can start implementing, and yes you can do any customizations to the build file or the project setup as much as you like.
 
-<span id="ezoic-pub-video-placeholder-1"></span>
 
 <hr>
 
