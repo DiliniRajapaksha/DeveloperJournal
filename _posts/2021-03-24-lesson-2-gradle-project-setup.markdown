@@ -1,6 +1,6 @@
 ---
 
-layout: lesson
+layout: lesson-video
 comments: true
 
 title:  "How To Set Up Spring Boot Project With Gradle"
@@ -28,11 +28,13 @@ next-lesson:
 
 ---
 
+<span id="ezoic-pub-video-placeholder-4"></span>
+
 <hr class="gray">
 
-You'll learn,
+You'll learn to,
 
-Set up the project using Gradle without Spring Initializr.
+- Set up the project using Gradle without Spring Initializr.
 
 - Generate a java project using Gradle command line.
 

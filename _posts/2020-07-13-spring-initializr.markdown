@@ -170,7 +170,7 @@ Now you can start implementing, and yes you can do any customizations to the bui
 Check out the video. <i class="fa fa-hand-o-down" aria-hidden="true"></i>
 {: .center}
 
-<div id="spr-ini-vid" class="ezoic-video center">
+<div class="ezoic-video center">
     <div class="mg-tp-1 video-container center">
        <span id="ezoic-pub-video-placeholder-1"></span>
     </div>  
