@@ -72,6 +72,11 @@ If you are new to unit testing with JUnit, please check out the previous post on
 >
 >--- ["Mockito." Mockito Framework Site. N.p., n.d. Web. 28 Apr. 2017.](http://site.mockito.org)
 
+
+<!-- Ezoic - incontent_5 - incontent_5 -->
+<div id="ezoic-pub-ad-placeholder-113"> </div>
+<!-- End Ezoic - incontent_5 - incontent_5 -->
+
 <hr>
 
 ## HOW TO INJECT MOCKS
@@ -159,6 +164,10 @@ public class CustomerServiceTest {
 ## HOW TO **MOCK** METHODS WITH MOCKITO
 
 <hr> 
+
+<!-- Ezoic - incontent_6 - incontent_6 -->
+<div id="ezoic-pub-ad-placeholder-114"> </div>
+<!-- End Ezoic - incontent_6 - incontent_6 -->
 
 Great! now we have successfully created and injected the mock, and now we should tell the mock how to behave when certain methods are called on it.
 
@@ -286,6 +295,9 @@ public class CustomerServiceTest {
 {% include inline-ad.html ad=ad %}
 </div>
 
+<!-- Ezoic - incontent_7 - incontent_7 -->
+<div id="ezoic-pub-ad-placeholder-115"> </div>
+<!-- End Ezoic - incontent_7 - incontent_7 -->
 
 <hr>
 
@@ -343,6 +355,10 @@ Following is an example of how to use it (not an ideal usecase but just wanted t
 <div>
   {% include content-upgrade-inline.html %}  
 </div>
+
+<!-- Ezoic - incontent_8 - incontent_8 -->
+<div id="ezoic-pub-ad-placeholder-116"> </div>
+<!-- End Ezoic - incontent_8 - incontent_8 -->
 
 <hr>
 
@@ -479,9 +495,14 @@ public class CustomerServiceTest {
 ~~~
 {: .language-java}
 
+
+<!-- Ezoic - incontent_9 - incontent_9 -->
+<div id="ezoic-pub-ad-placeholder-117"> </div>
+<!-- End Ezoic - incontent_9 - incontent_9 -->
+
 <hr>
 
-## I SPY - MOCKITO SPY
+## HOW TO SPY WITH MOCKITO
 
 <hr> 
 
@@ -546,6 +567,10 @@ That's it on this post, please check out the below websites for more cool featur
 [Mockito Main reference documentation](https://static.javadoc.io/org.mockito/mockito-core/2.7.22/org/mockito/Mockito.html)
 
 [Wiki page](https://github.com/mockito/mockito/wiki)
+
+<!-- Ezoic - incontent_10 - incontent_10 -->
+<div id="ezoic-pub-ad-placeholder-118"> </div>
+<!-- End Ezoic - incontent_10 - incontent_10 -->
 
 <hr>
 
