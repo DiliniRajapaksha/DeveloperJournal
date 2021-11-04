@@ -122,7 +122,7 @@ li{
 	grid: "header header" auto
 		  "main aside" 1fr
 		  "footer footer" 4em
-		  / 4fr minmax(250px, 1fr);
+		  / 4fr minmax(350px, 1fr);
 	grid-gap: 2em;
 
 }
@@ -158,7 +158,6 @@ li{
 		display: grid;
 		grid: "header" auto
 			  "main" 1fr
-			  "aside" auto
 			  "footer" 3em;
 	}
 	.col-container{
