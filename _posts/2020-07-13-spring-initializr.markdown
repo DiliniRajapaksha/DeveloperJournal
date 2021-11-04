@@ -165,15 +165,15 @@ Now you can start implementing, and yes you can do any customizations to the bui
 
 <hr>
 
-## Watch how it's done :joy:
+## Watch how it's done
 {: .center}
 
-Check out the YouTube video. <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+Check out the video. <i class="fa fa-hand-o-down" aria-hidden="true"></i>
 {: .center}
 
-<div class="maxw-700 center">
+<div id="spr-ini-vid" class="ezoic-video center">
     <div class="mg-tp-1 video-container center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/oySHuEFPBbk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <span id="ezoic-pub-video-placeholder-1"></span>
     </div>  
 </div>
 
