@@ -894,8 +894,8 @@ In this course you will learn how to write unit tests before implementing a sing
 
 
 <div class="center">
-{% assign ad = page.ads[0] %}
-{% include inline-ad.html ad=ad %}
+  {% assign ad = page.ads[0] %}
+  {% include inline-ad.html ad=ad %}
 </div>
 
 <hr class="gray">
