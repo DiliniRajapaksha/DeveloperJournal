@@ -1,6 +1,6 @@
 ---
 
-layout: lesson
+layout: lesson-video
 comments: true
 
 title:  "Designing A Rest Api With Spring Boot"
@@ -32,6 +32,7 @@ next-lesson:
 
 ---
 
+<span id="ezoic-pub-video-placeholder-6"></span>
 
 <hr>
 
@@ -45,6 +46,11 @@ next-lesson:
 Simplifying further, a REST API communicates with clients in terms of resources on which a client could perform operations such as **Read or Retrieve, Create, Update and Delete.**
 {: .border-box}
 
+
+<!-- Ezoic - incontent_5 - incontent_5 -->
+<div id="ezoic-pub-ad-placeholder-113"> </div>
+<!-- End Ezoic - incontent_5 - incontent_5 -->
+
 <hr>
 
 # REST API Design principles
@@ -54,6 +60,10 @@ Simplifying further, a REST API communicates with clients in terms of resources 
 Following are some of the basic but most overlooked REST API design principles.
 
 {% include video-timestamp.html time=53 %}
+
+<!-- Ezoic - incontent_6 - incontent_6 -->
+<div id="ezoic-pub-ad-placeholder-114"> </div>
+<!-- End Ezoic - incontent_6 - incontent_6 -->
 
 ## 1 | Resources are nouns
 
@@ -90,6 +100,10 @@ stackoverflow.com/listquestions <i class="fa fa-times" aria-hidden="true"></i>
 
 This is not how REST compliant URLs are built.
 
+<!-- Ezoic - incontent_7 - incontent_7 -->
+<div id="ezoic-pub-ad-placeholder-115"> </div>
+<!-- End Ezoic - incontent_7 - incontent_7 -->
+
 ## 2 | Always use plural nouns for resources in the URL
 
 the same examples we saw earlier, **products** instead of product and **questions** instead of question
@@ -106,6 +120,10 @@ A REST compliant web service has a predefined set of **stateless operations**, a
 |PUT |Update or Edit a resource |
 |DELETE|Delete a resource |
 {: .table}
+
+<!-- Ezoic - incontent_8 - incontent_8 -->
+<div id="ezoic-pub-ad-placeholder-116"> </div>
+<!-- End Ezoic - incontent_8 - incontent_8 -->
 
 ## 4 | Appropriate Use of HTTP status codes
 
@@ -129,11 +147,20 @@ You can find all the HTTP status codes and what they mean on the following page.
 
 **400** codes mean some client error.
 
+<!-- Ezoic - incontent_9 - incontent_9 -->
+<div id="ezoic-pub-ad-placeholder-117"> </div>
+<!-- End Ezoic - incontent_9 - incontent_9 -->
+
+
 ## 5 | HATEOAS
 
 HATEOAS stands for Hypermedia As The Engin Of Application 
 
 Simply means to use links for navigating the API.
+
+<!-- Ezoic - incontent_10 - incontent_10 -->
+<div id="ezoic-pub-ad-placeholder-118"> </div>
+<!-- End Ezoic - incontent_10 - incontent_10 -->
 
 <hr>
 
@@ -176,6 +203,10 @@ So, following is how I designed the URLs.
 
 I'm not allowing comment editing so PUT method will not be used.
 
+<!-- Ezoic - incontent_11 - incontent_11 -->
+<div id="ezoic-pub-ad-placeholder-122"> </div>
+<!-- End Ezoic - incontent_11 - incontent_11 -->
+
 <hr>
 
 # Spring Boot Application architecture
@@ -198,4 +229,6 @@ The application code is organised into three layers.
 |Controller|holds the API classes which would serve the incoming requests|
 {: .table}
 
-
+<!-- Ezoic - incontent_12 - incontent_12 -->
+<div id="ezoic-pub-ad-placeholder-123"> </div>
+<!-- End Ezoic - incontent_12 - incontent_12 -->
