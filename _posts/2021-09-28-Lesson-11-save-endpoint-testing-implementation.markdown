@@ -1,9 +1,9 @@
 ---
 
-layout: lesson
+layout: lesson-video
 comments: true
 
-title:  "REST API with Spring Boot | Lesson 11 | Unit Testing and Implementation to Saving a comment"
+title:  "REST API with Spring Boot | Lesson 11 | POST Request Testing And Implementation"
 date:   2021-09-28
 categories: courses/spring-boot
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
@@ -28,9 +28,11 @@ next-lesson:
 
 ---
 
+<span id="ezoic-pub-video-placeholder-13"></span>
+
 <hr>
 
-# Saving a Comment
+# POST Request
 
 <hr>
 

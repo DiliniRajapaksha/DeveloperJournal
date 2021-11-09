@@ -1,6 +1,6 @@
 ---
 
-layout: lesson
+layout: lesson-video
 comments: true
 
 title:  "REST API with Spring Boot | Unit Testing and Implementation of the Service"
@@ -26,3 +26,5 @@ next-lesson:
     url: lesson-6-spring-data
 
 ---
+
+<span id="ezoic-pub-video-placeholder-8"></span>

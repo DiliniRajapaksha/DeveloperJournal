@@ -1,6 +1,6 @@
 ---
 
-layout: lesson
+layout: lesson-video
 comments: true
 
 title:  "Integration Testing with Spring Boot"
@@ -40,6 +40,9 @@ next-lesson:
     url: lesson-8-spring-boot-application
 
 ---
+
+<span id="ezoic-pub-video-placeholder-9"></span>
+
 
 <hr>
 

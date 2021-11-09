@@ -1,6 +1,6 @@
 ---
 
-layout: lesson
+layout: lesson-video
 comments: true
 
 title:  "Spring Transaction Management In REST API With Spring Boot"
@@ -35,6 +35,8 @@ next-lesson:
     youtube-url:
 
 ---
+
+<span id="ezoic-pub-video-placeholder-11"></span>
 
 <hr>
 
