@@ -1,6 +1,6 @@
 ---
 
-layout: lesson
+layout: lesson-video
 comments: true
 
 title:  "REST API with Spring Boot | Lesson 14 | Delete Entity"
@@ -28,3 +28,4 @@ next-lesson:
 
 ---
 
+<span id="ezoic-pub-video-placeholder-14"></span>

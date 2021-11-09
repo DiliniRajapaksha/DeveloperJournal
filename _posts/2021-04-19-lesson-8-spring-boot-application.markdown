@@ -1,6 +1,6 @@
 ---
 
-layout: lesson
+layout: lesson-video
 comments: true
 
 title:  "Spring Boot Application"
@@ -34,6 +34,8 @@ next-lesson:
     url: lesson-9-spring-transaction-handling
 
 ---
+
+<span id="ezoic-pub-video-placeholder-10"></span>
 
 <hr>
 

@@ -1,6 +1,6 @@
 ---
 
-layout: lesson
+layout: lesson-video
 comments: true
 
 title:  "Unit Testing And Implementation Of REST API With Spring Boot"
@@ -27,7 +27,7 @@ next-lesson:
 
 ---
 
-
+<span id="ezoic-pub-video-placeholder-7"></span>
 
 
 

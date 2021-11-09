@@ -1,6 +1,6 @@
 ---
 
-layout: lesson
+layout: lesson-video
 comments: true
 
 title:  "Integration Testing REST API with Spring Boot Part 2"
@@ -27,6 +27,8 @@ next-lesson:
     youtube-url: https://youtu.be/fMHOldR44rQ
 
 ---
+
+<span id="ezoic-pub-video-placeholder-12"></span>
 
 <hr>
 

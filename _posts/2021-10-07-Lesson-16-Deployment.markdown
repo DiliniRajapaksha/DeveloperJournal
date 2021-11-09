@@ -1,6 +1,6 @@
 ---
 
-layout: lesson
+layout: lesson-video
 comments: true
 
 title:  "How To Deploy A Spring Boot Application"
@@ -37,6 +37,8 @@ next-lesson:
     url: 
     youtube-url: https://youtu.be/YrVx11DSAjY
 ---
+
+<span id="ezoic-pub-video-placeholder-16"></span>
 
 <hr>
 

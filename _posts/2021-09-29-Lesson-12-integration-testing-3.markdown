@@ -28,6 +28,8 @@ next-lesson:
 
 ---
 
+<span id="ezoic-pub-video-placeholder-18"></span>
+
 <hr>
 
 # Integration Tests For Saving An Entity

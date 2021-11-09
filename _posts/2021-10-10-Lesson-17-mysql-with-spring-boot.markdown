@@ -1,6 +1,6 @@
 ---
 
-layout: lesson
+layout: lesson-video
 comments: true
 
 title:  "Spring Boot How To Connect To MySQL Database"
@@ -28,6 +28,7 @@ images:
 
 ---
 
+<span id="ezoic-pub-video-placeholder-17"></span>
 
 So far we've been using the in-memory database H2. 
 
