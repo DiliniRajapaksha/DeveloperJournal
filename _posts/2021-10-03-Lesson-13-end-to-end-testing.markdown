@@ -11,7 +11,7 @@ description: "REST API End To End Testing"
 excerpt_separator: <!--more-->
 
 cover-image: 
-    url: /assets/img/spring-boot-course/Lesson13-spring-boot.png
+    url: /assets/img/thumb/postman.svg
     alt: Spring Boot Application
     title: Spring Boot Application
 

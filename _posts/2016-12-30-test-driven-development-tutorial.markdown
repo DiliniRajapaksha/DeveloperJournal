@@ -24,7 +24,7 @@ ads:
         title: Spring Boot Course
 
 cover-image:
-    url: /assets/img/tdd/TDD-thumb.png
+    url: /assets/img/thumb/TDD.svg
     alt: Test Driven Development Tutorial
     title: Test Driven Development Demo
 

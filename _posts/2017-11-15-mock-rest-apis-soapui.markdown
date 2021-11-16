@@ -10,7 +10,7 @@ description: "It's super quick and easy to mock or simulate any REST api with SO
 excerpt_separator: <!--more-->
 
 cover-image:
-    url: /assets/img/rest-mock/rest-mock.png
+    url: /assets/img/thumb/soapui.svg
     alt: Mock Rest APIs with Soap UI
     title: Mock Rest APIs with Soap UI
 

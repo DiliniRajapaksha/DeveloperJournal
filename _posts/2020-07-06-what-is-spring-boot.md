@@ -12,7 +12,7 @@ description: "Spring Boot is a framework or rather a tool built on top of spring
 excerpt_separator: <!--more-->
 
 images: 
-  - url: /assets/img/spring-boot/what-is-spring-boot.jpg
+  - url: /assets/img/thumb/spring-boot.svg
     alt: What is Spring Boot
     title: What is Spring Boot
 
@@ -25,7 +25,7 @@ ads:
         title: Spring Boot Course
 
 cover-image: 
-    url: /assets/img/spring-boot/what-is-spring-boot.jpg
+    url: /assets/img/thumb/spring-boot.svg
     alt: What is Spring Boot
     title: What is Spring Boot
 ---

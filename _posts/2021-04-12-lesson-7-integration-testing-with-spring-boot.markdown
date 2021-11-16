@@ -17,7 +17,7 @@ youtube:
         alt: 'Integration Testing with Spring Boot'
 
 cover-image: 
-    url: /assets/img/spring-boot-course/Lesson 7 - int1.png
+    url: /assets/img/thumb/spring-boot-integration-testing.svg
     alt: Integration Testing with Spring Boot
     title: Integration Testing with Spring Boot
 

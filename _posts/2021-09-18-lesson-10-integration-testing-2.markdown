@@ -17,7 +17,7 @@ youtube:
         alt: 'Integration Testing Part 2'
 
 cover-image: 
-    url: /assets/img/spring-boot-course/Lesson 10 - Integration testing - part 2.png
+    url: /assets/img/thumb/spring-boot-integration-testing-2.svg
     alt: Spring Boot Application
     title: Spring Boot Application
 

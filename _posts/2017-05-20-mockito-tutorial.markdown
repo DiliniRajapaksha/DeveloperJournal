@@ -18,7 +18,7 @@ description: "Learn to write elegant unit tests and mock dependencies with Mocki
 excerpt_separator: <!--more-->
 name: mockito
 cover-image:
-    url: /assets/img/mockito/mockito3.png
+    url: /assets/img/thumb/Mockito.svg
     alt: Mockito Tutorial
     title: Mockito Tutorial
 images: 

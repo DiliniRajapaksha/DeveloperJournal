@@ -11,7 +11,7 @@ description: "Endpoint implementation to retrieve comments - part 3 - The Reposi
 excerpt_separator: <!--more-->
 
 cover-image: 
-    url: /assets/img/spring-boot-course/Lesson 6 - Repository.png
+    url: /assets/img/thumb/spring-data.svg
     alt: Spring Data
     title: Spring Data
 

@@ -17,7 +17,7 @@ youtube:
         alt: 'Lesson 1'
 
 cover-image: 
-    url: /assets/img/spring-boot-course/Lesson 1 - Spring Initializr.png
+    url: /assets/img/thumb/springinitializr-1.svg
     alt: spring initializr
     title: spring initializr
 
