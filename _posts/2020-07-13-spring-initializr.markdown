@@ -13,7 +13,7 @@ excerpt_separator: <!--more-->
 name: spring-initializr
 
 images: 
-  - url: /assets/img/spring-boot/Spring initializr/how to use spring initializr.png
+  - url: /assets/img/thumb/springinitializr.svg
     alt: how to use spring initializr
     title: how to use spring initializr
   - url: /assets/img/spring-boot/Spring initializr/Spring Initializr website.jpg
@@ -57,7 +57,7 @@ images:
     title: Spring Initializr-defaults   
 
 cover-image: 
-    url: /assets/img/spring-boot/Spring initializr/how to use spring initializr.png
+    url: /assets/img/thumb/springinitializr.svg
     alt: how to use spring initializr
     title: how to use spring initializr
 

@@ -17,7 +17,7 @@ youtube:
         alt: 'Lesson 4'
 
 cover-image: 
-    url: /assets/img/spring-boot-course/Lesson 4 - controller.png
+    url: /assets/img/thumb/spring-boot-controller.svg
     alt: Unit Testing and Implementation
     title: Unit Testing and Implementation
 

@@ -17,7 +17,7 @@ description: In this Spring Boot Crash Course I will teach you how to build a RE
 excerpt_separator: <!--more-->
 
 cover-image:
-    url: /assets/img/spring-boot-course/thumb.jpg
+    url: /assets/img/thumb/spring-boot-course.svg
     alt: Learn Spring Boot 
     title: The Spring Boot Course
 

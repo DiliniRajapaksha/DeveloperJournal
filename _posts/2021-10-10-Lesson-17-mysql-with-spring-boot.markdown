@@ -17,7 +17,7 @@ youtube:
         alt: 'Lesson17 Connecting To MySQL Database'
 
 cover-image: 
-    url: /assets/img/spring-boot-course/Lesson17-spring-boot.png
+    url: /assets/img/thumb/spring-boot-mysql.svg
     alt: Spring Boot Application - Connecting To MySQL Database
     title: Spring Boot Application - Connecting To MySQL Database
 

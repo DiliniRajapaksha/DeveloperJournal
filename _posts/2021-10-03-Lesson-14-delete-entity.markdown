@@ -17,7 +17,7 @@ youtube:
         alt: 'Lesson14-spring-boot'
 
 cover-image: 
-    url: /assets/img/spring-boot-course/Lesson14-spring-boot.png
+    url: /assets/img/thumb/spring-boot-delete.svg
     alt: Spring Boot Application
     title: Spring Boot Application
 

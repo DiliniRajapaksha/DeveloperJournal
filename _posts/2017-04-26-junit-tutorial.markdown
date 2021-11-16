@@ -10,12 +10,12 @@ description: In this tutorial we will look into the basics of JUnit 4 which are 
 excerpt_separator: <!--more-->
 name: junit
 cover-image: 
-    url: /assets/img/junit/junit.png
+    url: /assets/img/thumb/JUnit.svg
     alt: How to write great unit tests with JUnit
     title: How to write great unit tests with JUnit
     
 images: 
-  - url: /assets/img/junit/junit.png
+  - url: /assets/img/thumb/JUnit.svg
     alt: How to write great unit tests with JUnit
     title: How to write great unit tests with JUnit
 

@@ -17,7 +17,7 @@ youtube:
         alt: 'Lesson 3'
 
 cover-image: 
-    url: /assets/img/spring-boot-course/Lesson 3 - Design.png
+    url: /assets/img/thumb/rest-api-design.svg
     alt: Design
     title: Design
 
