@@ -22,10 +22,10 @@ cover-image:
     alt: Mockito Tutorial
     title: Mockito Tutorial
 images: 
-  - url: /assets/img/mockito/mockito3.png
+  - url: /assets/img/thumb/Mockito.svg
     alt: Mockito
     title: Mockito
-image: /assets/img/mockito/mockito3.png
+image: /assets/img/thumb/Mockito.svg
 
 ads:
     - url: /courses/spring-boot/REST-API-with-Spring-Boot
