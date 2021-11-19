@@ -11,7 +11,7 @@
 :root{
 	--turquoise:#7ecdd0;
 	--brand-color:#282828;
-	--raleway-font: "raleway",sans-serif;
+	--raleway-font: "Raleway",sans-serif;
 	--title-color:#282828;
 	--pink:#ff7770;
 	--gray:#eee;
@@ -20,7 +20,7 @@
 }
 
 /*// Our variables*/
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: 'Raleway', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -70,9 +70,9 @@ html, body{
 	margin: 0px;
 	/*font-family: 'Nunito', sans-serif;*/
 	/*font-family: 'Open Sans', sans-serif;*/
-	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+	font-family: 'Nunito', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
 	color: #1f1f1f;
-	letter-spacing: 1px;
+	letter-spacing: 1.5px;
 	/*font-weight: 400;*/
 	font-style: normal;
 	background-color: #FFFFFF;
@@ -101,7 +101,8 @@ h3, h2{
 }
 
 h5{
-	font-size: 1em
+	font-size: 1em;
+	font-weight: 600;
 }
 video {
   width: 100%    !important;
@@ -126,7 +127,7 @@ li{
 	grid: "header" auto
 	  "content" 1fr
 	  / 1fr;
-	max-width: 1500px;
+	max-width: 75ch;
 	justify-self: center;
 	margin-right: 2rem;
 	margin-left: 2rem;
@@ -209,7 +210,7 @@ $radius: 0.2rem;
     position: absolute;
     cursor: pointer;
     margin: 0rem 1rem;
-    right: 0;
+    right: 1rem;
     top: 2rem;
 
     svg {
@@ -245,8 +246,10 @@ $radius: 0.2rem;
       &:first-child {
         margin-right: auto;
         display: block;
+        font-family: 'Lato', sans-serif;
         font-size: 1.5rem;
         font-weight: bold;
+        letter-spacing: 2px;
       }
     }
 
@@ -342,9 +345,7 @@ main{
 
 article{
 	grid-area: article;
-	display: grid;
-	grid: repeat(3, auto)/ 1fr;
-	justify-content: center;
+	max-width: 75ch;
 }
 
 .article-footer{
@@ -369,7 +370,9 @@ footer{
 	background-color: var(--turquoise);
 	display: flex;
 	flex-direction: column;
-    justify-content: center;
+  justify-content: center;
+  align-content: center;
+  padding: 1em;
 
 }
 
@@ -525,11 +528,10 @@ hr {
 .post-title, .post-title a{
  	font-family: var(--raleway-font);
     font-style: normal;
-    font-weight: 300;
-    font-size: 38;
+    font-size: clamp(24px, 5vw, 35px);
     line-height: 1.3em;
     text-transform: none;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     margin-bottom: 0.1em;
     color: #1c1c1c!important;
 
