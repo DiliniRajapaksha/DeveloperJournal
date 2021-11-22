@@ -7,7 +7,7 @@ title:  "Spring Boot How To Connect To MySQL Database"
 date:   2021-10-10
 categories: courses/spring-boot
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
-description: "REST API Deployment "
+description: "How to connect Spring Boot application with external database MySQL "
 excerpt_separator: <!--more-->
 
 youtube:
@@ -91,7 +91,7 @@ Check out the build file @ <https://github.com/JavaCodeHouse/comments-applicatio
 
 This could be done via an application.properties file placed in the `src/resources` directory.
 
-<div class="border-box bold">
+<div class="border-box bold" markdown=1>
 
 An `application.properties` file is one of many ways that Spring Boot lets you externalize configuration.
 A Spring Boot application loads properties from an `application.properties` file placed in the classpath.
