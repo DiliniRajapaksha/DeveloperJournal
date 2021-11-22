@@ -19,7 +19,7 @@ name: tdd
 ads:
     - url: /courses/spring-boot/REST-API-with-Spring-Boot
       img: 
-        url: /assets/img/spring-boot-course/thumb.jpg
+        url: /assets/img/spring-boot-course/spring-boot-course.svg
         alt: Spring Boot Course
         title: Spring Boot Course
 
