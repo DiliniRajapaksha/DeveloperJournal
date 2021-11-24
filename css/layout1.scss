@@ -136,7 +136,7 @@ body{
 	grid-template-rows: 1fr auto auto 1fr 1fr 1fr;
 
 	grid-template-areas: 	"header"
-												 "ad" 
+												 "ad-ez" 
 												 "content"
 												 "sidebar-l"
 												 "sidebar-r"
@@ -154,7 +154,7 @@ body{
 		grid-template-rows: 1fr auto auto 1fr 1fr 1fr;
 
 		grid-template-areas: 	". header ."
-													 "ad ad ad" 
+													 "ad-ez ad-ez ad-ez" 
 													 ". content ."
 													 ". sidebar-l ."
 													 ". sidebar-r ."
@@ -592,18 +592,6 @@ hr {
  .ad .button{
 	background-color: var(--pink);
 }
-
- @media only screen and (max-width : 960px) {
-
-	.side-bar{
-		position: relative;
-		/*width:50%;*/
-		min-width: 350px;
-	}
-	aside{
-		margin-top: 0px;
-	}
- }
 
 
 #content-upgrade{
