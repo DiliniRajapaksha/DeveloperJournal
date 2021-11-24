@@ -154,7 +154,7 @@ body{
 		grid-template-rows: 1fr auto auto 1fr 1fr 1fr;
 
 		grid-template-areas: 	". header ."
-													 ". ad ." 
+													 "ad ad ad" 
 													 ". content ."
 													 ". sidebar-l ."
 													 ". sidebar-r ."
@@ -184,8 +184,8 @@ body{
 
 	grid-template-areas: "header ."
 											 "ad-ez ad-ez " 
-											 "content sidebarl"
-											 "sidebarr sidebarr"
+											 "content sidebarr"
+											 "sidebarl sidebarl"
 											 "footer footer";
 	}
 
@@ -195,7 +195,7 @@ body{
 
 }
 
-@media only screen and (min-width: (750px + 2*360px)) {
+@media only screen and (min-width: (720px + 2*360px)) {
 
 	body{
 	display: grid;
@@ -204,7 +204,7 @@ body{
 
 	grid-template-areas: ". header ."
 											 "ad-ez ad-ez ad-ez" 
-											 "sidebarr content sidebarl"
+											 "sidebarl content sidebarr"
 											 "footer footer footer";
 	}
 
