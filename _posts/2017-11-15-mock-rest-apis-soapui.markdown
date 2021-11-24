@@ -15,7 +15,7 @@ cover-image:
     title: Mock Rest APIs with Soap UI
 
 images: 
-  - url: /assets/img/rest-mock/rest-mock.png
+  - url: /assets/img/thumb/soapui.svg
     alt: Mock Rest APIs with Soap UI
     title: Mock Rest APIs with Soap UI
     max-width: 900px
