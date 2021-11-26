@@ -44,6 +44,9 @@ You'll learn to,
 
 - Then generate the eclipse configuration files and import the project to eclipse.
 
+<!-- Ezoic - under_first_paragraph - under_first_paragraph -->
+<div id="ezoic-pub-ad-placeholder-124"> </div>
+<!-- End Ezoic - under_first_paragraph - under_first_paragraph -->
 
 <hr class="gray">
 
@@ -62,6 +65,10 @@ The Gradle command to generate eclipse configuration files:
 On Windows:  `gradlew eclipse`
 
 On Mac: `./gradlew eclipse`
+
+<!-- Ezoic - under_second_paragraph - under_second_paragraph -->
+<div id="ezoic-pub-ad-placeholder-125"> </div>
+<!-- End Ezoic - under_second_paragraph - under_second_paragraph -->
 
 <hr class="gray">
 

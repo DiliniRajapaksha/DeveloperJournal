@@ -1,6 +1,6 @@
 ---
 
-layout: lesson
+layout: lesson-video
 comments: true
 
 title:  "How To Create Spring Boot Project With Spring Initializr"
@@ -28,6 +28,10 @@ next-lesson:
 
 ---
 
+
+<span id="ezoic-pub-video-placeholder-19"></span>
+
+
 <hr class="gray">
 
 You'll learn,
@@ -37,6 +41,11 @@ You'll learn,
 - Spring starter dependencies.
 
 - Discuss the content i.e each and every line, of the generated build file.
+
+<!-- Ezoic - under_first_paragraph - under_first_paragraph -->
+<div id="ezoic-pub-ad-placeholder-124"> </div>
+<!-- End Ezoic - under_first_paragraph - under_first_paragraph -->
+
 
 <hr>
 
@@ -55,6 +64,10 @@ All you have to do is select a few starter dependencies according the type of pr
 You can find a list of Spring Boot Starters and a link to each of the build files [here]({% post_url 2020-07-06-what-is-spring-boot %}#spring-boot-starters){:target="_blank"}
 
 So for example, if you are building a REST API or a web project, you would add the `spring-boot-starter-web` dependency to your project and if you take a look at the [build](https://github.com/spring-projects/spring-boot/blob/master/spring-boot-project/spring-boot-starters/spring-boot-starter-web/build.gradle){:target="_blank"} file, you can see all the other dependencies it includes. And if you want to use spring data jpa, you would add the spring-boot-starter-data-jpa dependency.
+
+<!-- Ezoic - under_second_paragraph - under_second_paragraph -->
+<div id="ezoic-pub-ad-placeholder-125"> </div>
+<!-- End Ezoic - under_second_paragraph - under_second_paragraph -->
 
 <hr>
 
@@ -89,6 +102,10 @@ So for example, if you are building a REST API or a web project, you would add t
     }
 ~~~
 {: .language-groovy}
+
+<!-- Ezoic - incontent_5 - incontent_5 -->
+<div id="ezoic-pub-ad-placeholder-113"> </div>
+<!-- End Ezoic - incontent_5 - incontent_5 -->
 
 <hr>
 

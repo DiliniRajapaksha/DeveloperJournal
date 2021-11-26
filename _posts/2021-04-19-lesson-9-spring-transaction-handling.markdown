@@ -53,6 +53,10 @@ The method executes inside of a transaction, if anything goes wrong in the middl
     {% include image.html image=image %}
 </div>
 
+<!-- Ezoic - under_first_paragraph - under_first_paragraph -->
+<div id="ezoic-pub-ad-placeholder-124"> </div>
+<!-- End Ezoic - under_first_paragraph - under_first_paragraph -->
+
 ### Transactional Method Example
 
 Let's say there were 100 comments in a database, and while a method is being executed, 30 of them were successfully streamed, but then something happens in the middle of it and it could not read from the database anymore. 
@@ -60,6 +64,10 @@ Let's say there were 100 comments in a database, and while a method is being exe
 If the method runs within a transaction, the whole method will fail instead of returning 30 comments. 
 
 That prevents us from getting an incomplete list of comments.
+
+<!-- Ezoic - under_second_paragraph - under_second_paragraph -->
+<div id="ezoic-pub-ad-placeholder-125"> </div>
+<!-- End Ezoic - under_second_paragraph - under_second_paragraph -->
 
 <hr>
 
@@ -77,6 +85,11 @@ Spring Framework’s transaction support is enabled via AOP proxies. So the call
     {% include image.html image=image %}
 </div>
 
+<!-- Ezoic - incontent_5 - incontent_5 -->
+<div id="ezoic-pub-ad-placeholder-113"> </div>
+<!-- End Ezoic - incontent_5 - incontent_5 -->
+
+
 <hr>
 
 # How To Enable Spring's Transaction Management
@@ -88,6 +101,10 @@ Typically transaction management is enabled using `@EnableTransactionManagement`
 We are building a Spring Boot application, so most of the configuration is done for me. because I have spring-data libraries in the classpath, transaction management is enabled by the framework. So, you don't have to do anything to enable transaction management.
 
 In order to apply transaction management, all you have to do is add the `@Transactional` annotation.
+
+<!-- Ezoic - incontent_6 - incontent_6 -->
+<div id="ezoic-pub-ad-placeholder-114"> </div>
+<!-- End Ezoic - incontent_6 - incontent_6 -->
 
 <hr>
 
@@ -168,6 +185,12 @@ The `@Transactional` annotation can be placed on interfaces, classes, or both cl
 
 Don't worry if you are confused with the above excerpt, it's all explained below. <i class="fa fa-hand-o-down" aria-hidden="true"></i>
 
+
+
+<!-- Ezoic - incontent_7 - incontent_7 -->
+<div id="ezoic-pub-ad-placeholder-115"> </div>
+<!-- End Ezoic - incontent_7 - incontent_7 -->
+
 <hr>
 
 # Transaction Configuration In Spring
@@ -191,6 +214,10 @@ Following are the settings or the attributes which can be set on this tag.
     proxy-target-class
     order
 
+<!-- Ezoic - incontent_8 - incontent_8 -->
+<div id="ezoic-pub-ad-placeholder-116"> </div>
+<!-- End Ezoic - incontent_8 - incontent_8 -->
+
 ### Java Based configuration
 
 When using java based configuration, `@EnableTransactionManagement` annotation would be used to provide the same configuration as above.
@@ -204,6 +231,11 @@ It has the following three optional elements.
 
 Regardless of the mode of configuration, i.e. either XML or Java based configuration, so long as we have not specifically set these attributes, the default values apply. So let's look at each one.
 
+
+<!-- Ezoic - incontent_9 - incontent_9 -->
+<div id="ezoic-pub-ad-placeholder-117"> </div>
+<!-- End Ezoic - incontent_9 - incontent_9 -->
+
 ### The proxyTargetClass or proxy-target-class
 
 This could be either true or false.
@@ -212,6 +244,9 @@ The default value is **false**. In which case, **JDK interface-based proxies** a
 
 If this attribute is set to **true**, then **CGLIB proxies** will be used, which are class-based, and therefore any `@Transactional` annotations on interfaces will be ignored.
 
+<!-- Ezoic - incontent_10 - incontent_10 -->
+<div id="ezoic-pub-ad-placeholder-118"> </div>
+<!-- End Ezoic - incontent_10 - incontent_10 -->
 
 ### The mode
 
@@ -243,10 +278,19 @@ That's because,
 
 </div>
 
+
+<!-- Ezoic - incontent_11 - incontent_11 -->
+<div id="ezoic-pub-ad-placeholder-122"> </div>
+<!-- End Ezoic - incontent_11 - incontent_11 -->
+
 ### What Happens In A Spring Boot Application
 
 In a Spring Boot application, transaction management is enabled by the framework, without having to add the `@EnableTransactionManagement` annotation, and the defaults are applied.
 Hence there is no restriction as to where to place the `@Transactional` annotations, but it is safer to follow the recommendation because in case those need to be changed later on.
+
+<!-- Ezoic - incontent_12 - incontent_12 -->
+<div id="ezoic-pub-ad-placeholder-123"> </div>
+<!-- End Ezoic - incontent_12 - incontent_12 -->
 
 <hr>
 

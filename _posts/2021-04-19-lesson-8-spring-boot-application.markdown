@@ -54,6 +54,9 @@ Following is the very minimum you have to do, to make any Java application a Spr
 
 Let's look at each step in detail.
 
+<!-- Ezoic - under_first_paragraph - under_first_paragraph -->
+<div id="ezoic-pub-ad-placeholder-124"> </div>
+<!-- End Ezoic - under_first_paragraph - under_first_paragraph -->
 
 ## 1. The Main class
 
@@ -77,6 +80,10 @@ So the root package is `com.comment`, and this is where I want to place the main
 </div>
 
 
+<!-- Ezoic - under_second_paragraph - under_second_paragraph -->
+<div id="ezoic-pub-ad-placeholder-125"> </div>
+<!-- End Ezoic - under_second_paragraph - under_second_paragraph -->
+
 ## 2. The @SpringBootApplication Annotation
 
 
@@ -98,12 +105,20 @@ By enabling auto-configuration, the Spring Boot framework kind of looks at the j
 
 For example, if H2 is on your classpath, and you have not manually configured any database connection beans, then Spring Boot auto-configures an in-memory database. How convenient is that? :grinning:
 
+<!-- Ezoic - incontent_5 - incontent_5 -->
+<div id="ezoic-pub-ad-placeholder-113"> </div>
+<!-- End Ezoic - incontent_5 - incontent_5 -->
+
 ### @ComponentScan
 
 This is the annotation that we can use to tell the Spring framework where to scan for beans, i.e. basically the classes annotated with @Component, @Service or @Repository.
 
 So when this annotation is on a particular class, the package of that class and all of its sub-packages will be scanned for beans.
 That's why we want to place the main class in the root package so that all the beans could be found.
+
+<!-- Ezoic - incontent_6 - incontent_6 -->
+<div id="ezoic-pub-ad-placeholder-114"> </div>
+<!-- End Ezoic - incontent_6 - incontent_6 -->
 
 ### @Configuration
 
@@ -112,6 +127,10 @@ Spring Boot favours Java-based configuration, and in the documentation, it is sa
 
 > Although it is possible to use SpringApplication with XML sources, we generally recommend that your primary source be a single @Configuration class. Usually, the class that defines the main method is a good candidate as the primary @Configuration.
 > --- [Spring Boot Reference Guide](https://docs.spring.io/spring-boot/docs/2.0.x/reference/html/using-boot-configuration-classes.html){:target="_blank"}
+
+<!-- Ezoic - incontent_7 - incontent_7 -->
+<div id="ezoic-pub-ad-placeholder-115"> </div>
+<!-- End Ezoic - incontent_7 - incontent_7 -->
 
 
 ## 3. The main Method
@@ -138,6 +157,10 @@ public class Application {
 ~~~
 {: .language-java}
 
+<!-- Ezoic - incontent_8 - incontent_8 -->
+<div id="ezoic-pub-ad-placeholder-116"> </div>
+<!-- End Ezoic - incontent_8 - incontent_8 -->
+
 <hr>
 
 # Spring Boot Application Annotations in Controller, Service, and Repository layers
@@ -154,6 +177,10 @@ But then, how is this controller identified by the framework?
 
 Annotations of course!
 
+<!-- Ezoic - incontent_9 - incontent_9 -->
+<div id="ezoic-pub-ad-placeholder-117"> </div>
+<!-- End Ezoic - incontent_9 - incontent_9 -->
+
 ### @Restcontroller
 
 When you annotate the Controller class with the `@Restcontroller` annotation, Spring Boot will pick it up as a resource controller to serve the incoming HTTP requests.
@@ -165,6 +192,9 @@ When you annotate the Controller class with the `@Restcontroller` annotation, Sp
 
 `@Controller` indicates that the class is a controller, and it is itself annotated with `@Component`
 
+<!-- Ezoic - incontent_10 - incontent_10 -->
+<div id="ezoic-pub-ad-placeholder-118"> </div>
+<!-- End Ezoic - incontent_10 - incontent_10 -->
 
 ### Controller method annoatations
 
@@ -184,6 +214,11 @@ Following are the HTTP method specific variants, which are method level annotati
 - `@PatchMapping`
 
 If the request URI contains a path parameter, it should be annotated with `@PathVariable` in the method parameter.
+
+
+<!-- Ezoic - incontent_11 - incontent_11 -->
+<div id="ezoic-pub-ad-placeholder-122"> </div>
+<!-- End Ezoic - incontent_11 - incontent_11 -->
 
 ### Example request URI and the matching Controller method
 
@@ -257,6 +292,10 @@ public class CommentService {
 
 ~~~
 {: .language-java}
+
+<!-- Ezoic - incontent_12 - incontent_12 -->
+<div id="ezoic-pub-ad-placeholder-123"> </div>
+<!-- End Ezoic - incontent_12 - incontent_12 -->
 
 ## The Repository
 

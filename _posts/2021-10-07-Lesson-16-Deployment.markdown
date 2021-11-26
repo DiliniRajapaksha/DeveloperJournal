@@ -56,6 +56,10 @@ There are quite a few options or ways of running the application, each has its u
 
 First, let's look at the easiest and the quickest option.
 
+<!-- Ezoic - incontent_5 - incontent_5 -->
+<div id="ezoic-pub-ad-placeholder-113"> </div>
+<!-- End Ezoic - incontent_5 - incontent_5 -->
+
 
 ## Run the Spring Boot Application Using Gradle Command Line
 
@@ -69,6 +73,11 @@ So all you have to do is to run the task on command line.
 {: .terminal}
 
 {% include video-timestamp.html time=43 %}
+
+<!-- Ezoic - incontent_6 - incontent_6 -->
+<div id="ezoic-pub-ad-placeholder-114"> </div>
+<!-- End Ezoic - incontent_6 - incontent_6 -->
+
 
 
 ## How to run a Spring Boot Application as an executable jar
@@ -89,6 +98,10 @@ Change directory to build/libs directory and run the below command.
 comment.jar is the name of the jar file.
 
 {% include video-timestamp.html time=116 %}
+
+<!-- Ezoic - incontent_7 - incontent_7 -->
+<div id="ezoic-pub-ad-placeholder-115"> </div>
+<!-- End Ezoic - incontent_7 - incontent_7 -->
 
 
 ## How To Create An Executable War File In Spring Boot With Gradle
@@ -119,6 +132,10 @@ public class CommentApplication extends SpringBootServletInitializer {
 ```
 {: .language-java}
 
+<!-- Ezoic - incontent_8 - incontent_8 -->
+<div id="ezoic-pub-ad-placeholder-116"> </div>
+<!-- End Ezoic - incontent_8 - incontent_8 -->
+
 
 Next, add the war plugin to the build file in the plugins sections.
 
@@ -145,6 +162,10 @@ Now you can run the war file with the below command
 `java -jar comments.war`
 {: .terminal}
 
+<!-- Ezoic - incontent_9 - incontent_9 -->
+<div id="ezoic-pub-ad-placeholder-117"> </div>
+<!-- End Ezoic - incontent_9 - incontent_9 -->
+
 
 ## How To Deploy Spring Boot Application To External Server
 
@@ -159,6 +180,11 @@ Then package the application to a war file. You could move the Spring Boot Tomca
 Then deploy this war file in your server as usual.
 
 {% include video-timestamp.html time=268 %}
+
+
+<!-- Ezoic - incontent_10 - incontent_10 -->
+<div id="ezoic-pub-ad-placeholder-118"> </div>
+<!-- End Ezoic - incontent_10 - incontent_10 -->
 
 ### How To Exclude Embedded Tomcat In Spring Boot Application
 
@@ -193,6 +219,10 @@ This will move the libraries to WEB-INF/lib-provided directory inside the war fi
     {% include image.html image=image %}
 </div>
 
+
+<!-- Ezoic - incontent_11 - incontent_11 -->
+<div id="ezoic-pub-ad-placeholder-122"> </div>
+<!-- End Ezoic - incontent_11 - incontent_11 -->
 
 If I build the project now, it'll package the application to a war file which can be deployed in an external container such as Wildfly or Tomcat.
 
@@ -243,5 +273,10 @@ So here are the two war files.
 As you can see, The normal war file is smaller in size than the executable war file.
 
 Now, to deploy this normal war file in the WildFly server, copy that into the deployments folder, and start the server.
+
+
+<!-- Ezoic - incontent_12 - incontent_12 -->
+<div id="ezoic-pub-ad-placeholder-123"> </div>
+<!-- End Ezoic - incontent_12 - incontent_12 -->
 
 Please find the complete source code @ <https://github.com/JavaCodeHouse/comments-application>{:target="_blank" .url}

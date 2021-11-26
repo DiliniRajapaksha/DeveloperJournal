@@ -38,6 +38,10 @@ next-lesson:
 
 The cool thing about spring boot is that we don't have to worry about database configuration for our testing. Because we added the h2 dependency at the begining, it configures an in memeory database for us, all ready for our testing purposes. Now all I have to do is to pre-load it with my test data. There are a few ways to do this.
 
+<!-- Ezoic - under_first_paragraph - under_first_paragraph -->
+<div id="ezoic-pub-ad-placeholder-124"> </div>
+<!-- End Ezoic - under_first_paragraph - under_first_paragraph -->
+
 ### Three options to preload the database for testing purposes
 
 1. Inject the repository in to the test class and save values directly through that. 
@@ -48,6 +52,10 @@ The cool thing about spring boot is that we don't have to worry about database c
 
 For my testing, I'll use a combination of the last two methods.
 
+
+<!-- Ezoic - incontent_5 - incontent_5 -->
+<div id="ezoic-pub-ad-placeholder-113"> </div>
+<!-- End Ezoic - incontent_5 - incontent_5 -->
 
 ## Using a Script file to preload the database
 
@@ -64,6 +72,10 @@ For my testing, I'll use a combination of the last two methods.
 {: .border-box}
 
 
+<!-- Ezoic - incontent_6 - incontent_6 -->
+<div id="ezoic-pub-ad-placeholder-114"> </div>
+<!-- End Ezoic - incontent_6 - incontent_6 -->
+
 #### Example test-data.sql file
 
 ```
@@ -77,6 +89,11 @@ insert into `comment` (post_id, message) values (1, 'test comment4');
 
 ```
 {: .language-sql}
+
+<!-- Ezoic - incontent_7 - incontent_7 -->
+<div id="ezoic-pub-ad-placeholder-115"> </div>
+<!-- End Ezoic - incontent_7 - incontent_7 -->
+
 
 #### Code example - using the script file to pre-load the database
 
@@ -94,11 +111,21 @@ insert into `comment` (post_id, message) values (1, 'test comment4');
 ```
 {: .language-java}
 
+
+<!-- Ezoic - incontent_8 - incontent_8 -->
+<div id="ezoic-pub-ad-placeholder-116"> </div>
+<!-- End Ezoic - incontent_8 - incontent_8 -->
+
+
 ## Using @Sql and @SqlGroup annotations to execute a set of sql statements
 
 This is best done with an example. In the above example I have used the @Sql annotation to run the script file to load some data, but after the test execution, I want to remove all the data to clear the database for my other tests. This can be done with a single sql statement. So I would use another @Sql annotation to run the delete statement like so, `@Sql(executionPhase = ExecutionPhase.AFTER_TEST_METHOD, statements = "delete from comment;")`.
 
 I would also use the @SqlGroup annotation to group these together.
+
+<!-- Ezoic - incontent_9 - incontent_9 -->
+<div id="ezoic-pub-ad-placeholder-117"> </div>
+<!-- End Ezoic - incontent_9 - incontent_9 -->
 
 #### Code example - using the @Sql and @SqlGroup annotation to execute a set of sql statements
 
@@ -116,6 +143,10 @@ I would also use the @SqlGroup annotation to group these together.
 ```
 {: .language-java}
 
+<!-- Ezoic - incontent_10 - incontent_10 -->
+<div id="ezoic-pub-ad-placeholder-118"> </div>
+<!-- End Ezoic - incontent_10 - incontent_10 -->
+
 <hr>
 
 # How to test the REST API response 
@@ -123,6 +154,11 @@ I would also use the @SqlGroup annotation to group these together.
 <hr>
 
 The response is a JSON, so I will use json path expressions to check that I'm getting the correct response. The [documentation](https://github.com/json-path/JsonPath){:target="_blank"} provide all the expresstions that can be used.
+
+
+<!-- Ezoic - incontent_11 - incontent_11 -->
+<div id="ezoic-pub-ad-placeholder-122"> </div>
+<!-- End Ezoic - incontent_11 - incontent_11 -->
 
 Following are some exapmles that I used in my testing.
 
