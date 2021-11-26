@@ -76,6 +76,10 @@ next-lesson:
 ```
 {: .language-java}
 
+<!-- Ezoic - incontent_5 - incontent_5 -->
+<div id="ezoic-pub-ad-placeholder-113"> </div>
+<!-- End Ezoic - incontent_5 - incontent_5 -->
+
 <hr>
 
 # @ResponseStatus Annotation

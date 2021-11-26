@@ -42,6 +42,11 @@ That would be a catastrophe in a production environment.
 
 So that's why you would want to connect this application to an external database.
 
+<!-- Ezoic - incontent_5 - incontent_5 -->
+<div id="ezoic-pub-ad-placeholder-113"> </div>
+<!-- End Ezoic - incontent_5 - incontent_5 -->
+
+
 <hr>
 
 # Create a schema in MySQL
@@ -64,6 +69,10 @@ Create a new schema for the comment application to connect to, Let's call it `co
 
 Now on to the application.
 
+<!-- Ezoic - incontent_6 - incontent_6 -->
+<div id="ezoic-pub-ad-placeholder-114"> </div>
+<!-- End Ezoic - incontent_6 - incontent_6 -->
+
 <hr>
 
 # How To Connect Spring Boot With Mysql
@@ -76,6 +85,10 @@ You have to do only 2 things in order to connect this Spring Boot application to
 
 2. Next step is to let Spring Boot know that it should use MySQL instead of the embedded database via an application properties file.
 
+<!-- Ezoic - incontent_7 - incontent_7 -->
+<div id="ezoic-pub-ad-placeholder-115"> </div>
+<!-- End Ezoic - incontent_7 - incontent_7 -->
+
 ### Add The Mysql Connector Dependency To The Spring Boot Project
 
 Add the following line to the build.gradle file.
@@ -86,6 +99,10 @@ Add the following line to the build.gradle file.
 
 Check out the build file @ <https://github.com/JavaCodeHouse/comments-application/blob/main/build.gradle>{:target="_blank" .url}
 
+
+<!-- Ezoic - incontent_8 - incontent_8 -->
+<div id="ezoic-pub-ad-placeholder-116"> </div>
+<!-- End Ezoic - incontent_8 - incontent_8 -->
 
 ### Configure MySQL connection in Spring Boot application
 
@@ -98,6 +115,10 @@ A Spring Boot application loads properties from an `application.properties` file
 
 </div>
 
+<!-- Ezoic - incontent_9 - incontent_9 -->
+<div id="ezoic-pub-ad-placeholder-117"> </div>
+<!-- End Ezoic - incontent_9 - incontent_9 -->
+
 This is where you should provide the database connection URL.
 
 {% include video-timestamp.html time=55 %}
@@ -109,6 +130,13 @@ Setting it to `create` will create the tables for the entities in the database, 
 After that, we only need to update the schema if there are any changes to the entities.
 
 Then you should provide the username and password to the database as well.
+
+
+
+<!-- Ezoic - incontent_10 - incontent_10 -->
+<div id="ezoic-pub-ad-placeholder-118"> </div>
+<!-- End Ezoic - incontent_10 - incontent_10 -->
+
 
 #### application.properties file
 
@@ -129,6 +157,10 @@ Now that we have moved from h2 to MySQL, our integration tests are not working a
 As you would guess they fail because there's no database connection.
 
 
+<!-- Ezoic - incontent_11 - incontent_11 -->
+<div id="ezoic-pub-ad-placeholder-122"> </div>
+<!-- End Ezoic - incontent_11 - incontent_11 -->
+
 <hr>
 
 # How To Use External Database With H2 For Testing Purposes
@@ -144,5 +176,10 @@ For that you should add another application.properties file inside of `src/integ
 This is just a blank file, You don't have to have anything in here and this file will override the one we added earlier.
 
 You can find out more about the precedence of external configurations in the [documentation](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html#boot-features-external-config-application-property-files).
+
+
+<!-- Ezoic - incontent_12 - incontent_12 -->
+<div id="ezoic-pub-ad-placeholder-123"> </div>
+<!-- End Ezoic - incontent_12 - incontent_12 -->
 
 Please find the complete source code @ <https://github.com/JavaCodeHouse/comments-application>{:target="_blank" .url}

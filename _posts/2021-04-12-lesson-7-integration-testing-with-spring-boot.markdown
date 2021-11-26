@@ -60,6 +60,11 @@ Now that I have implemented a part of the API across all 3 layers, it's time to 
 For the integration test, I want to send a get request to the API and it should go through all three layers and come back with a response, and this response will be asserted according to the expectations of the API.
 
 
+<!-- Ezoic - under_first_paragraph - under_first_paragraph -->
+<div id="ezoic-pub-ad-placeholder-124"> </div>
+<!-- End Ezoic - under_first_paragraph - under_first_paragraph -->
+
+
 ### Two approaches to Integration testing with Spring
 
 1. Start a server and send the request using the `TestRestTemplate`, provided by Spring.
@@ -82,6 +87,10 @@ So I'm going to use the second approach in my integration tests. For this, I nee
 Using the `MockMvc` I can `perform` GET, POST, AND DELETE operations. 
 
 The `perform` method will return a result as a `ResultAction` on which I can perform operations such as `andDo`, `andReturn` and `andExpect`.
+
+<!-- Ezoic - incontent_5 - incontent_5 -->
+<div id="ezoic-pub-ad-placeholder-113"> </div>
+<!-- End Ezoic - incontent_5 - incontent_5 -->
 
 <hr>
 
@@ -137,6 +146,10 @@ Use `@WebMvcTest` if you only want to test the Controller layer and happy to moc
 ### @AutoConfigureMockMvc
 
 This annotation auto-configures the `MockMvc`.
+
+<!-- Ezoic - incontent_6 - incontent_6 -->
+<div id="ezoic-pub-ad-placeholder-114"> </div>
+<!-- End Ezoic - incontent_6 - incontent_6 -->
 
 <hr>
 
