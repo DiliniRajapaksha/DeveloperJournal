@@ -1,6 +1,6 @@
 ---
 
-layout: lesson-video
+layout: lesson
 comments: true
 
 title:  "How To Deploy A Spring Boot Application"
@@ -13,7 +13,7 @@ excerpt_separator: <!--more-->
 youtube:
     url: https://youtu.be/QAKlzQk0WuY
     image:
-        url: /assets/img/spring-boot-course/Lesson16-spring-boot.png
+        url: /assets/img/thumb/spring-boot-deploy.svg
         alt: 'Lesson16-spring-boot'
 
 cover-image: 

@@ -1,6 +1,6 @@
 ---
 
-layout: lesson-video
+layout: lesson
 comments: true
 
 title:  "REST API with Spring Boot | Unit Testing and Implementation of the Service"
@@ -13,7 +13,7 @@ excerpt_separator: <!--more-->
 youtube:
     url: https://youtu.be/LJjgx3Dra90
     image:
-        url: /assets/img/spring-boot-course/Lesson 5 - service.png
+        url: /assets/img/thumb/spring-boot-service.svg
         alt: 'Lesson 5'
 
 cover-image: 

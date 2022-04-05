@@ -1,6 +1,6 @@
 ---
 
-layout: lesson-video
+layout: lesson
 comments: true
 
 title:  "How To Set Up Spring Boot Project With Gradle"
@@ -13,7 +13,7 @@ excerpt_separator: <!--more-->
 youtube:
     url: https://youtu.be/6YJq9Vng074
     image:
-        url: /assets/img/spring-boot-course/Lesson 2 - Gradle.png
+        url: /assets/img/thumb/springboot-gradle.svg
         alt: 'Lesson 1'
 
 cover-image: 

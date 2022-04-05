@@ -1,6 +1,6 @@
 ---
 
-layout: lesson-video
+layout: lesson
 comments: true
 
 title:  "Spring Transaction Management In REST API With Spring Boot"
@@ -13,7 +13,7 @@ excerpt_separator: <!--more-->
 youtube:
     url: https://youtu.be/nSu1wMXsPqY
     image:
-        url: /assets/img/spring-boot-course/Lesson 9 - Spring Transaction handling.png
+        url: /assets/img/thumb/spring-transactions.svg
         alt: 'Spring Boot Application'
 
 cover-image: 

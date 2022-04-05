@@ -1,6 +1,6 @@
 ---
 
-layout: lesson-video
+layout: lesson
 comments: true
 
 title:  "REST API with Spring Boot | Lesson 14 | Delete Entity"
@@ -13,7 +13,7 @@ excerpt_separator: <!--more-->
 youtube:
     url: https://youtu.be/qqYkfzbXIQ0
     image:
-        url: /assets/img/spring-boot-course/Lesson14-spring-boot.png
+        url: /assets/img/thumb/spring-boot-delete.svg
         alt: 'Lesson14-spring-boot'
 
 cover-image: 
