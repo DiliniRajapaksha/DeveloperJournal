@@ -1,6 +1,6 @@
 ---
 
-layout: lesson-video
+layout: lesson
 comments: true
 
 title:  "How To Create Spring Boot Project With Spring Initializr"
@@ -13,7 +13,7 @@ excerpt_separator: <!--more-->
 youtube:
     url: https://youtu.be/pdX8BM9mi9E
     image:
-        url: /assets/img/spring-boot-course/Lesson 1 - Spring Initializr.png
+        url: /assets/img/thumb/springinitializr-setup.svg
         alt: 'Lesson 1'
 
 cover-image: 

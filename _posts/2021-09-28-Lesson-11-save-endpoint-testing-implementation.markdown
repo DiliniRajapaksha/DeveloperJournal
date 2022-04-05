@@ -1,6 +1,6 @@
 ---
 
-layout: lesson-video
+layout: lesson
 comments: true
 
 title:  "REST API with Spring Boot | Lesson 11 | POST Request Testing And Implementation"
@@ -13,7 +13,7 @@ excerpt_separator: <!--more-->
 youtube:
     url: https://youtu.be/fMHOldR44rQ
     image:
-        url: /assets/img/spring-boot-course/Lesson11-spring-boot.png
+        url: /assets/img/thumb/spring-boot-post.svg
         alt: 'Lesson11-spring-boot'
 
 cover-image: 

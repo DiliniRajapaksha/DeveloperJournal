@@ -1,6 +1,6 @@
 ---
 
-layout: lesson-video
+layout: lesson
 comments: true
 
 title:  "Integration Testing with Spring Boot"

@@ -1,6 +1,6 @@
 ---
 
-layout: lesson-video
+layout: lesson
 comments: true
 
 title:  "Unit Testing And Implementation Of REST API With Spring Boot"
@@ -13,7 +13,7 @@ excerpt_separator: <!--more-->
 youtube:
     url: https://youtu.be/Gq0gBKKLM-I
     image:
-        url: /assets/img/spring-boot-course/Lesson 4 - controller.png
+        url: /assets/img/thumb/spring-boot-controller.svg
         alt: 'Lesson 4'
 
 cover-image: 

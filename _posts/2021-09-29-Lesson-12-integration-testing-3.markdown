@@ -13,7 +13,7 @@ excerpt_separator: <!--more-->
 youtube:
     url: https://youtu.be/wTKs-XAgt2I
     image:
-        url: /assets/img/spring-boot-course/Lesson12-spring-boot.png
+        url: /assets/img/thumb/spring-boot-integration-testing-3.svg
         alt: 'Lesson12-spring-boot'
 
 cover-image: 

@@ -1,6 +1,6 @@
 ---
 
-layout: lesson-video
+layout: lesson
 comments: true
 
 title:  "Designing A Rest Api With Spring Boot"
@@ -13,7 +13,7 @@ excerpt_separator: <!--more-->
 youtube:
     url: https://youtu.be/4OqQtCRb2r8
     image:
-        url: /assets/img/spring-boot-course/Lesson 3 - Design.png
+        url: /assets/img/thumb/rest-api-design.svg
         alt: 'Lesson 3'
 
 cover-image: 

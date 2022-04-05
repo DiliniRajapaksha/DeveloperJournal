@@ -1,6 +1,6 @@
 ---
 
-layout: lesson-video
+layout: lesson
 comments: true
 
 title:  "Spring Data | The Repository"
@@ -9,6 +9,13 @@ categories: courses/spring-boot
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: "Endpoint implementation to retrieve comments - part 3 - The Repository | Spring Data"
 excerpt_separator: <!--more-->
+
+youtube:
+    url: https://youtu.be/UAs8rCeDBZU
+    image:
+        url: /assets/img/thumb/spring-data.svg
+        alt: 'spring-data'
+
 
 cover-image: 
     url: /assets/img/thumb/spring-data.svg

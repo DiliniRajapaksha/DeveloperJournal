@@ -1,6 +1,6 @@
 ---
 
-layout: lesson-video
+layout: lesson
 comments: true
 
 title:  "Spring Boot Application"
@@ -13,7 +13,7 @@ excerpt_separator: <!--more-->
 youtube:
     url: https://youtu.be/nSu1wMXsPqY
     image:
-        url: /assets/img/spring-boot-course/Lesson 8 - Spring boot app.png
+        url: /assets/img/thumb/spring-boot-app.svg
         alt: 'Spring Boot Application'
 
 cover-image: 

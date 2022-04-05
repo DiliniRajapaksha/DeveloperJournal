@@ -1,6 +1,6 @@
 ---
 
-layout: lesson-video
+layout: lesson
 comments: true
 
 title:  "Spring Boot How To Connect To MySQL Database"
@@ -13,7 +13,7 @@ excerpt_separator: <!--more-->
 youtube:
     url: https://youtu.be/YrVx11DSAjY
     image:
-        url: /assets/img/spring-boot-course/Lesson17-spring-boot.png
+        url: /assets/img/thumb/spring-boot-mysql.svg
         alt: 'Lesson17 Connecting To MySQL Database'
 
 cover-image: 

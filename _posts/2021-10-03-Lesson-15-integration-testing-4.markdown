@@ -1,6 +1,6 @@
 ---
 
-layout: lesson-video
+layout: lesson
 comments: true
 
 title:  "Integration Testing REST API with Spring Boot Part 4"
@@ -13,7 +13,7 @@ excerpt_separator: <!--more-->
 youtube:
     url: https://youtu.be/NMOLPNtlQp0
     image:
-        url: /assets/img/spring-boot-course/Lesson15-spring-boot.png
+        url: /assets/img/thumb/spring-boot-integration-testing-4.svg
         alt: 'Lesson15-spring-boot'
 
 cover-image: 
