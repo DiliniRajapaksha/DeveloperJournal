@@ -1,5 +1,6 @@
 ---
 layout: default
+aside: true
 ---
 <article class="post" markdown="1" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -7,14 +8,28 @@ layout: default
 		<h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
 		<time id="publish-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time>
 		{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
+
+		<!-- Ezoic - under_page_title - under_page_title -->
+		<div id="ezoic-pub-ad-placeholder-121"> </div>
+		<!-- End Ezoic - under_page_title - under_page_title -->
+
 	</header>
 
 	<div class="intro">
 		{{page.excerpt}}
+
+		<!-- Ezoic - under_first_paragraph - under_first_paragraph -->
+		<div id="ezoic-pub-ad-placeholder-124"> </div>
+		<!-- End Ezoic - under_first_paragraph - under_first_paragraph -->
 	</div>
 	<div class="visual">
 		{% assign image = page.images[0] %}
 		{% include image.html image=image styleClass="shadow mg-bt-1" id="main-image" %}
+
+		<!-- Ezoic - under_second_paragraph - under_second_paragraph -->
+		<div id="ezoic-pub-ad-placeholder-125"> </div>
+		<!-- End Ezoic - under_second_paragraph - under_second_paragraph -->
+
 	</div>
 
 	<div class="content" itemprop="articleBody">

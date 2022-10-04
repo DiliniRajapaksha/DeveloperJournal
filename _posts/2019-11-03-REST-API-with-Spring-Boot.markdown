@@ -3,6 +3,7 @@
 layout: course-page
 header-style: sp-bt-header bg-dark-gray
 intro-style: bg-sp-bt
+title:  "REST API with Spring Boot"
 title-style: sp-bt-header
 title-tag:  "Learn Spring Boot in 2 hours"
 title-post-pre: "Learn"
@@ -16,19 +17,39 @@ description: In this Spring Boot Crash Course I will teach you how to build a RE
 excerpt_separator: <!--more-->
 
 cover-image:
-    url: /assets/img/spring-boot-course/thumb.jpg
+    url: /assets/img/thumb/spring-boot-course.svg
     alt: Learn Spring Boot 
     title: The Spring Boot Course
 
 youtube-videos:
     - url: https://youtu.be/pdX8BM9mi9E
       image:
-          url: /assets/img/spring-boot-course/lesson1.png
+          url: /assets/img/spring-boot-course/Lesson 1 - Spring Initializr.png
           alt: 'Lesson 1'
     - url: https://youtu.be/6YJq9Vng074
       image:
-          url: /assets/img/spring-boot-course/lesson2.png
+          url: /assets/img/spring-boot-course/Lesson 2 - Gradle.png
           alt: 'Lesson 2'
+    - url: https://youtu.be/4OqQtCRb2r8
+      image:
+          url: /assets/img/spring-boot-course/Lesson 3 - Design.png
+          alt: 'Lesson 3'
+    - url: https://youtu.be/Gq0gBKKLM-I
+      image:
+          url: /assets/img/spring-boot-course/Lesson 4 - controller.png
+          alt: 'Lesson 4'     
+    - url: https://youtu.be/LJjgx3Dra90
+      image:
+          url: /assets/img/spring-boot-course/Lesson 5 - service.png
+          alt: 'Lesson 5'      
+    - url: https://youtu.be/UAs8rCeDBZU
+      image:
+          url: /assets/img/spring-boot-course/Lesson 6 - Repository.png
+          alt: 'Lesson 6'    
+    - url: https://youtu.be/BBE3MJLuTqU
+      image:
+          url: /assets/img/spring-boot-course/Lesson 7 - int1.png
+          alt: 'Lesson 7'    
     - url: https://youtu.be/nSu1wMXsPqY
       image:
           url: /assets/img/spring-boot-course/lesson8.png
@@ -99,7 +120,7 @@ Then generate the eclipse configuration files and import the project to eclipse.
 ### DESIGN
 {: .module-title .center}
 
-#### Lesson 3: Design
+#### [Lesson 3: Design]({% post_url 2021-03-28-lesson-3-design%}){: .lesson-title-link}  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!]({{ page.youtube-videos[2].url }}){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -126,7 +147,7 @@ Then generate the eclipse configuration files and import the project to eclipse.
 This module consists of several lessons on **Unit Testing, Implementation** and also **Integration Testing** the API.
 {: .pd-1}
 
-#### Lesson 4: Endpoint implementation to retrieve comments - part 1 (The Controller)
+#### [Lesson 4: Endpoint implementation to retrieve comments - part 1 (The Controller)]({% post_url 2021-03-31-lesson-4-testing-implementation%}){: .lesson-title-link}  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!]({{ page.youtube-videos[3].url }}){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -140,7 +161,7 @@ That means, as, in all of the implementations throughout the project, we **write
 {: .pd-1}
 </div>
 
-#### Lesson 5: Endpoint implementation to retrieve comments - part 2 (The Service)
+#### [Lesson 5: Endpoint implementation to retrieve comments - part 2 | The Service ]({% post_url 2021-04-05-lesson-5-testing-implementation%}){: .lesson-title-link}  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!]({{ page.youtube-videos[4].url }}){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -151,7 +172,7 @@ In this lesson, we move the business logic to the service layer by refactoring t
 
 </div>
 
-#### Lesson 6: Endpoint implementation to retrieve comments - part 3 (The Repository)
+#### [Lesson 6: Endpoint implementation to retrieve comments - part 3 | Spring Data]({% post_url 2021-04-07-lesson-6-spring-data%}){: .lesson-title-link}  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!]({{ page.youtube-videos[5].url }}){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -164,7 +185,7 @@ In this lesson, we move the business logic to the service layer by refactoring t
 
 </div>
 
-#### Lesson 7: Integration testing - part 1
+#### [Lesson 7: Integration testing - part 1]({% post_url 2021-04-12-lesson-7-integration-testing-with-spring-boot %}){: .lesson-title-link}  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!]({{ page.youtube-videos[6].url }}){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -181,7 +202,7 @@ In this lesson, we move the business logic to the service layer by refactoring t
 
 </div>
 
-#### Lesson 8: Making a Spring Boot Application  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch now!](https://javacodehouse-training.thinkific.com/courses/spring-boot){: .btn-sm-play}
+#### [Lesson 8: Making a Spring Boot Application]({% post_url 2021-04-19-lesson-8-spring-boot-application %}){: .lesson-title-link}  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!]({{ page.youtube-videos[7].url }}){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -195,7 +216,7 @@ Here we discuss the spring boot annotations and then add all the required annota
 
 </div>
 
-#### Lesson 9: Spring Transaction handling
+#### [Lesson 9: Spring Transaction handling]({% post_url 2021-04-19-lesson-9-spring-transaction-handling %}){: .lesson-title-link}  [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!](https://youtu.be/XL0EROsn5Yc){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -217,7 +238,7 @@ Here we discuss the spring boot annotations and then add all the required annota
 </div>
 
 
-#### Lesson 10: Integration testing - part 2
+#### Lesson 10: Integration testing - part 2 [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!](https://youtu.be/YMgNyfuTtz8){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -234,7 +255,7 @@ Here we discuss the spring boot annotations and then add all the required annota
 
 </div>
 
-#### Lesson 11: Endpoint implementation to save a comment
+#### Lesson 11: Endpoint implementation to save a comment [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!](https://youtu.be/fMHOldR44rQ){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -244,7 +265,7 @@ Unit tests and implementation of the endpoint for saving a comment.
 {: .pd-1}
 </div>
 
-#### Lesson 12: Integration testing part 3
+#### Lesson 12: Integration testing part 3 [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!](https://youtu.be/wTKs-XAgt2I){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -254,7 +275,7 @@ Write some integration tests for saving the comment
 {: .pd-1}
 </div>
 
-#### Lesson 13: End to end test
+#### Lesson 13: End to end test [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!](https://youtu.be/DwESsqPwlZc){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -269,7 +290,7 @@ Write some integration tests for saving the comment
 
 </div>
 
-#### Lesson 14: Endpoint implementation to delete a comment
+#### Lesson 14: Endpoint implementation to delete a comment [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!](https://youtu.be/qqYkfzbXIQ0){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -280,7 +301,7 @@ Physical delete vs Logical delete.
 {: .pd-1}
 </div>
 
-#### Lesson 15: Integration testing part 4
+#### Lesson 15: Integration testing part 4 [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!](https://youtu.be/NMOLPNtlQp0){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -298,7 +319,7 @@ Write some integration tests for deleting the comment
 ### Deployment
 {: .module-title .center}
 
-#### Lesson 16: Deployment
+#### Lesson 16: Deployment [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!](https://youtu.be/QAKlzQk0WuY){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -311,7 +332,7 @@ Write some integration tests for deleting the comment
 
 </div>
 
-#### Lesson 17: External Database
+#### Lesson 17: External Database [<i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!](https://youtu.be/YrVx11DSAjY){:target="_blank"}{: .btn-sm-play}
 {: .lesson-title}
 
 <div class="arrow-down" />
@@ -324,12 +345,6 @@ Write some integration tests for deleting the comment
 
 </div>
 
-</div>
-
-<div class="mg-tp-3 center">
-<a class="btn-md-play" href="https://javacodehouse-training.thinkific.com/courses/spring-boot" target="_blank">
-<i class="fa fa-play-circle" aria-hidden="true"></i> Enrol Now!
-</a>  
 </div>
 
 </div>

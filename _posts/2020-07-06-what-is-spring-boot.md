@@ -12,12 +12,20 @@ description: "Spring Boot is a framework or rather a tool built on top of spring
 excerpt_separator: <!--more-->
 
 images: 
-  - url: /assets/img/spring-boot/what-is-spring-boot.jpg
+  - url: /assets/img/thumb/spring-boot.svg
     alt: What is Spring Boot
     title: What is Spring Boot
 
+
+ads:
+    - url: /courses/spring-boot/REST-API-with-Spring-Boot
+      img: 
+        url: /assets/img/spring-boot-course/spring-boot-course.svg
+        alt: Spring Boot Course
+        title: Spring Boot Course
+
 cover-image: 
-    url: /assets/img/spring-boot/what-is-spring-boot.jpg
+    url: /assets/img/thumb/spring-boot.svg
     alt: What is Spring Boot
     title: What is Spring Boot
 ---
@@ -32,6 +40,10 @@ Spring Boot still uses the Spring framework under the hood, but almost all of th
 Whether you use Spring Boot or Spring framework, you would still create a Spring application at the end. The differences are in the process. How fast and how easy things can get during development.
 
 So in this post let's take a look at the Spring Boot framework.
+
+<!-- Ezoic - incontent_5 - incontent_5 -->
+<div id="ezoic-pub-ad-placeholder-113"> </div>
+<!-- End Ezoic - incontent_5 - incontent_5 -->
 
 <!--more-->
 
@@ -53,6 +65,10 @@ In other words, Spring Boot is an extension of the Spring framework, intended to
 
 You can set up a spring application using Spring Boot (without having to write a single line of XML or any configuration what so ever) to the point where it is ready to be deployed and run in a matter of minutes :joy:. So it spares the developers more time to focus on implementing the application logic rather than project set up and configuration.
 
+<!-- Ezoic - incontent_6 - incontent_6 -->
+<div id="ezoic-pub-ad-placeholder-114"> </div>
+<!-- End Ezoic - incontent_6 - incontent_6 -->
+
 How is it possible? 
 
 Well, [**Spring Boot starters**](#spring-boot-starters) and [**Autoconfiguration**](#what-is-autoconfiguration) makes the project set up so quick and easy that you only have to know which kind of application you want to create. 
@@ -67,6 +83,10 @@ It's the **Spring Boot Actuator**, which lets you monitor and interact with the 
 
 Oh, by the way, Spring Boot also embeds a server, such as TOMCAT or Reactor Netty depending on the kind of application that you create, so You can bundle up your web application as a jar file and just run it without having to have a server.
 
+
+<!-- Ezoic - incontent_7 - incontent_7 -->
+<div id="ezoic-pub-ad-placeholder-115"> </div>
+<!-- End Ezoic - incontent_7 - incontent_7 -->
 
 <hr>
 
@@ -104,10 +124,14 @@ dependencies {
 
 Similarly, if you want to use Spring Data Jpa, you would add the `spring-boot-starter-data-jpa` dependency to your project.
 
-**Below is a list of Spring Boot starter dependencies, each with the link to it's `build.gradle` file.**
 
 There’s a list of all the starters available in the [Spring Boot Documentation](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-starter){:target="_blank"} along with a brief description of each, and the table below is derived from it.
 
+<!-- Ezoic - incontent_8 - incontent_8 -->
+<div id="ezoic-pub-ad-placeholder-116"> </div>
+<!-- End Ezoic - incontent_8 - incontent_8 -->
+
+## List of popular Spring Boot starter dependencies, each with the link to its `build.gradle` file
 
 |---
 | Name | Description |
@@ -161,6 +185,9 @@ There’s a list of all the starters available in the [Spring Boot Documentation
 | [spring-boot-starter-websocket](https://github.com/spring-projects/spring-boot/blob/master/spring-boot-project/spring-boot-starters/spring-boot-starter-websocket/build.gradle){:target="_blank"} | Starter for building WebSocket applications using Spring Framework’s WebSocket support |
 {: .table-striped}
 
+<!-- Ezoic - incontent_9 - incontent_9 -->
+<div id="ezoic-pub-ad-placeholder-117"> </div>
+<!-- End Ezoic - incontent_9 - incontent_9 -->
 
 <hr>
 
@@ -184,6 +211,11 @@ Auto-configuration is the reason why the Pivotal team says ["It's a Kind of Magi
 
 <!-- How to enable and disable auto-configuration -->
 
+
+<!-- Ezoic - incontent_10 - incontent_10 -->
+<div id="ezoic-pub-ad-placeholder-118"> </div>
+<!-- End Ezoic - incontent_10 - incontent_10 -->
+
 <hr>
 
 # Spring Initializr
@@ -203,20 +235,22 @@ Spring initialzr will do the following:
 
 Now you can start implementing, and yes you can do any customizations to the build file or the project setup as much as you like.
 
+<!-- Ezoic - incontent_11 - incontent_11 -->
+<div id="ezoic-pub-ad-placeholder-122"> </div>
+<!-- End Ezoic - incontent_11 - incontent_11 -->
+
 <hr>
 
 {% include related-post.html post-name='spring-initializr' title = "How to set up a Spring Boot project using Spring Initializr" %}
 
 <hr>
 
-## Want to get started with Spring Boot?
+## Want To Get Started With Spring Boot?
 {: .center}
 
-Check out the course. <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+Check out the FREE course. <i class="fa fa-hand-o-down" aria-hidden="true"></i>
 {: .center}
 
-<div class="maxw-700 center">
-    <div class="mg-tp-1 video-container center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/TtQcdMr-MPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>  
+<div class="center">
+  <span id="ezoic-pub-video-placeholder-5"></span>
 </div>

@@ -10,12 +10,12 @@ description: In this tutorial we will look into the basics of JUnit 4 which are 
 excerpt_separator: <!--more-->
 name: junit
 cover-image: 
-    url: /assets/img/junit/junit.png
+    url: /assets/img/thumb/JUnit.svg
     alt: How to write great unit tests with JUnit
     title: How to write great unit tests with JUnit
     
 images: 
-  - url: /assets/img/junit/junit.png
+  - url: /assets/img/thumb/JUnit.svg
     alt: How to write great unit tests with JUnit
     title: How to write great unit tests with JUnit
 
@@ -36,11 +36,16 @@ content-upgrade:
     mailmunch-href: mailmunch-pop-743283
 
 ads:
-    - url: /courses/the-spring-boot-course
+    - url: /courses/spring-boot/REST-API-with-Spring-Boot
       img: 
-        url: /assets/img/spring-boot-course/course-ad.png
+        url: /assets/img/spring-boot-course/spring-boot-course.svg
         alt: Spring Boot Course
         title: Spring Boot Course
+    - url: /courses/spring-boot/lesson-7-integration-testing-with-spring-boot
+      img: 
+        url: /assets/img/thumb/spring-boot-integration-testing.svg
+        alt: Integration Testing with Spring Boot
+        title: Integration Testing with Spring Boot
 
     
 ---
@@ -65,6 +70,10 @@ In this tutorial we will look into the basics of JUnit 4 which are essential to 
 - `@Test` - Marks the method as a test method.
 - `@Before` and `@After` sandwiches **each test method** in the class.
 - `@BeforeClass` and `@AfterClass` sandwiches **all of the test methods** in a JUnit test class. 
+
+<!-- Ezoic - incontent_5 - incontent_5 -->
+<div id="ezoic-pub-ad-placeholder-113"> </div>
+<!-- End Ezoic - incontent_5 - incontent_5 -->
 
 ### Following is the execution order of the above mentioned methods when a JUnit4 test is run.
 
@@ -91,6 +100,9 @@ In this tutorial we will look into the basics of JUnit 4 which are essential to 
 </div> 
 </div>
 
+<!-- Ezoic - incontent_6 - incontent_6 -->
+<div id="ezoic-pub-ad-placeholder-114"> </div>
+<!-- End Ezoic - incontent_6 - incontent_6 -->
 
 
 ~~~
@@ -147,12 +159,18 @@ In this tutorial we will look into the basics of JUnit 4 which are essential to 
 ~~~
 {: .language-java}
 
+<!-- Ezoic - incontent_7 - incontent_7 -->
+<div id="ezoic-pub-ad-placeholder-115"> </div>
+<!-- End Ezoic - incontent_7 - incontent_7 -->
 
 <div class="center">
-{% assign ad = page.ads[0] %}
+{% assign ad = page.ads[1] %}
 {% include inline-ad.html ad=ad %}
 </div>
 
+<!-- Ezoic - incontent_8 - incontent_8 -->
+<div id="ezoic-pub-ad-placeholder-116"> </div>
+<!-- End Ezoic - incontent_8 - incontent_8 -->
 
 <hr>
 
@@ -186,11 +204,18 @@ In this tutorial we will look into the basics of JUnit 4 which are essential to 
 
         eg: `assertThat("hello world", anyOf(is("hello world"), containsString("hello")));` In this case, the test will pass if either the actual string is "hello world" or if it contains the word "hello".
 
+<!-- Ezoic - incontent_9 - incontent_9 -->
+<div id="ezoic-pub-ad-placeholder-117"> </div>
+<!-- End Ezoic - incontent_9 - incontent_9 -->
+
 ##### Following is a list of hamcrest coreMatchers from the [hamcrest docs](http://hamcrest.org/JavaHamcrest/javadoc/1.3/org/hamcrest/CoreMatchers.html){:target="_blank"}. 
 
 
 {::nomarkdown}<ul> <li> allOf </li> <li> any </li> <li> anyOf </li> <li> anything </li> <li> both </li> <li> containsString </li> <li> describedAs </li> <li> either </li> <li> endsWith </li> <li> equalTo </li>   </ul> {:/}    | {::nomarkdown} <ul> <li> everyItem </li>  <li> hasItems </li> <li> instanceOf </li> <li> is </li> <li> isA </li> <li> not </li> <li> notNullValue </li> <li> nullValue </li> <li> sameInstance </li> <li> startsWith </li> <li> theInstance </li> </ul> {:/} 
 
+<!-- Ezoic - incontent_10 - incontent_10 -->
+<div id="ezoic-pub-ad-placeholder-118"> </div>
+<!-- End Ezoic - incontent_10 - incontent_10 -->
 
 ### How to use `assertThat` with `hamcrest` matches.
 
@@ -221,7 +246,9 @@ public void testAssetThatExamples() {
 
 [JUnit4 wiki for Assertions](https://github.com/junit-team/junit4/wiki/Assertions){:target="_blank"} contains a list of examples for each of the assertions mentioned above. Also [this](https://objectpartners.com/2013/09/18/the-benefits-of-using-assertthat-over-other-assert-methods-in-unit-tests){:target="_blank"} is a comprehensive post on `assertThat`. I like the table at the end the most, which is a comparison of the `assertThat` with the old style assert methods, very useful.
 
-
+<!-- Ezoic - incontent_11 - incontent_11 -->
+<div id="ezoic-pub-ad-placeholder-122"> </div>
+<!-- End Ezoic - incontent_11 - incontent_11 -->
 
 <div>
   {% include content-upgrade-inline.html %}  
@@ -289,7 +316,9 @@ For example, we need a method which reads a file and it throws file not found ex
 
 You could read more about exceptions testing in [JUnit4 wiki for Exception testing](https://github.com/junit-team/junit4/wiki/Exception-testing){:target="_blank"}  and [bad.robot - Expecting Exceptions JUnit Rule](http://baddotrobot.com/blog/2012/03/27/expecting-exception-with-junit-rule/index.html){:target="_blank"}.
 
-
+<!-- Ezoic - incontent_12 - incontent_12 -->
+<div id="ezoic-pub-ad-placeholder-123"> </div>
+<!-- End Ezoic - incontent_12 - incontent_12 -->
 <hr>
 
 ## JUnit4 - Parameterized tests
@@ -345,11 +374,15 @@ Check out the following course. <i class="fa fa-hand-o-down" aria-hidden="true">
 
 In this course you will learn how to write proper unit tests to test business logic in a Test First manner (or TDD), and also how to write seperate integration tests.
 
-<div class="maxw-700 center">
+<div class="center">
+  <span id="ezoic-pub-video-placeholder-5"></span>
+</div>
+
+<!-- <div class="maxw-700 center">
     <div class="mg-tp-1 video-container center">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/TtQcdMr-MPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>  
-</div>
+</div> -->
 
 
 <hr>

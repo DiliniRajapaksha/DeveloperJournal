@@ -10,12 +10,12 @@ description: "It's super quick and easy to mock or simulate any REST api with SO
 excerpt_separator: <!--more-->
 
 cover-image:
-    url: /assets/img/rest-mock/rest-mock.png
+    url: /assets/img/thumb/soapui.svg
     alt: Mock Rest APIs with Soap UI
     title: Mock Rest APIs with Soap UI
 
 images: 
-  - url: /assets/img/rest-mock/rest-mock.png
+  - url: /assets/img/thumb/soapui.svg
     alt: Mock Rest APIs with Soap UI
     title: Mock Rest APIs with Soap UI
     max-width: 900px
@@ -120,9 +120,9 @@ images:
     max-width: 900px
 
 ads:
-    - url: /courses/the-spring-boot-course
+    - url: /courses/spring-boot/REST-API-with-Spring-Boot
       img: 
-        url: /assets/img/spring-boot-course/course-ad.png
+        url: /assets/img/spring-boot-course/spring-boot-course.svg
         alt: Spring Boot Course
         title: Spring Boot Course
 

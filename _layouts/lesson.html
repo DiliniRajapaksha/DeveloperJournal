@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<article class="post" markdown="1" itemscope itemtype="http://schema.org/BlogPosting">
+
+	<header class="post-header">
+		<h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+		<time id="publish-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time>
+		{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
+	</header>
+
+	<div class="visual">
+		{% assign video = page.youtube %}
+		{% include youtube-video.html video=video %}
+	</div>
+
+	<div class="content" itemprop="articleBody">
+	  	{{ content }}
+	</div>
+
+	{% if page.next-lesson %}
+		<hr>
+		<div class="next">
+			<h2>Next</h2>
+			{% if page.next-lesson.url %}
+				<h3><a href="{{ page.next-lesson.url | prepend: site.course-url }}">{{ page.next-lesson.title }}</a></h3>
+			{% elsif page.next-lesson.youtube-url %}
+				<h3><i class="fa fa-youtube-play pink" id="play-icon" aria-hidden="true"></i><a href="{{page.next-lesson.youtube-url}}" target="_blank">{{ page.next-lesson.title }}</a></h3>
+				<!-- <h3>{{ page.next-lesson.title }} <a class="btn-sm-play" href="{{page.next-lesson.youtube-url}}"><i class="fa fa-youtube-play" aria-hidden="true"></i> Watch on Youtube!</a></h3>  -->
+			{% else %}
+				<h3>{{ page.next-lesson.title }}</h3>
+			{% endif %}
+		</div>
+	{% endif %}
+</article>
+<div class="article-footer">
+	
+	{% include comments.html %}
+</div>
+
+ 
+ 
+
