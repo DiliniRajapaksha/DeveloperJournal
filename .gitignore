@@ -6,3 +6,4 @@ key
 **/.DS_Store
 **/._.DS_Store
 **/._*
+docker-compose.yml
