@@ -175,6 +175,10 @@ body{
 	display: none;
 }
 
+.visual{
+	margin: 3em 0;
+}
+
 @media only screen and (min-width: (750px + 360px)) {
 
 	body{
@@ -448,9 +452,6 @@ article{
 .article-footer{
 	grid-area: article-footer;
 }
-/*.visual{
-	max-width: 650px;
-}*/
 
 aside{
 	margin-top: 3em;
@@ -904,4 +905,8 @@ margin-right: 0.5em;
 
 .ezoic-video{
 	max-width: 854px;
+}
+
+.mg-tb-2{
+	margin: 2em 0;
 }

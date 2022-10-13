@@ -24,9 +24,9 @@ images:
     max-width: 250px
 ---
 
-**You MUST separate integration tests from unit tests.**
+**Why you MUST separate integration tests from unit tests.**
 
-Integration tests take way longer to run while unit tests finish in seconds. It is the best practice to separate them.
+Integration tests take way longer to run while unit tests finish in seconds. So, it is the best practice to separate them.
 
 ### Gradle recommends the same as well.
 
