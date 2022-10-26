@@ -110,6 +110,10 @@ ul{
 	margin: 0px;
 }
 
+ul.social{
+	list-style: none;
+}
+
 li{
 	margin-bottom: 1em;
 
@@ -130,10 +134,12 @@ li{
 	margin-bottom: 4em;
 }*/
 
+// Mobile one column layout
+// 1 fraction is 100% of the available space, giving 1fr to content and rest of it auto
 body{
 	display: grid;
 	grid-template-columns: 1fr ;
-	grid-template-rows: 1fr auto auto 1fr 1fr 1fr;
+	grid-template-rows: auto auto 1fr auto auto auto;
 
 	grid-template-areas: 	"header"
 												 "ad-ez" 
@@ -146,12 +152,13 @@ body{
 	margin-bottom: 4em;
 }
 
+
 @media only screen and (min-width: (100ch)) {
 
 	body{
 		display: grid;
 		grid-template-columns: 1fr 75ch 1fr ;
-		grid-template-rows: 1fr auto auto 1fr 1fr 1fr;
+		grid-template-rows: auto auto 1fr auto auto auto;
 
 		grid-template-areas: 	". header ."
 													 "ad-ez ad-ez ad-ez" 
@@ -179,17 +186,18 @@ body{
 	margin: 3em 0;
 }
 
+//content aligned to left
 @media only screen and (min-width: (750px + 360px)) {
 
 	body{
 	display: grid;
 	grid-template-columns: 75ch minmax(360px, 1fr);
-	grid-template-rows: 1fr auto auto 1fr;
+	grid-template-rows: auto auto 1fr auto;
 	grid-gap: 1em;
-	grid-template-areas: "header ."
+	grid-template-areas: "header header"
 											 "ad-ez ad-ez" 
-											 "content sidebarr"
-											 "sidebarl sidebarl"
+											 "content sidebar-r"
+											 "sidebar-l sidebar-l"
 											 "footer footer";
 	}
 
@@ -205,11 +213,11 @@ body{
 	body{
 	display: grid;
 	grid-template-columns: minmax(360px, 1fr) 75ch minmax(360px, 1fr);
-	grid-template-rows: 1fr auto auto 1fr;
+	grid-template-rows: auto auto 1fr auto;
 
 	grid-template-areas: ". header ."
 											 "ad-ez ad-ez ad-ez" 
-											 "sidebarl content sidebarr"
+											 "sidebar-l content sidebar-r"
 											 "footer footer footer";
 	}
 
@@ -370,7 +378,7 @@ $radius: 0.2rem;
 }
 
 // Desktop view
-@media only screen and (min-width: 560px) {
+@media only screen and (min-width: 650px) {
   .nav {
     &__toggle {
       display: none;
@@ -909,4 +917,13 @@ margin-right: 0.5em;
 
 .mg-tb-2{
 	margin: 2em 0;
+}
+
+// .fa-linkedin-square{
+// 	color: #0A66C2;
+// }
+
+.social-icon{
+	color: var(--brand-color);
+    padding-bottom: 9px;
 }
