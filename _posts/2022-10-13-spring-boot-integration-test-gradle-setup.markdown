@@ -11,6 +11,9 @@ categories: blog
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: "How to setup seperate integration tests with Gradle"
 excerpt_separator: <!--more-->
+author:
+author-link:
+author-img: 
 
 cover-image:
     url: /assets/img/gradle-int/thumb.svg

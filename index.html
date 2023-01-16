@@ -9,11 +9,24 @@ title: Java Code House
     <li class="post-excerpt">
       <header class="mg-bt-1">
         <h1 class="post-title" ><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-        {% if post.last-updated %}
-          <time id="publish-date" datetime="{{ post.last-updated | date_to_xmlschema }}" itemprop="dateModified">{{ post.last-updated | date_to_long_string }}</time>
+
+
+        {% if page.author %} 
+        {% assign author = page.autor %}
         {% else %}
-          <time id="publish-date" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date_to_long_string }}</time>
+        {% assign author = site.author %}
         {% endif %}
+    
+        <span itemscope itemtype="https://schema.org/Person"> 
+          <span itemprop="name" class="meta-data-post meta-data-post-author-name">by {{author}}</span>
+          {% if post.last-updated %}
+            <time class="meta-data-post" id="publish-date" datetime="{{ post.last-updated | date_to_xmlschema }}" itemprop="dateModified">{{ post.last-updated | date_to_long_string }}</time>
+          {% else %}
+            <time class="meta-data-post"  id="publish-date" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date_to_long_string }}</time>
+          {% endif %}
+        </span>
+
+
 
       </header>
       <a href="{{post.url | prepend: site.baseurl}}" class="mg-bt-1">            
