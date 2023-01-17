@@ -6,8 +6,22 @@ aside: true
 
 	<header class="post-header">
 		<h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-		<time id="publish-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time>
-		{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
+		{% if page.author %} 
+		{% assign author = page.autor %}
+		{% assign author-link = page.autor-link %}
+		<!-- Should add a default avatar image path in the post incase the author image is not present -->
+		{% assign author-img = page.autor-img %} 
+		{% else %}
+		{% assign author = site.author %}
+		{% assign author-link = site.author-link %}
+		{% assign author-img = "/assets/img/dilini.jpg" %}
+		{% endif %}
+
+		<span itemscope itemtype="https://schema.org/Person"> 
+			<img src="{{author-img}}" itemprop="image" alt="Photo of "{{author}} class="author-img"/>
+			<span itemprop="name" class="meta-data-post meta-data-post-author-name"> <a href="{{author-link}}" target="_blank">{{author}}</a> </span>
+			<time class="meta-data-post seperator" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time>
+		</span>
 
 		<!-- Ezoic - under_page_title - under_page_title -->
 		<div id="ezoic-pub-ad-placeholder-121"> </div>
