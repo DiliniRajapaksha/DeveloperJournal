@@ -28,7 +28,7 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       #000;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
@@ -54,6 +54,9 @@ $on-laptop:        800px;
 .highlighter-rouge .highlight{
   background-color: #f7f7f7;
   border:none;
+}
+pre {
+    white-space: pre-wrap;
 }
 
 @mixin vendor-prefix($name, $argument) {
@@ -94,6 +97,7 @@ h1, h2, h3{
 
 h3, h2{
 	margin-top: 2em;
+	font-weight: bold;
 }
 
 h5{
@@ -900,6 +904,9 @@ div.center {
 .gray-box{
 	background-color: #eee;
 	padding: 2em;
+}
+.highlightme {
+	 background-color: #ff777040; 
 }
 
 .img-md{
