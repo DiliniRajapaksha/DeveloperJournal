@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Docker for Developers | How I went from confusion to clarity
-date: 2023-10-02
+date: 2023-10-15
 categories: blog
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: "What is docker and how to use it as a developer..."
