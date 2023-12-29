@@ -9,7 +9,7 @@ categories: courses/spring-boot
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: "Designing the REST API"
 excerpt_separator: <!--more-->
-
+name: design
 youtube:
     url: https://youtu.be/4OqQtCRb2r8
     image:
@@ -232,3 +232,8 @@ The application code is organised into three layers.
 <!-- Ezoic - incontent_12 - incontent_12 -->
 <div id="ezoic-pub-ad-placeholder-123"> </div>
 <!-- End Ezoic - incontent_12 - incontent_12 -->
+
+
+---
+
+{% include related-post.html post-name='put-patch' title = "Checkout -> PUT vs PATCH Operations" %}

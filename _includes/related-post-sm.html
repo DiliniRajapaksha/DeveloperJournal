@@ -1,0 +1,19 @@
+
+{% assign post = site.posts | where: 'name', include.post-name | first %}
+
+<div class="related-post-container">
+
+    <h5 class="center mg-bt-1 related-post">
+        <a href="{{ post.url | prepend: site.baseurl }}" target="_blank">Checkout this Post!</a></h5> 
+
+    <div class="center maxw-700" markdown="0">
+        <a href="{{ post.url | prepend: site.baseurl }}" target="_blank">
+            {% assign image = post.cover-image %}
+            {% include image.html image=image styleClass="shadow" %}
+        </a>
+        <!-- <h4> {{include.title}}</h4> -->
+        <p>{{post.title}}</p>
+    </div>
+
+</div>
+

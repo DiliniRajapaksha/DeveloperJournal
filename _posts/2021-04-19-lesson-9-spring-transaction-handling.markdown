@@ -89,6 +89,9 @@ Spring Framework’s transaction support is enabled via AOP proxies. So the call
 <div id="ezoic-pub-ad-placeholder-113"> </div>
 <!-- End Ezoic - incontent_5 - incontent_5 -->
 
+---
+
+{% include related-post-sm.html post-name='map-flatmap' title = "map vs flatMap in Java Stream API" %}
 
 <hr>
 
@@ -184,6 +187,7 @@ The `@Transactional` annotation can be placed on interfaces, classes, or both cl
 > --- [Spring Documentation](https://docs.spring.io/spring/docs/4.2.x/spring-framework-reference/html/transaction.html#transaction-declarative-annotations){:target="_blank"}   
 
 Don't worry if you are confused with the above excerpt, it's all explained below. <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+
 
 
 
@@ -295,5 +299,7 @@ Hence there is no restriction as to where to place the `@Transactional` annotati
 <hr>
 
 **I highly recommend reading the [documentation](https://docs.spring.io/spring/docs/4.2.x/spring-framework-reference/html/transaction.html){:target="_blank"} for Spring transaction management as we cannot cover everything here.**
+
+
 
 
