@@ -11,6 +11,7 @@ categories: blog
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: "The difference between Map and FlatMap methods in Java Stream API"
 excerpt_separator: <!--more-->
+name: map-flatmap
 
 cover-image:
     url: /assets/img/thumb/map-vs-flatmap.svg
