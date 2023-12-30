@@ -215,6 +215,7 @@ Select the HTTP method and give the resource path, it can be anything. I have se
 {% include image.html image=image  styleClass="gray-border-10" %}
 </div>
 
+{% include related-post-sm.html post-name='jdk'%}
 
 #### 3. Add a mock response  
 

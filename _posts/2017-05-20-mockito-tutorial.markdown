@@ -159,6 +159,8 @@ public class CustomerServiceTest {
   {% include content-upgrade-inline.html %}  
 </div>
 
+{% include related-post-sm.html post-name='jdk'%}
+
 <hr>
 
 ## HOW TO **MOCK** METHODS WITH MOCKITO

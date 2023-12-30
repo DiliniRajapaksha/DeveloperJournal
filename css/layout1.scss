@@ -848,6 +848,9 @@ div.center {
 
 .related-post{
 
+	margin: 1em auto;
+    max-width: 500px;
+	
  	a{
 		color: var(--title-color);
 		text-decoration: none;
