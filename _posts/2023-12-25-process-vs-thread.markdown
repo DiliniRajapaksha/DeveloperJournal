@@ -2,7 +2,6 @@
 
 layout: post
 comments: true
-
 aside: true
 title:  "Process Vs Thread"
 date:   2023-12-25
@@ -11,16 +10,17 @@ categories: blog
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: "The difference between Processes and Threads"
 excerpt_separator: <!--more-->
+name: process
 
 cover-image:
     url: /assets/img/thumb/process-vs-thread.svg
-    alt: Map vs FlatMap
-    title: Map vs FlatMap
+    alt: Process Vs Thread
+    title: Process Vs Thread
 
 images: 
   - url: /assets/img/thumb/process-vs-thread.svg
-    alt: Map vs FlatMap
-    title: Map vs FlatMap
+    alt: Process Vs Thread
+    title: Process Vs Thread
     max-width: 250px
 ---
 

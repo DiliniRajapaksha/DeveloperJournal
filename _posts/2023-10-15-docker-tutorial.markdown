@@ -7,6 +7,7 @@ categories: blog
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
 description: "What is docker and how to use it as a developer..."
 excerpt_separator: <!--more-->
+name: docker
 images:
   - url: /assets/img/docker/docker.png
     alt: Docker
@@ -164,6 +165,9 @@ A container is created from an image when the `docker run` command is executed. 
 
 
 **Then I moved on to dockerizing my spring boot application.**
+
+{% include related-post-sm.html post-name='jdk'%}
+
 
 --- 
 

@@ -172,6 +172,8 @@ In this tutorial we will look into the basics of JUnit 4 which are essential to 
 <div id="ezoic-pub-ad-placeholder-116"> </div>
 <!-- End Ezoic - incontent_8 - incontent_8 -->
 
+{% include related-post-sm.html post-name='jdk'%}
+
 <hr>
 
 ## JUnit4 - Assertions

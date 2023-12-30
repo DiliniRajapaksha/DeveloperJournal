@@ -213,3 +213,6 @@ task integration_test(type: Test) {
 
 Please find the complete source code of this project @ <https://github.com/JavaCodeHouse/Integration-tests-gradle/tree/main>{:target="_blank" .url}
 
+---
+
+{% include related-post.html post-name='docker' title="Get started with Docker"%}
