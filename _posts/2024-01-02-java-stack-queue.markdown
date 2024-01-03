@@ -15,19 +15,21 @@ name: stack-queue
 
 cover-image:
     url: /assets/img/thumb/stack-queue.svg
-    alt: Java optional
-    title: Java optional
+    alt: Java Stacks and Queues
+    title: Java Stacks and Queues
 
 images: 
   - url: /assets/img/thumb/stack-queue.svg
-    alt: Java optional
-    title: Java optional
+    alt: Java Stacks and Queues
+    title: Java Stacks and Queues
     max-width: 250px
 ---
 
 Let's look at how to work with stacks and queues in Java.
 
 <!--more-->
+
+---
 
 # Stack
 
