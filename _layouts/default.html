@@ -67,13 +67,18 @@
                   }
         }
         },
-        autostart: false
+        autostart: true
+            }).then(() => {
+              window.voiceflow.chat.proactive.clear();
+              window.voiceflow.chat.proactive.push(
+                {type: "text", payload: {message: "Hello!"}},
+                {type: "text", payload: {message: "Welcome to Java Code House..."}},
+                {type: "text", payload: {message: "I'm your AI assistant at JCH, ready to assist you."}}
+              )
             });
           }
           v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
       })(document, 'script');
     </script>
-
-
   </body>
 </html>
