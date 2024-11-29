@@ -1,9 +1,9 @@
 ---
 
-layout: post
+layout: lesson
 comments: true
 
-title:  "REST API with Spring Boot | Lesson 2"
+title:  "How To Set Up Spring Boot Project With Gradle"
 date:   2021-03-24
 categories: courses/spring-boot
 markdown_ext: "markdown, mkdown, mkdn, mkd, md"
@@ -21,10 +21,12 @@ cover-image:
     alt: spring initializr
     title: spring initializr
 
----
+next-lesson:
+    title: Lesson 3 - Designing the REST API
+    url: lesson-3-design
 
-{% assign video = page.youtube %}
-{% include youtube-video.html video=video %}
+
+---
 
 <hr class="gray">
 
@@ -63,25 +65,23 @@ On Mac: `./gradlew eclipse`
 
 # Links
 
-Core Gradle plugins: <https://docs.gradle.org/current/userguide/plugin_reference.html>
+Core Gradle plugins: <https://docs.gradle.org/current/userguide/plugin_reference.html>{:target="_blank" .url}
 
-Build Init plugin - <https://docs.gradle.org/current/userguide/build_init_plugin.html>
+Build Init plugin - <https://docs.gradle.org/current/userguide/build_init_plugin.html>{:target="_blank" .url}
 
-Java plugin - <https://docs.gradle.org/current/userguide/java_plugin.html>
+Java plugin - <https://docs.gradle.org/current/userguide/java_plugin.html>{:target="_blank" .url}
 
-eclipse plugin - <https://docs.gradle.org/current/userguide/eclipse_plugin.html>
+eclipse plugin - <https://docs.gradle.org/current/userguide/eclipse_plugin.html>{:target="_blank" .url}
 
-idea plugin - <https://docs.gradle.org/current/userguide/idea_plugin.html>
+idea plugin - <https://docs.gradle.org/current/userguide/idea_plugin.html>{:target="_blank" .url}
 
-Gradle plugins portal:  <https://plugins.gradle.org/>
+Gradle plugins portal:  <https://plugins.gradle.org/>{:target="_blank" .url}
 
-Spring Boot plugin - <https://plugins.gradle.org/plugin/org.springframework.boot>
+Spring Boot plugin - <https://plugins.gradle.org/plugin/org.springframework.boot>{:target="_blank" .url}
 
-Spring dependency management plugin - <https://plugins.gradle.org/plugin/io.spring.dependency-management>
+Spring dependency management plugin - <https://plugins.gradle.org/plugin/io.spring.dependency-management>{:target="_blank" .url}
 
-<hr class="gray">
 
-## Next
 
-### Lesson 3: Design (Coming up soon)
+
 

@@ -16,6 +16,14 @@ images:
     alt: What is Spring Boot
     title: What is Spring Boot
 
+
+ads:
+    - url: /courses/spring-boot/REST-API-with-Spring-Boot
+      img: 
+        url: /assets/img/spring-boot-course/thumb.jpg
+        alt: Spring Boot Course
+        title: Spring Boot Course
+
 cover-image: 
     url: /assets/img/spring-boot/what-is-spring-boot.jpg
     alt: What is Spring Boot
@@ -104,10 +112,10 @@ dependencies {
 
 Similarly, if you want to use Spring Data Jpa, you would add the `spring-boot-starter-data-jpa` dependency to your project.
 
-**Below is a list of Spring Boot starter dependencies, each with the link to it's `build.gradle` file.**
 
 There’s a list of all the starters available in the [Spring Boot Documentation](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-starter){:target="_blank"} along with a brief description of each, and the table below is derived from it.
 
+## List of popular Spring Boot starter dependencies, each with the link to its `build.gradle` file
 
 |---
 | Name | Description |
@@ -209,14 +217,13 @@ Now you can start implementing, and yes you can do any customizations to the bui
 
 <hr>
 
-## Want to get started with Spring Boot?
+## Want To Get Started With Spring Boot?
 {: .center}
 
-Check out the course. <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+Check out the FREE course. <i class="fa fa-hand-o-down" aria-hidden="true"></i>
 {: .center}
 
-<div class="maxw-700 center">
-    <div class="mg-tp-1 video-container center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/TtQcdMr-MPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>  
+<div class="center">
+{% assign ad = page.ads[0] %}
+{% include inline-ad.html ad=ad %}
 </div>

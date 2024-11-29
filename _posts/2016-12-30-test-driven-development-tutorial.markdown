@@ -15,6 +15,14 @@ description: All you need to know about TDD to get started and how it's done wit
 excerpt_separator: <!--more-->
 name: tdd 
 
+
+ads:
+    - url: /courses/spring-boot/REST-API-with-Spring-Boot
+      img: 
+        url: /assets/img/spring-boot-course/thumb.jpg
+        alt: Spring Boot Course
+        title: Spring Boot Course
+
 cover-image:
     url: /assets/img/tdd/TDD-thumb.png
     alt: Test Driven Development Tutorial
@@ -884,10 +892,10 @@ Check out the following course. <i class="fa fa-hand-o-down" aria-hidden="true">
 
 In this course you will learn how to write unit tests before implementing a single line of bussiness logic, and also how to write seperate integration tests, while building a REST API with Spring Boot.
 
-<div class="maxw-700 center" markdown="0">
-    <div class="mg-tp-1 video-container center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/TtQcdMr-MPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>  
+
+<div class="center">
+{% assign ad = page.ads[0] %}
+{% include inline-ad.html ad=ad %}
 </div>
 
 <hr class="gray">

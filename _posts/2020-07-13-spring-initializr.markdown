@@ -60,6 +60,14 @@ cover-image:
     url: /assets/img/spring-boot/Spring initializr/how to use spring initializr.png
     alt: how to use spring initializr
     title: how to use spring initializr
+
+ads:
+    - url: /courses/spring-boot/REST-API-with-Spring-Boot
+      img: 
+        url: /assets/img/spring-boot-course/thumb.jpg
+        alt: Spring Boot Course
+        title: Spring Boot Course
+
 ---
 
 In this post, let's look at the Spring Initializr and how to use it.
@@ -73,11 +81,11 @@ In this post, let's look at the Spring Initializr and how to use it.
 
 <hr>
 
-**Spring initializr is a [website](https://start.spring.io/) or web-based tool that can be used to set up a Spring Boot project.**
+**Spring initializr is a [website](https://start.spring.io/){:target="_blank"} or web-based tool that can be used to set up a Spring Boot project.**
 
 Of course, you can set up a Spring Boot project without using the Spring initializr, but the advantage of using the Spring initializr is that it speeds up the process and does most of the groundwork for you.
 
-All you have to do is to go to [start.spring.io](https://start.spring.io/) and add the spring boot starter dependencies that you want, (eg: web, JPA and H2) and generate the project!
+All you have to do is to go to [start.spring.io](https://start.spring.io/){:target="_blank"} and add the spring boot starter dependencies that you want, (eg: web, JPA and H2) and generate the project!
 
 Spring initialzr will do the following:
 
@@ -92,7 +100,7 @@ Now you can start implementing, and yes you can do any customizations to the bui
 
 <hr>
 
-1. Go to the [Spring Initializr website](https://start.spring.io/). Here's what it looks like at the moment. They change the look of the site quite often :sunglasses:
+1. Go to the [Spring Initializr website](https://start.spring.io/){:target="_blank"}. Here's what it looks like at the moment. They change the look of the site quite often :sunglasses:
 
     <div class="screen-shot mg-bt-1">
     {% assign image = page.images[1] %}
@@ -223,13 +231,13 @@ When you unzip, it contains the following.
 
 - Did you notice that there are no versions specified for any of the dependencies? :open_mouth:
   
-  That's because the versions are handled by the Spring Boot plugin [`org.springframework.boot`](https://plugins.gradle.org/plugin/org.springframework.boot) which is available as a gradle community plugin in the [plugins portal](https://plugins.gradle.org/)
+  That's because the versions are handled by the Spring Boot plugin [`org.springframework.boot`](https://plugins.gradle.org/plugin/org.springframework.boot){:target="_blank"} which is available as a gradle community plugin in the [plugins portal](https://plugins.gradle.org/){:target="_blank"}
   
   We don't have to worry about versions and version compatibility of all the dependencies anymore! :relieved:
 
-- There's another plugin [`io.spring.dependency-management`](https://plugins.gradle.org/plugin/io.spring.dependency-management) added by Spring Initialzr. It provides Maven-like dependency management functionality within Gradle.
+- There's another plugin [`io.spring.dependency-management`](https://plugins.gradle.org/plugin/io.spring.dependency-management){:target="_blank"} added by Spring Initialzr. It provides Maven-like dependency management functionality within Gradle.
 
-  You can find more on the plugin [here](https://github.com/spring-gradle-plugins/dependency-management-plugin).
+  You can find more on the plugin [here](https://github.com/spring-gradle-plugins/dependency-management-plugin){:target="_blank"}.
 
 <hr>
 
@@ -336,3 +344,15 @@ So if you execute the `./gradlew test` command, you will be able to run the samp
 
 Now that you have a working project setup, you can get on with testing and implementation of your application. :tada:
 
+<hr>
+
+## Want To Get Started With Spring Boot?
+{: .center}
+
+Check out the FREE course. <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+{: .center}
+
+<div class="center">
+{% assign ad = page.ads[0] %}
+{% include inline-ad.html ad=ad %}
+</div>

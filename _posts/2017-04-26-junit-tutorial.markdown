@@ -36,11 +36,16 @@ content-upgrade:
     mailmunch-href: mailmunch-pop-743283
 
 ads:
-    - url: /courses/the-spring-boot-course
+    - url: /courses/spring-boot/REST-API-with-Spring-Boot
       img: 
-        url: /assets/img/spring-boot-course/course-ad.png
+        url: /assets/img/spring-boot-course/thumb.jpg
         alt: Spring Boot Course
         title: Spring Boot Course
+    - url: /courses/spring-boot/lesson-7-integration-testing-with-spring-boot
+      img: 
+        url: /assets/img/spring-boot-course/Lesson 7 - int1.png
+        alt: Integration Testing with Spring Boot
+        title: Integration Testing with Spring Boot
 
     
 ---
@@ -149,7 +154,7 @@ In this tutorial we will look into the basics of JUnit 4 which are essential to 
 
 
 <div class="center">
-{% assign ad = page.ads[0] %}
+{% assign ad = page.ads[1] %}
 {% include inline-ad.html ad=ad %}
 </div>
 
@@ -345,11 +350,16 @@ Check out the following course. <i class="fa fa-hand-o-down" aria-hidden="true">
 
 In this course you will learn how to write proper unit tests to test business logic in a Test First manner (or TDD), and also how to write seperate integration tests.
 
-<div class="maxw-700 center">
+<div class="center">
+{% assign ad = page.ads[0] %}
+{% include inline-ad.html ad=ad %}
+</div>
+
+<!-- <div class="maxw-700 center">
     <div class="mg-tp-1 video-container center">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/TtQcdMr-MPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>  
-</div>
+</div> -->
 
 
 <hr>

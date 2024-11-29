@@ -7,3 +7,4 @@ gem 'jekyll-redirect-from'
 gem 'jemoji'
 gem 'gemoji'
 gem "github-pages", group: :jekyll_plugins
+gem "webrick", "~> 1.7"

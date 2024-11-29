@@ -2,6 +2,8 @@
 ---
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
 :root{
 	--turquoise:#7ecdd0;
 	--brand-color:#282828;
@@ -62,10 +64,9 @@ html, body{
 	font-size: 18px;
 	height: 100%;
 	margin: 0px;
-	font-family: "europa";
+	font-family: 'Nunito', sans-serif;
 	color: #1f1f1f;
-	line-height: 1.6em;
-	letter-spacing: .5px;
+	letter-spacing: 1px;
 	font-weight: 300;
 	font-style: normal;
 	background-color: #FFFFFF;
@@ -77,6 +78,15 @@ img{
 a, a:visited, a:hover, a:active {
 	text-decoration: none;
 	color: var(--turquoise);
+}
+
+h1, h2, h3{
+	font-family: var(--raleway-font);
+	line-height: 1.5em;
+}
+
+h3, h2{
+	margin-top: 2em;
 }
 
 h5{
@@ -367,6 +377,36 @@ footer{
 	color: #ffffff;
 }
 
+.btn-sm-play{
+	text-align: center;
+	min-width: 140px;
+    height: 28px;
+	padding: 0.3em 1em;
+	color: #ffffff;
+	background-color: var(--sp-bt-green);
+	@include vendor-prefix(border-radius, 5px);	
+	/*margin: 1em 0em;*/
+    font-size: 0.7em;
+
+	/*.btn-sm-play-pink*/
+     &-pink {
+    	@extend .btn-sm-play;
+    	background-color: var(--pink);
+  }
+}
+
+.btn-sm-play:visited{
+		color: #ffffff;
+	}
+.btn-sm-play:hover{
+	color: #ffffff;
+	background-color: var(--pink);
+	text-decoration: none;
+	a:hover{
+		color: #ffffff;
+	}
+}
+
 hr {
     display: block;
     height: 1px;
@@ -415,15 +455,17 @@ hr {
 	    padding-bottom: 0.5em;
 	    margin-bottom: 1em;
 	    color: var(--sp-bt-green);
+	 	
 	 	h2{
 	    	font-size: 2em;
+	    	margin-top: 0;
 	 	}
 
  	}
 
  }
  .ad .button{
-	background-color: var(--sp-bt-green);
+	background-color: var(--pink);
 }
 
  @media only screen and (max-width : 960px) {
@@ -489,13 +531,23 @@ pre, code{
 	color: var(--title-color);
 	line-height: 1.42857143;
     color: #333;
-    word-break: break-all;
+    word-break: break-word;
     word-wrap: break-word;
     white-space: pre-wrap;
 }
 pre{
 	    overflow-x: auto;
 }
+
+@media only screen and (min-width : 900px) {
+	pre, code{
+
+	    word-break: normal;
+	    word-wrap: normal;
+	    white-space: pre-wrap;
+	}
+}
+
 
 .footer a, .footer a:visited{
 	color: white;
@@ -511,6 +563,7 @@ pre{
 }
 .emoji{
 	width: auto;
+	vertical-align: top;
 }
 
 /*Utils*/
@@ -646,6 +699,27 @@ div.center {
     th{
 		background-color: #f2f2f2;
 	}
+
+}
+
+.table{
+	margin: 2em 0;
+
+	tr{
+		background-color: #f6f6f6;
+	}
+
+	th, td{
+		padding: 10px;
+	}
+}
+
+.table-sp{
+
+	tr:nth-child(2), tr:nth-child(4), tr:nth-child(5){
+	
+		background-color: #fdffb1;
+	}
 }
 
 /* video post */
@@ -668,3 +742,50 @@ div.center {
   grid-area: video;
 }
 /* end video post */
+
+.def-box{
+	background-color: #ffffff;
+	color: var(--brand-color);
+	padding: 3em;
+	margin: 2em 0;
+}
+.border-box{
+    border: 4px solid #ece099;
+    padding: 2em;
+    margin: 2em 0;
+}
+.gray-box{
+	background-color: #eee;
+	padding: 2em;
+}
+
+.img-md{
+	max-width: 500px;
+	margin: 3em 0;
+}
+
+.img-md{
+	max-width: 900px;
+	margin: 3em 0;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.pink{
+	color: var(--pink);
+}
+
+#play-icon{
+margin-right: 0.5em;
+}
+
+.terminal{
+	background-color: #ececec;
+	padding: 2em;
+}
+
+.url{
+	word-break: break-word;
+}
